@@ -1,5 +1,5 @@
 #include "ReadPot.h"
-#include "../potentiometer_struct.h"
+#include "../shmem_struct.h"
 
 #include <iostream>
 #include <stdint.h>
@@ -9,16 +9,24 @@ using namespace std;
 
 ReadPot::ReadPot()
 {
-    this->potentiometer_data = new PosixShMem("POTENTIOMETER",sizeof(POTENTIOMETER_DATA));
+    this->shmem_data = new PosixShMem("SHMEM",sizeof(SHMEM_DATA));
     this->startActivity();
- 
+    this->last_pot = 0.0;
+    this->last_time = 0.0;
+
 }
 
 ReadPot::~ReadPot()
 {
     this->stopActivity();
-    delete this->potentiometer_data;
-    this->potentiometer_data = NULL; 
+    // verificar se existe antes de deletar
+    if(this->shmem_data){
+        delete this->shmem_data;
+    }
+
+    this->shmem_data = NULL;
+    
+     
 }
 
 void ReadPot::startActivity()
@@ -30,7 +38,7 @@ void ReadPot::startActivity()
 void ReadPot::stopActivity()
 {
     ThreadBase::stopActivity();
-    cout << "POTEN." << endl;
+    cout << "READ." << endl;
 }
 
 int ReadPot::run()
@@ -40,49 +48,46 @@ int ReadPot::run()
     this->tim1.tv_sec = 0;
     this->tim1.tv_nsec = 50000000L;    /// < thread frequency 20Hz
 
-    POTENTIOMETER_DATA my_data;
+    SHMEM_DATA my_data;
     
-    int volt[2];
-    double ang[2];
-    double vel;
-    double v_ang[2];
-    double v_time[2];
-    double m_ang;
-    double m_time;
-    int v_volt[233];
-
-    for(int j=0; j<234; j++){
-        v_volt[j] = j;
-    }
-    int j=0;           
-    while(this->is_alive && j<234)
-    {   
+    float ang;
+    float vel;
+    float volt = 0.0;
+    float x_ang = 0.0;
+    road_time_t x_time;
+    road_time_t time_pot;
+    
+               
+    while(this->is_alive)
+    {         
         
-        int i=0;
-        volt[i] = v_volt[j];
-        ang[i] = (volt[i]*2*M_PI)/233;
-        v_ang[i] = ang[i];
-        v_time[i] = road_time();
-        j++;
-        i++;
-        volt[i] = v_volt[j];
-        ang[i] = (volt[i]*2*M_PI)/233;
-        v_ang[i] = ang[i];
-        v_time[i] = road_time();
-        j++;
-        i++;
+        time_pot = road_time();
+         
+        if(last_time != 0)
+        {   
+            volt = volt + 0.1;
+            ang = (volt*2*M_PI)/5.0;
+            vel = ((ang-last_pot)/(time_pot-last_time))*1000000;
+
+            x_ang = (ang+last_pot)/2;
+            x_time = (time_pot+last_time)/2;
+
         
-        vel = (v_ang[i]-v_ang[i-1])/((v_time[i]-v_time[i-1])/1000000);
+            my_data.time = x_time;
+            my_data.potentiometer = x_ang;
+            my_data.velocity = vel;
+            this->shmem_data->write(&my_data, sizeof(SHMEM_DATA));  /// < Write the memory
 
-        m_ang = (v_ang[1]+v_ang[0])/2;
-        m_time = (v_time[1]+v_time[0])/2;
+            
+            last_pot = ang;
+                                        
+        }
+       
 
-        my_data.time = road_time();
-        my_data.potentiometer = m_ang;
-        my_data.velocity = vel;                         
-        this->potentiometer_data->write(&my_data, sizeof(POTENTIOMETER_DATA));  /// < Write the memory
-        nanosleep(&this->tim1, &this->tim2);
-                
+        last_time = time_pot;
+
+        nanosleep(&this->tim1, &this->tim2);           
+                            
     }
     
     this->is_running = 0;

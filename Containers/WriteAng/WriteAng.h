@@ -12,7 +12,7 @@ public:
 
 private:
 
-    PosixShMem *write_data; // Data pointer
+    PosixShMem *shmem_data; // Data pointer
     void startActivity() override;
     void stopActivity() override; 
     int run() override; // Read function

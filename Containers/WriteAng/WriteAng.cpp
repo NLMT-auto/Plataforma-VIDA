@@ -1,24 +1,27 @@
 #include "WriteAng.h"
-#include "../data_struct.h"
+#include "../shmem_struct.h"
 
 #include <iostream>
-#include <fstream>
 #include <stdint.h>
 
 using namespace std; 
 
 WriteAng::WriteAng()
 {
-    this->write_data = new PosixShMem("MOTOR", sizeof(WRITE_DATA));
+    this->shmem_data = new PosixShMem("SHMEM",sizeof(SHMEM_DATA));
     this->startActivity();
  
 }
 
 WriteAng::~WriteAng()
 {
-    this->stopActivity();
-    delete this->write_data;
-    this->write_data = NULL; 
+   this->stopActivity();
+    // verificar se existe antes de deletar
+    if(this->shmem_data){
+        delete this->shmem_data;
+    }
+
+    this->shmem_data = NULL; 
 }
 
 void WriteAng::startActivity()
@@ -30,7 +33,7 @@ void WriteAng::startActivity()
 void WriteAng::stopActivity()
 {
     ThreadBase::stopActivity();
-    cout << "POTEN." << endl;
+    cout << "WRITE." << endl;
 }
 
 int WriteAng::run()
@@ -40,15 +43,20 @@ int WriteAng::run()
     this->tim1.tv_sec = 0;
     this->tim1.tv_nsec = 100000000L;    /// < thread frequency 10Hz
 
-    WRITE_DATA new_data;
+    SHMEM_DATA my_data;
+        
     
    
     while(this->is_alive)
     {   
-        this->write_data->read(&new_data, sizeof(WRITE_DATA));  /// < Write the memory
+        this->shmem_data->read(&my_data, sizeof(SHMEM_DATA));  /// < Read the memory
 
-        cout <<   " ÂNGULO: "  << new_data.potentiometer << " |  TEMPO: " << new_data.time << " |  VELOCIDADE: " << new_data.velocity << endl;
+        cout << "POSIÇÃO: " << my_data.potentiometer << "  | TEMPO: " << my_data.time <<  "  | VELOCIDADE: " << my_data.velocity << endl;                      
+                                        
+        nanosleep(&this->tim1, &this->tim2); 
+        
     }
+    
     this->is_running = 0;
     pthread_exit(NULL);
     return EXIT_SUCCESS;
