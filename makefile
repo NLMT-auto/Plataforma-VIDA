@@ -6,14 +6,15 @@ INCLUDES = -I..
 CONTAINERS = Containers
 	READPOT = ${CONTAINERS}/ReadPot
 	WRITEANG = ${CONTAINERS}/WriteAng
+	CONTROL = ${CONTAINERS}/Control
 
 UTILS = Utils
 	POSIXSHMEM = $(UTILS)/PosixShMem
 	THREADBASE = $(UTILS)/ThreadBase
 all: main
 
-main: ReadPot.o WriteAng.o PosixShMem.o ThreadBase.o main.o
-	$(CC) ReadPot.o WriteAng.o PosixShMem.o ThreadBase.o main.o -o TesteThread $(LINKER_FLAGS)
+main: ReadPot.o WriteAng.o PosixShMem.o Control.o ThreadBase.o main.o
+	$(CC) ReadPot.o WriteAng.o PosixShMem.o Control.o ThreadBase.o main.o -o TesteThread $(LINKER_FLAGS)
 	rm -rf *.o
 
 ThreadBase.o: $(THREADBASE)/ThreadBase.cpp
@@ -27,3 +28,6 @@ ReadPot.o: $(READPOT)/ReadPot.cpp
 
 WriteAng.o: $(WRITEANG)/WriteAng.cpp
 	$(CC) $(INCLUDES) $(CFLAGS) $(WRITEANG)/WriteAng.cpp
+
+Control.o: $(CONTROL)/Control.cpp
+	$(CC) $(INCLUDES) $(CFLAGS) $(CONTROL)/Control.cpp
