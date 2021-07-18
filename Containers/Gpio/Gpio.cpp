@@ -19,16 +19,15 @@ Gpio::Gpio()
 			exit(EXIT_FAILURE);
 		}
 	}
-    this->encoder = new Encoder(27,20);
-    this->motor = new Motor(4,5,6);
+    this->control = new Control(4,5,6);
     this->potentiometer = new Potentiometer(0x48,0);
 }
 
 Gpio::~Gpio()
 {
-    delete this->motor;
+    delete this->control;
     delete this->potentiometer;
-    this->motor = NULL;
+    this->control = NULL;
     this->potentiometer = NULL;
     if (Gpio::sem_pt)
     {

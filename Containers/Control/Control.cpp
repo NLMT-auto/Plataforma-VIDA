@@ -1,67 +1,56 @@
 #include "Control.h"
-#include "../shmem_struct.h"
-
-#include <iostream>
-#include <stdint.h>
-#include <cmath>
-
-using namespace std; 
+#include "../Steering/Steering_struct.h"
+#include "../Potentiometer/Potentiometer_struct.h"
+#include <stdio.h> 
 
 Control::Control()
 {
-    this->shmem_data = new PosixShMem("SHMEM",sizeof(SHMEM_DATA));
+    this->steering_data = new PosixShMem("STERING", sizeof(Timestamped_STEERING_DATA));
+    this->potentiometer_data = new PosixShMem("POTENTIOMETER", sizeof(Timestamped_POTENTIOMETER_DATA));
     this->startActivity();
-    this->last_pot = 0.0;
-    this->last_time = 0.0;
-
 }
 
 Control::~Control()
 {
     this->stopActivity();
-    // verificar se existe antes de deletar
-    if(this->shmem_data){
-        delete this->shmem_data;
-    }
-
-    this->shmem_data = NULL;
-    
-     
+    this->steering_data = NULL;
+    this->potentiometer_data = NULL;
 }
 
 void Control::startActivity()
 {
     ThreadBase::startActivity();
-    
 }
 
 void Control::stopActivity()
 {
     ThreadBase::stopActivity();
-    cout << "CONTROL." << endl;
+     printf("Control\n");
 }
 
 int Control::run()
 {
     this->is_running = 1;
     this->is_alive = 1;
-    this->tim1.tv_sec = 0;
-    this->tim1.tv_nsec = 100000000L;    /// < thread frequency 10Hz
 
-    SHMEM_DATA my_data;
+    this->tim1.tv_sec = 0;
+    this->tim1.tv_nsec = 100000000L;
+
+    Timestamped_STEERING_DATA steering;
+    Timestamped_POTENTIOMETER_DATA potentiometer;
     
     while(this->is_alive)
-    {   
-        this->shmem_data->read(&my_data, sizeof(SHMEM_DATA));  /// < Read the memory                     
-                                        
-        std::cout << "Oi do controle !!!" << endl;
+    {
+        this->potentiometer_data->read(&potentiometer,sizeof(Timestamped_POTENTIOMETER_DATA));
         
-        nanosleep(&this->tim1, &this->tim2); 
-        
+        steering.direction = false;
+        steering.speed = (potentiometer.potentiometer/27300.0)*255;
+        steering.time = road_time();
+        this->steering_data->write(&steering,sizeof(Timestamped_STEERING_DATA));
+		nanosleep(&this->tim1, &this->tim2);
     }
-    
     this->is_running = 0;
     pthread_exit(NULL);
-    return EXIT_SUCCESS;
-}
 
+    return 1;
+}

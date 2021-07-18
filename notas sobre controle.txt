@@ -1,2 +1,0 @@
-O controle tem q pegar os dados do potenciômetro q já estão calculados e mandar para o motor de esterçamento, como eu ainda
-não sei mas a biblioteca q eu devo usar provavelmente é a writingPi do raspbary.

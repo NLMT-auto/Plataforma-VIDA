@@ -1,7 +1,7 @@
 #ifndef POTENTIOMETER_STRUCT_H
 #define POTENTIOMETER_STRUCT_H
 #include <stdint.h>
-#include "../../../Utils/road_time.h"
+#include "../../Utils/road_time.h"
 
 typedef struct
 {

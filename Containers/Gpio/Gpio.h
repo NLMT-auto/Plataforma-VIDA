@@ -1,7 +1,7 @@
 #ifndef GPIO_H
 #define GPIO_H
 #include <semaphore.h> 
-#include "ReadPot/Potentiometer.h"
+#include "../Potentiometer/Potentiometer.h"
 
 class Gpio
 {

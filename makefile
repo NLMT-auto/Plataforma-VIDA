@@ -4,17 +4,18 @@ LINKER_FLAGS = -lpthread -lrt
 INCLUDES = -I..
 
 CONTAINERS = Containers
-	READPOT = ${CONTAINERS}/ReadPot
-	WRITEANG = ${CONTAINERS}/WriteAng
+	POTENTIOMETER = ${CONTAINERS}/Potentiometer
+	Steering = ${CONTAINERS}/Steering
 	CONTROL = ${CONTAINERS}/Control
+	GPIO = ${CONTAINERS}/Gpio
 
 UTILS = Utils
 	POSIXSHMEM = $(UTILS)/PosixShMem
 	THREADBASE = $(UTILS)/ThreadBase
 all: main
 
-main: ReadPot.o WriteAng.o PosixShMem.o Control.o ThreadBase.o main.o
-	$(CC) ReadPot.o WriteAng.o PosixShMem.o Control.o ThreadBase.o main.o -o TesteThread $(LINKER_FLAGS)
+main: Potentiometer.o PosixShMem.o Control.o Gpio.o Steering.o ThreadBase.o main.o
+	$(CC) Potentiometer.o PosixShMem.o Control.o Gpio.o Steering.o ThreadBase.o main.o -o TesteThread $(LINKER_FLAGS)
 	rm -rf *.o
 
 ThreadBase.o: $(THREADBASE)/ThreadBase.cpp
@@ -23,11 +24,14 @@ ThreadBase.o: $(THREADBASE)/ThreadBase.cpp
 PosixShMem.o: $(POSIXSHMEM)/PosixShMem.cpp
 	$(CC) $(INCLUDES) $(CFLAGS) $(POSIXSHMEM)/PosixShMem.cpp
 
-ReadPot.o: $(READPOT)/ReadPot.cpp
-	$(CC) $(INCLUDES) $(CFLAGS) $(READPOT)/ReadPot.cpp
-
-WriteAng.o: $(WRITEANG)/WriteAng.cpp
-	$(CC) $(INCLUDES) $(CFLAGS) $(WRITEANG)/WriteAng.cpp
+Potentiometer.o: $(POTENTIOMETER)/Potentiometer.cpp
+	$(CC) $(INCLUDES) $(CFLAGS) $(POTENTIOMETER)/Potentiometer.cpp
 
 Control.o: $(CONTROL)/Control.cpp
 	$(CC) $(INCLUDES) $(CFLAGS) $(CONTROL)/Control.cpp
+
+Gpio.o: $(GPIO)/Gpio.cpp
+	$(CC) $(INCLUDES) $(CFLAGS) $(GPIO)/Gpio.cpp
+
+Steering.o: $(STEERING)/Steering.cpp
+	$(CC) $(INCLUDES) $(CFLAGS) $(STEERING)/Steering.cpp

@@ -1,6 +1,6 @@
 #include "Potentiometer.h"
 #include "Potentiometer_struct.h"
-#include "../Gpio.h"
+#include "../Gpio/Gpio.h"
 #include "ads1115.h"
 #include <stdio.h> 
 #include <stdlib.h>
