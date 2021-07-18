@@ -4,7 +4,6 @@
 #include <iostream>
 #include <stdint.h>
 #include <cmath>
-#include <wiringPi.h>
 
 using namespace std; 
 
