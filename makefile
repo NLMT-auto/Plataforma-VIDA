@@ -15,7 +15,7 @@ UTILS = Utils
 all: main
 
 main: Potentiometer.o PosixShMem.o Control.o Gpio.o Steering.o ThreadBase.o main.o
-	$(CC) Potentiometer.o PosixShMem.o Control.o Gpio.o Steering.o ThreadBase.o main.o -o TesteThread $(LINKER_FLAGS)
+	$(CC) Potentiometer.o PosixShMem.o Control.o Gpio.o Steering.o ThreadBase.o main.o -o Executavel $(LINKER_FLAGS)
 	rm -rf *.o
 
 ThreadBase.o: $(THREADBASE)/ThreadBase.cpp
