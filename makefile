@@ -8,14 +8,16 @@ CONTAINERS = Containers
 	Steering = ${CONTAINERS}/Steering
 	CONTROL = ${CONTAINERS}/Control
 	GPIO = ${CONTAINERS}/Gpio
+	READMEM =$(CONTAINERS)/ReadMem
+	WRITEMEM =$(CONTAINERS)/WriteMem
 
 UTILS = Utils
 	POSIXSHMEM = $(UTILS)/PosixShMem
 	THREADBASE = $(UTILS)/ThreadBase
 all: main
 
-main: Potentiometer.o PosixShMem.o Control.o Gpio.o Steering.o ThreadBase.o main.o
-	$(CC) Potentiometer.o PosixShMem.o Control.o Gpio.o Steering.o ThreadBase.o main.o -o Executavel $(LINKER_FLAGS)
+main: ReadMem.o WriteMem.o Potentiometer.o PosixShMem.o Control.o Gpio.o Steering.o ThreadBase.o main.o
+	$(CC) ReadMem.o WriteMem.o Potentiometer.o PosixShMem.o Control.o Gpio.o Steering.o ThreadBase.o main.o -o Executavel $(LINKER_FLAGS)
 	rm -rf *.o
 
 ThreadBase.o: $(THREADBASE)/ThreadBase.cpp
@@ -35,3 +37,9 @@ Gpio.o: $(GPIO)/Gpio.cpp
 
 Steering.o: $(STEERING)/Steering.cpp
 	$(CC) $(INCLUDES) $(CFLAGS) $(STEERING)/Steering.cpp
+
+ReadMem.o: $(READMEM)/ReadMem.cpp
+	$(CC) $(INCLUDES) $(CFLAGS) $(READMEM)/ReadMem.cpp
+
+WriteMem.o: $(WRITEMEM)/WriteMem.cpp
+	$(CC) $(INCLUDES) $(CFLAGS) $(WRITEMEM)/WriteMem.cpp
