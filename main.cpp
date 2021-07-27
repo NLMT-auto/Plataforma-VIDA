@@ -2,7 +2,6 @@
 #include <cstdlib>
 #include "Containers/Control/Control.h"
 #include "Containers/ReadMem/ReadMem.h"
-#include "Containers/WriteMem/WriteMem.h"
 
 using namespace std;
 
@@ -10,7 +9,6 @@ int main (int argc, char* argv[])  /// < Main function that create and calls for
 {
     Control *control = new Control;
     ReadMem *read = new ReadMem();
-    WriteMem *write = new WriteMem();
     int quit =-1;
     do
     {
@@ -20,7 +18,6 @@ int main (int argc, char* argv[])  /// < Main function that create and calls for
 
     delete control;
     delete read;
-    delete write;
 
     return EXIT_SUCCESS;
 }

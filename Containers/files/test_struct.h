@@ -1,14 +1,14 @@
 
-//Estrutura que com um campo de dado e o tempo que foi adquirido
-//Nesse exemplo os dados são os de um contador de loops
+//Structure that with a data field and the time that was acquired 
+//In this example the data is from a loop counter 
 
 #ifndef TEST_STRUCT
 #define TEST_STRUCT
 #include <time.h>
-#include "../Utils/road_time.h"
+#include "../../Utils/road_time.h"
 typedef struct
 {
-    //int velocidade;
+    //int velocity;
     uint64_t contador;
 }TEST_DATA;
 
