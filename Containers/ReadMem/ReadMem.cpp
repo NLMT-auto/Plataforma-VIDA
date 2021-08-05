@@ -72,7 +72,7 @@ int ReadMem::run()
       if(auxiliar > 0){   
                                                   // Compara os valor da diferença entre a velocidade_requerida e a Minha_velocidade e toma a decisão necessária.
             std::cout<< "ACELERAR" <<std::endl;
-            analogWrite(PINO_MOTORFREIO,0);
+           //analogWrite(PINO_MOTORFREIO,0);
            // valor_pwm = (auxiliar+Minha_velocidade)*2.56;
             
 			if(auxiliar > MAX_ACC)
@@ -88,7 +88,7 @@ int ReadMem::run()
         }
       else if(auxiliar < 0){
 
-            analogWrite(PINO_MOTORPRINCIPAL,0);
+           // analogWrite(PINO_MOTORPRINCIPAL,0);
            // valor_pwm = (auxiliar+Minha_velocidade)*2.56;
             
 			if(auxiliar < MAX_DCC)
@@ -108,8 +108,8 @@ int ReadMem::run()
         }
       else if(auxiliar == 0){
             std::cout<<"MANTER"<< std::endl;
-            analogWrite(PINO_PWM,valor_pwm);
-            analogWrite(PINO_MOTORFREIO,0);
+            //analogWrite(PINO_PWM,valor_pwm);
+            //analogWrite(PINO_MOTORFREIO,0);
         }
 
         //Realizará a leitura da memória e apresentará os dados no terminal
