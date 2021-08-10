@@ -161,5 +161,36 @@ int Control::run()
     return 1;
 }
 
-//Steering control 2
+//Steering control 2 esterçamento 1.1
 
+    Poten::Poten()
+    {
+        Poten::startActivity();
+        this->potendata = new PosixShMem("SH_mem", sizeof(POTEN_DATA));
+    }
+
+    Poten::~Poten()
+    {
+        Poten::stopActivity();
+        delete potendata;
+    }
+
+    int Poten::run()
+    {
+        this->is_running = 1;
+        this->is_alive = 1;
+
+        this->tim1.tv_sec = 0;
+        this->tim1.tv_nsec = 100000000L;
+    
+        POTEN_DATA potenciometro;
+
+        while(this->is_running)
+        {
+            this->potendata->read(&potenciometro, sizeof(POTEN_DATA));
+
+            //oq tem q fazer agr ? kkkkkkkkkkkkk
+
+        
+        }
+    }

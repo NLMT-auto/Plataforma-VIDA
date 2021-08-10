@@ -1,7 +1,7 @@
 #ifndef POTEN_H
 #define POTEN_H
-#include "../Utils/PosixShMem/PosixShMem.h"
-#include "../Utils/ThreadBase/ThreadBase.h"
+#include "../../Utils/PosixShMem/PosixShMem.h"
+#include "../../Utils/ThreadBase/ThreadBase.h"
 #include <stdint.h>
 
 using namespace std;

@@ -2,11 +2,11 @@
 #include <iostream>
 #include <math.h>
 #include "poten_struct.h"
-#include <wiringPi.h>
+//#include <wiringPi.h>
 
 using namespace std;
 
-wiringPiSetup();
+//wiringPiSetup();
 
 poten::poten(){
 
@@ -28,11 +28,11 @@ int poten::run(){
 
     POTEN_DATA mydata;
 
-    void pinMode(mydata.analogpin, INPUT);
+   // void pinMode(mydata.analogpin, INPUT);
 
     while(this->is_alive){
 
-        mydata.value_poten_in = analogRead(mydata.analogin);                    //Leitura do valor de tensão do potenciômetro
+       // mydata.value_poten_in = analogRead(mydata.analogin);                    //Leitura do valor de tensão do potenciômetro
 
         //Passando para a SheredMemory
 

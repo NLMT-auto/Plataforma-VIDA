@@ -2,7 +2,8 @@
 #define CONTROL_H
 #include "../../Utils/PosixShMem/PosixShMem.h"
 #include "../../Utils/ThreadBase/ThreadBase.h"
-#include "../../poten"
+#include "../poten/poten.h"
+#include "../poten/poten_struct.h"
 #include <string>
 #include <stdio.h>
 #include <iostream>
@@ -33,12 +34,24 @@ public:
 private:
     PosixShMem* steering_data;
     PosixShMem* potentiometer_data;
-    PosixShMem* poten_data;
 
     void startActivity() override;
     void stopActivity() override;
     int run() override;
 };
 
+class Poten: public ThreadBase
+{
+    public:
+        Poten();
+        ~Poten();
+    private:
+        PosixShMem *estedata;
+        PosixShMem *potendata;
+
+        void startActivity() override;
+        void stopActivity() override;
+        int run() override;
+};
 
 #endif
