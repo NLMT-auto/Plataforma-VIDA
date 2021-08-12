@@ -1,4 +1,4 @@
-#include "ReadMem.h"
+/*#include "ReadMem.h"
 #include "../files/test_struct.h"
 #include <fstream>
 #include <iostream>
@@ -121,3 +121,4 @@ int ReadMem::run()
     pthread_exit(NULL);
     return EXIT_SUCCESS;
 }
+*/

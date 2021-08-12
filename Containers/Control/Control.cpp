@@ -1,6 +1,4 @@
 #include "Control.h"
-#include "../Steering/Steering_struct.h"
-#include "../Potentiometer/Potentiometer_struct.h"
 #include "../poten/poten_struct.h"
 #include "../files/test_struct.h"
 #include <stdio.h>
@@ -12,12 +10,12 @@
 #include <utility>  
 #include <math.h>
 #include <ctime>
-#include <wiringPi.h>
+//#include <wiringPi.h>
 #include <vector>
 #include "../../Utils/road_time.h"
 #include "../files/general_defines.h"
 
-//Encoder control
+/*//Encoder control
 using namespace std;
 
 wiringPiSetup();
@@ -108,7 +106,7 @@ int WriteMem::run()
     pthread_exit(NULL);
 
     return 1;
-}
+}*/
 
 
 //Steering control 2 esterçamento 1.1
@@ -141,7 +139,8 @@ int WriteMem::run()
             
             potenciometro.value_poten_out = (potenciometro.value_poten_in/27300.0)*255; // transormação da tensão lida no potenciômetro em angulo
             potenciometro.time = road_time();   //contador de tempo
-            this->potendata->write(&potenciometro,sizeof(Timestamped_STEERING_DATA)); //gravação dos dados na memoria compartilhada
+            cout << "\n valor valor do angulo: " << potenciometro.value_poten_out << endl;
+            this->potendata->write(&potenciometro,sizeof(POTEN_DATA)); //gravação dos dados na memoria compartilhada
 		    nanosleep(&this->tim1, &this->tim2);
         }
         this->is_running = 0;
