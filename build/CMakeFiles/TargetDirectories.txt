@@ -1,0 +1,3 @@
+/var/www/Plataforma-VIDA/build/CMakeFiles/rebuild_cache.dir
+/var/www/Plataforma-VIDA/build/CMakeFiles/edit_cache.dir
+/var/www/Plataforma-VIDA/build/CMakeFiles/nlmt.dir
