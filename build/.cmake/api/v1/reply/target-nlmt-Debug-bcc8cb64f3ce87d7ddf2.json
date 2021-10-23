@@ -42,7 +42,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " "
+					"fragment" : "-g  "
 				}
 			],
 			"language" : "CXX",
@@ -53,7 +53,9 @@
 				8,
 				10,
 				12,
-				15
+				14,
+				16,
+				19
 			]
 		}
 	],
@@ -62,6 +64,10 @@
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -95,7 +101,9 @@
 				8,
 				10,
 				12,
-				15
+				14,
+				16,
+				19
 			]
 		},
 		{
@@ -111,7 +119,9 @@
 				9,
 				11,
 				13,
-				14
+				15,
+				17,
+				18
 			]
 		}
 	],
@@ -145,29 +155,51 @@
 		},
 		{
 			"backtrace" : 2,
-			"path" : "Containers/poten/poten_struct.h",
+			"path" : "Containers/Estecamento/poten/poten_struct.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "Containers/poten/poten.cpp",
+			"path" : "Containers/Estecamento/poten/poten.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
-			"path" : "Containers/poten/poten.h",
+			"path" : "Containers/Estecamento/poten/poten.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "Containers/ReadMem/ReadMem.cpp",
+			"path" : "Containers/Encoder/ReadMem/ReadMem.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
-			"path" : "Containers/ReadMem/ReadMem.h",
+			"path" : "Containers/Encoder/ReadMem/ReadMem.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Containers/Encoder/SetPoint/SetPoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "Containers/Encoder/SetPoint/SetPoint.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Containers/Encoder/WriteMem/WriteMem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "Containers/Encoder/WriteMem/WriteMem.h",
 			"sourceGroupIndex" : 1
 		},
 		{

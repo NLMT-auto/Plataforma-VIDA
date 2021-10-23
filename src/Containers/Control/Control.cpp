@@ -1,8 +1,8 @@
-#include "Control.h"
-#include "../poten/poten_struct.h"
+#include "Control.h"                                //Arquivo de declaração da classe Control
+#include "../Estecamento/poten/poten_struct.h"
 #include "../files/test_struct.h"
 #include <stdio.h>
-#include <iostream>
+#include <iostream>                                 
 #include <cstdlib>
 #include <iomanip>
 #include <string>
@@ -10,41 +10,41 @@
 #include <utility>  
 #include <math.h>
 #include <ctime>
-//#include <wiringPi.h>
+//#include <wiringPi.h>                             //Biblioteca de manipulação de GPIO para raspberry/odroid
 #include <vector>
 #include "../../Utils/road_time.h"
 #include "../files/general_defines.h"
 #include "../../Utils/ThreadBase/ThreadBase.h"
 #include <fstream>
 
-/*//Encoder control
+//Encoder control
 using namespace std;
 
-wiringPiSetup();
+//wiringPiSetup();
 
-WriteMem::WriteMem()
+Encoder::Encoder()
 {
     this->data = new PosixShMem("SH_MEM",sizeof(TIMESTAMPED_TEST_DATA));
     this->startActivity();
 }
 
-WriteMem::~WriteMem()
+Encoder::~Encoder()
 {
     this->stopActivity();
 }
 
-void WriteMem::startActivity()
+void Encoder::startActivity()
 {
     ThreadBase::startActivity();
 }
 
-void WriteMem::stopActivity()
+void Encoder::stopActivity()
 {
     ThreadBase::stopActivity();
     std::cout << "WRITE" << std::endl;
 }
 
-int WriteMem::run()
+int Encoder::run()
 {
   
 	this->is_running = 1;
@@ -57,7 +57,7 @@ int WriteMem::run()
     int cont=0;                                 //if controler
     double velocity_angular;                    //Saves the angular velocity value. 
 
-    void pinMode(PINOSENSOR, INPUT);
+    //void pinMode(PINOSENSOR, INPUT);
 
     clock_t t1, t0,t3;                          //Variables for time manipulation. 
     double t2;                                      
@@ -68,15 +68,22 @@ int WriteMem::run()
 	road_time_t previous_time = road_time(); // microseconds ex. 100287238913721
 	
 	road_time_t current_time;
-	
-	int previous_state = digitalRead(PINOSENSOR);
+
+    ifstream arqEst;
+    arqEst.open("Arquivo_dados_controle_esteçamento.txt");
+    int valor_est = 0;
+
+    if(arqEst.is_open()){
+
+	int previous_state = 0;
 	int current_state;
 	
 	long long unsigned int enc_counter = 0;
 
     while(this->is_alive)
     {    
-		current_state = digitalRead(PINOSENSOR);
+        arqEst >> valor_est;
+		current_state = valor_est;
 		
         if(previous_state != current_state)
 		{
@@ -99,57 +106,25 @@ int WriteMem::run()
         
 		
 		this->data->write(&my_data, sizeof(TIMESTAMPED_TEST_DATA));             //Writes linear velocity values to shared memory. 
-		//std:: cout<< "Escrita"<< std:: endl;
+		std:: cout<< "Escrita"<< std:: endl;
 		
 		nanosleep(&this->tim1, &this->tim2);
        
     }
+
+    }else{
+
+        cout << "Nao foi possivel abrir o arquivo de teste com os dados para o esterçamento, checa se ele foi feito !!!" << endl;
+    
+    }
+
     this->is_running = 0;
     pthread_exit(NULL);
 
     return 1;
-}*/
+}
 
-
-/*Steering control 2 esterçamento 1.1
-
-    Potentiometer::Potentiometer()
-    {
-        this->potendata = new PosixShMem("POTEN_DATA", sizeof(POTEN_DATA));
-        this->startActivity();
-    }
-
-    Potentiometer::~Potentiometer()
-    {
-        delete potendata;
-        this->stopActivity();
-    }
-
-    int Potentiometer::run()
-    {
-        this->is_running = 1;
-        this->is_alive = 1;
-
-        this->tim1.tv_sec = 0;
-        this->tim1.tv_nsec = 100000000L;
-    
-        POTEN_DATA potenciometro;
-
-        while(this->is_running)
-        {
-            this->potendata->read(&potenciometro, sizeof(POTEN_DATA));  // leitura do valor lido no potenciometro  
-            
-            potenciometro.value_poten_out = (potenciometro.value_poten_in/27300.0)*255; // transormação da tensão lida no potenciômetro em angulo
-            potenciometro.time = road_time();   //contador de tempo
-            cout << "\n valor valor do angulo: " << potenciometro.value_poten_out << endl;
-            this->potendata->write(&potenciometro,sizeof(POTEN_DATA)); //gravação dos dados na memoria compartilhada
-		    nanosleep(&this->tim1, &this->tim2);
-        }
-        this->is_running = 0;
-        pthread_exit(NULL);
-        
-        return 1;
-    }*/
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Steering cotrol
 Control::Control()
@@ -191,7 +166,7 @@ int Control::run()
             
             potentiometer.value_poten_out = (potentiometer.value_poten_in/27300.0)*255; // transormação da tensão lida no potenciômetro em angulo
             potentiometer.time = road_time();   //contador de tempo
-            cout << "\n valor valor do angulo: " << potentiometer.value_poten_out << endl;
+            cout << "\n valor do angulo: " << potentiometer.value_poten_out << endl;
             this->potendata->write(&potentiometer,sizeof(POTEN_DATA)); //gravação dos dados na memoria compartilhada
 		    nanosleep(&this->tim1, &this->tim2);
 

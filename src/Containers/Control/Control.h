@@ -2,18 +2,18 @@
 #define CONTROL_H
 #include "../../Utils/PosixShMem/PosixShMem.h"
 #include "../../Utils/ThreadBase/ThreadBase.h"
-#include "../poten/poten.h"
-#include "../poten/poten_struct.h"
+#include "../Estecamento/poten/poten.h"
+#include "../Estecamento/poten/poten_struct.h"
 #include <string>
 #include <stdio.h>
 #include <iostream>
 
 using namespace std;
-class WriteMem: public ThreadBase
+class Encoder: public ThreadBase
 {
 public:
-    WriteMem();
-    ~WriteMem();
+    Encoder();
+    ~Encoder();
 
 private:
 

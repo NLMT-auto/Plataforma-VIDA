@@ -70,35 +70,61 @@ CMakeFiles/nlmt.dir/Containers/Control/Control.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nlmt.dir/Containers/Control/Control.cpp.s"
 	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/www/Plataforma-VIDA/src/Containers/Control/Control.cpp -o CMakeFiles/nlmt.dir/Containers/Control/Control.cpp.s
 
-CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.o: CMakeFiles/nlmt.dir/flags.make
-CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.o: /var/www/Plataforma-VIDA/src/Containers/poten/poten.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.o -c /var/www/Plataforma-VIDA/src/Containers/poten/poten.cpp
+CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.o: CMakeFiles/nlmt.dir/flags.make
+CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.o: /var/www/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.o -c /var/www/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.cpp
 
-CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/www/Plataforma-VIDA/src/Containers/poten/poten.cpp > CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.i
+CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/www/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.cpp > CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.i
 
-CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/www/Plataforma-VIDA/src/Containers/poten/poten.cpp -o CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.s
+CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/www/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.cpp -o CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.s
 
-CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.o: CMakeFiles/nlmt.dir/flags.make
-CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.o: /var/www/Plataforma-VIDA/src/Containers/ReadMem/ReadMem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.o -c /var/www/Plataforma-VIDA/src/Containers/ReadMem/ReadMem.cpp
+CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o: CMakeFiles/nlmt.dir/flags.make
+CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o: /var/www/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o -c /var/www/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp
 
-CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/www/Plataforma-VIDA/src/Containers/ReadMem/ReadMem.cpp > CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.i
+CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/www/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp > CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.i
 
-CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/www/Plataforma-VIDA/src/Containers/ReadMem/ReadMem.cpp -o CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.s
+CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/www/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp -o CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.s
+
+CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o: CMakeFiles/nlmt.dir/flags.make
+CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o: /var/www/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o -c /var/www/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp
+
+CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/www/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp > CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.i
+
+CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/www/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp -o CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.s
+
+CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o: CMakeFiles/nlmt.dir/flags.make
+CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o: /var/www/Plataforma-VIDA/src/Containers/Encoder/WriteMem/WriteMem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o -c /var/www/Plataforma-VIDA/src/Containers/Encoder/WriteMem/WriteMem.cpp
+
+CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/www/Plataforma-VIDA/src/Containers/Encoder/WriteMem/WriteMem.cpp > CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.i
+
+CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/www/Plataforma-VIDA/src/Containers/Encoder/WriteMem/WriteMem.cpp -o CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.s
 
 CMakeFiles/nlmt.dir/Utils/PosixShMem/PosixShMem.cpp.o: CMakeFiles/nlmt.dir/flags.make
 CMakeFiles/nlmt.dir/Utils/PosixShMem/PosixShMem.cpp.o: /var/www/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nlmt.dir/Utils/PosixShMem/PosixShMem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/nlmt.dir/Utils/PosixShMem/PosixShMem.cpp.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nlmt.dir/Utils/PosixShMem/PosixShMem.cpp.o -c /var/www/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp
 
 CMakeFiles/nlmt.dir/Utils/PosixShMem/PosixShMem.cpp.i: cmake_force
@@ -111,7 +137,7 @@ CMakeFiles/nlmt.dir/Utils/PosixShMem/PosixShMem.cpp.s: cmake_force
 
 CMakeFiles/nlmt.dir/Utils/ThreadBase/ThreadBase.cpp.o: CMakeFiles/nlmt.dir/flags.make
 CMakeFiles/nlmt.dir/Utils/ThreadBase/ThreadBase.cpp.o: /var/www/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/nlmt.dir/Utils/ThreadBase/ThreadBase.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/nlmt.dir/Utils/ThreadBase/ThreadBase.cpp.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nlmt.dir/Utils/ThreadBase/ThreadBase.cpp.o -c /var/www/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.cpp
 
 CMakeFiles/nlmt.dir/Utils/ThreadBase/ThreadBase.cpp.i: cmake_force
@@ -124,7 +150,7 @@ CMakeFiles/nlmt.dir/Utils/ThreadBase/ThreadBase.cpp.s: cmake_force
 
 CMakeFiles/nlmt.dir/main.cpp.o: CMakeFiles/nlmt.dir/flags.make
 CMakeFiles/nlmt.dir/main.cpp.o: /var/www/Plataforma-VIDA/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/nlmt.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/nlmt.dir/main.cpp.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nlmt.dir/main.cpp.o -c /var/www/Plataforma-VIDA/src/main.cpp
 
 CMakeFiles/nlmt.dir/main.cpp.i: cmake_force
@@ -138,8 +164,10 @@ CMakeFiles/nlmt.dir/main.cpp.s: cmake_force
 # Object files for target nlmt
 nlmt_OBJECTS = \
 "CMakeFiles/nlmt.dir/Containers/Control/Control.cpp.o" \
-"CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.o" \
-"CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.o" \
+"CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.o" \
+"CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o" \
+"CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o" \
+"CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o" \
 "CMakeFiles/nlmt.dir/Utils/PosixShMem/PosixShMem.cpp.o" \
 "CMakeFiles/nlmt.dir/Utils/ThreadBase/ThreadBase.cpp.o" \
 "CMakeFiles/nlmt.dir/main.cpp.o"
@@ -148,14 +176,16 @@ nlmt_OBJECTS = \
 nlmt_EXTERNAL_OBJECTS =
 
 nlmt: CMakeFiles/nlmt.dir/Containers/Control/Control.cpp.o
-nlmt: CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.o
-nlmt: CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.o
+nlmt: CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.o
+nlmt: CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o
+nlmt: CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o
+nlmt: CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o
 nlmt: CMakeFiles/nlmt.dir/Utils/PosixShMem/PosixShMem.cpp.o
 nlmt: CMakeFiles/nlmt.dir/Utils/ThreadBase/ThreadBase.cpp.o
 nlmt: CMakeFiles/nlmt.dir/main.cpp.o
 nlmt: CMakeFiles/nlmt.dir/build.make
 nlmt: CMakeFiles/nlmt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable nlmt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/var/www/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable nlmt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nlmt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

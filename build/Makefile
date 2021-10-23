@@ -150,59 +150,113 @@ Containers/Control/Control.cpp.s:
 	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/Control/Control.cpp.s
 .PHONY : Containers/Control/Control.cpp.s
 
-Containers/ReadMem/ReadMem.o: Containers/ReadMem/ReadMem.cpp.o
+Containers/Encoder/ReadMem/ReadMem.o: Containers/Encoder/ReadMem/ReadMem.cpp.o
 
-.PHONY : Containers/ReadMem/ReadMem.o
-
-# target to build an object file
-Containers/ReadMem/ReadMem.cpp.o:
-	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.o
-.PHONY : Containers/ReadMem/ReadMem.cpp.o
-
-Containers/ReadMem/ReadMem.i: Containers/ReadMem/ReadMem.cpp.i
-
-.PHONY : Containers/ReadMem/ReadMem.i
-
-# target to preprocess a source file
-Containers/ReadMem/ReadMem.cpp.i:
-	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.i
-.PHONY : Containers/ReadMem/ReadMem.cpp.i
-
-Containers/ReadMem/ReadMem.s: Containers/ReadMem/ReadMem.cpp.s
-
-.PHONY : Containers/ReadMem/ReadMem.s
-
-# target to generate assembly for a file
-Containers/ReadMem/ReadMem.cpp.s:
-	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.s
-.PHONY : Containers/ReadMem/ReadMem.cpp.s
-
-Containers/poten/poten.o: Containers/poten/poten.cpp.o
-
-.PHONY : Containers/poten/poten.o
+.PHONY : Containers/Encoder/ReadMem/ReadMem.o
 
 # target to build an object file
-Containers/poten/poten.cpp.o:
-	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.o
-.PHONY : Containers/poten/poten.cpp.o
+Containers/Encoder/ReadMem/ReadMem.cpp.o:
+	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o
+.PHONY : Containers/Encoder/ReadMem/ReadMem.cpp.o
 
-Containers/poten/poten.i: Containers/poten/poten.cpp.i
+Containers/Encoder/ReadMem/ReadMem.i: Containers/Encoder/ReadMem/ReadMem.cpp.i
 
-.PHONY : Containers/poten/poten.i
+.PHONY : Containers/Encoder/ReadMem/ReadMem.i
 
 # target to preprocess a source file
-Containers/poten/poten.cpp.i:
-	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.i
-.PHONY : Containers/poten/poten.cpp.i
+Containers/Encoder/ReadMem/ReadMem.cpp.i:
+	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.i
+.PHONY : Containers/Encoder/ReadMem/ReadMem.cpp.i
 
-Containers/poten/poten.s: Containers/poten/poten.cpp.s
+Containers/Encoder/ReadMem/ReadMem.s: Containers/Encoder/ReadMem/ReadMem.cpp.s
 
-.PHONY : Containers/poten/poten.s
+.PHONY : Containers/Encoder/ReadMem/ReadMem.s
 
 # target to generate assembly for a file
-Containers/poten/poten.cpp.s:
-	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.s
-.PHONY : Containers/poten/poten.cpp.s
+Containers/Encoder/ReadMem/ReadMem.cpp.s:
+	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.s
+.PHONY : Containers/Encoder/ReadMem/ReadMem.cpp.s
+
+Containers/Encoder/SetPoint/SetPoint.o: Containers/Encoder/SetPoint/SetPoint.cpp.o
+
+.PHONY : Containers/Encoder/SetPoint/SetPoint.o
+
+# target to build an object file
+Containers/Encoder/SetPoint/SetPoint.cpp.o:
+	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o
+.PHONY : Containers/Encoder/SetPoint/SetPoint.cpp.o
+
+Containers/Encoder/SetPoint/SetPoint.i: Containers/Encoder/SetPoint/SetPoint.cpp.i
+
+.PHONY : Containers/Encoder/SetPoint/SetPoint.i
+
+# target to preprocess a source file
+Containers/Encoder/SetPoint/SetPoint.cpp.i:
+	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.i
+.PHONY : Containers/Encoder/SetPoint/SetPoint.cpp.i
+
+Containers/Encoder/SetPoint/SetPoint.s: Containers/Encoder/SetPoint/SetPoint.cpp.s
+
+.PHONY : Containers/Encoder/SetPoint/SetPoint.s
+
+# target to generate assembly for a file
+Containers/Encoder/SetPoint/SetPoint.cpp.s:
+	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.s
+.PHONY : Containers/Encoder/SetPoint/SetPoint.cpp.s
+
+Containers/Encoder/WriteMem/WriteMem.o: Containers/Encoder/WriteMem/WriteMem.cpp.o
+
+.PHONY : Containers/Encoder/WriteMem/WriteMem.o
+
+# target to build an object file
+Containers/Encoder/WriteMem/WriteMem.cpp.o:
+	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o
+.PHONY : Containers/Encoder/WriteMem/WriteMem.cpp.o
+
+Containers/Encoder/WriteMem/WriteMem.i: Containers/Encoder/WriteMem/WriteMem.cpp.i
+
+.PHONY : Containers/Encoder/WriteMem/WriteMem.i
+
+# target to preprocess a source file
+Containers/Encoder/WriteMem/WriteMem.cpp.i:
+	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.i
+.PHONY : Containers/Encoder/WriteMem/WriteMem.cpp.i
+
+Containers/Encoder/WriteMem/WriteMem.s: Containers/Encoder/WriteMem/WriteMem.cpp.s
+
+.PHONY : Containers/Encoder/WriteMem/WriteMem.s
+
+# target to generate assembly for a file
+Containers/Encoder/WriteMem/WriteMem.cpp.s:
+	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.s
+.PHONY : Containers/Encoder/WriteMem/WriteMem.cpp.s
+
+Containers/Estecamento/poten/poten.o: Containers/Estecamento/poten/poten.cpp.o
+
+.PHONY : Containers/Estecamento/poten/poten.o
+
+# target to build an object file
+Containers/Estecamento/poten/poten.cpp.o:
+	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.o
+.PHONY : Containers/Estecamento/poten/poten.cpp.o
+
+Containers/Estecamento/poten/poten.i: Containers/Estecamento/poten/poten.cpp.i
+
+.PHONY : Containers/Estecamento/poten/poten.i
+
+# target to preprocess a source file
+Containers/Estecamento/poten/poten.cpp.i:
+	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.i
+.PHONY : Containers/Estecamento/poten/poten.cpp.i
+
+Containers/Estecamento/poten/poten.s: Containers/Estecamento/poten/poten.cpp.s
+
+.PHONY : Containers/Estecamento/poten/poten.s
+
+# target to generate assembly for a file
+Containers/Estecamento/poten/poten.cpp.s:
+	$(MAKE) -f CMakeFiles/nlmt.dir/build.make CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.s
+.PHONY : Containers/Estecamento/poten/poten.cpp.s
 
 Utils/PosixShMem/PosixShMem.o: Utils/PosixShMem/PosixShMem.cpp.o
 
@@ -297,12 +351,18 @@ help:
 	@echo "... Containers/Control/Control.o"
 	@echo "... Containers/Control/Control.i"
 	@echo "... Containers/Control/Control.s"
-	@echo "... Containers/ReadMem/ReadMem.o"
-	@echo "... Containers/ReadMem/ReadMem.i"
-	@echo "... Containers/ReadMem/ReadMem.s"
-	@echo "... Containers/poten/poten.o"
-	@echo "... Containers/poten/poten.i"
-	@echo "... Containers/poten/poten.s"
+	@echo "... Containers/Encoder/ReadMem/ReadMem.o"
+	@echo "... Containers/Encoder/ReadMem/ReadMem.i"
+	@echo "... Containers/Encoder/ReadMem/ReadMem.s"
+	@echo "... Containers/Encoder/SetPoint/SetPoint.o"
+	@echo "... Containers/Encoder/SetPoint/SetPoint.i"
+	@echo "... Containers/Encoder/SetPoint/SetPoint.s"
+	@echo "... Containers/Encoder/WriteMem/WriteMem.o"
+	@echo "... Containers/Encoder/WriteMem/WriteMem.i"
+	@echo "... Containers/Encoder/WriteMem/WriteMem.s"
+	@echo "... Containers/Estecamento/poten/poten.o"
+	@echo "... Containers/Estecamento/poten/poten.i"
+	@echo "... Containers/Estecamento/poten/poten.s"
 	@echo "... Utils/PosixShMem/PosixShMem.o"
 	@echo "... Utils/PosixShMem/PosixShMem.i"
 	@echo "... Utils/PosixShMem/PosixShMem.s"

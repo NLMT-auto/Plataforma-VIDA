@@ -1,10 +1,10 @@
 #include "ReadMem.h"
-#include "../files/test_struct.h"
+#include "../../files/test_struct.h"
 #include <fstream>
 #include <iostream>
 //#include <wiringPi.h>
 #define PINO_PWM
-#include "../files/general_defines.h"
+#include "../../files/general_defines.h"
 
 using namespace std;
 

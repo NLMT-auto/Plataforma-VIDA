@@ -1,8 +1,8 @@
 #ifndef READMEM_H
 #define READMEM_H
 
-#include "../../Utils/PosixShMem/PosixShMem.h"
-#include "../../Utils/ThreadBase/ThreadBase.h"
+#include "../../../Utils/PosixShMem/PosixShMem.h"
+#include "../../../Utils/ThreadBase/ThreadBase.h"
 
 class ReadMem: public ThreadBase
 {

@@ -40,7 +40,7 @@ int poten::run(){
     this->tim1.tv_nsec = 100000000L;//10Hz
 
     fstream arq;
-    arq.open("arquivopoten.txt", ios::in);
+    arq.open("arquivoPoten.txt", ios::in);
     float tensao = 0;
 
     POTEN_DATA mydata;

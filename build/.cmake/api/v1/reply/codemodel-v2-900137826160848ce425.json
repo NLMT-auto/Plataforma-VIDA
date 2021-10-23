@@ -18,7 +18,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -38,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "nlmt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-nlmt-39c95c6a05b16a9a63c2.json",
+					"jsonFile" : "target-nlmt-Debug-bcc8cb64f3ce87d7ddf2.json",
 					"name" : "nlmt",
 					"projectIndex" : 0
 				}

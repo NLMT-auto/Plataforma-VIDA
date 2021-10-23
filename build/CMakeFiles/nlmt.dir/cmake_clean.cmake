@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/nlmt.dir/Containers/Control/Control.cpp.o"
-  "CMakeFiles/nlmt.dir/Containers/ReadMem/ReadMem.cpp.o"
-  "CMakeFiles/nlmt.dir/Containers/poten/poten.cpp.o"
+  "CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o"
+  "CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o"
+  "CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o"
+  "CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.o"
   "CMakeFiles/nlmt.dir/Utils/PosixShMem/PosixShMem.cpp.o"
   "CMakeFiles/nlmt.dir/Utils/ThreadBase/ThreadBase.cpp.o"
   "CMakeFiles/nlmt.dir/main.cpp.o"

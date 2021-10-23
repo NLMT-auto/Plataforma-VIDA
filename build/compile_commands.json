@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/var/www/Plataforma-VIDA/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Containers/Control/Control.cpp.o -c /var/www/Plataforma-VIDA/src/Containers/Control/Control.cpp",
+  "file": "/var/www/Plataforma-VIDA/src/Containers/Control/Control.cpp"
+},
+{
+  "directory": "/var/www/Plataforma-VIDA/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.o -c /var/www/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.cpp",
+  "file": "/var/www/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.cpp"
+},
+{
+  "directory": "/var/www/Plataforma-VIDA/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o -c /var/www/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp",
+  "file": "/var/www/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp"
+},
+{
+  "directory": "/var/www/Plataforma-VIDA/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o -c /var/www/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp",
+  "file": "/var/www/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp"
+},
+{
+  "directory": "/var/www/Plataforma-VIDA/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o -c /var/www/Plataforma-VIDA/src/Containers/Encoder/WriteMem/WriteMem.cpp",
+  "file": "/var/www/Plataforma-VIDA/src/Containers/Encoder/WriteMem/WriteMem.cpp"
+},
+{
+  "directory": "/var/www/Plataforma-VIDA/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Utils/PosixShMem/PosixShMem.cpp.o -c /var/www/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp",
+  "file": "/var/www/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp"
+},
+{
+  "directory": "/var/www/Plataforma-VIDA/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Utils/ThreadBase/ThreadBase.cpp.o -c /var/www/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.cpp",
+  "file": "/var/www/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.cpp"
+},
+{
+  "directory": "/var/www/Plataforma-VIDA/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/main.cpp.o -c /var/www/Plataforma-VIDA/src/main.cpp",
+  "file": "/var/www/Plataforma-VIDA/src/main.cpp"
+}
+]
