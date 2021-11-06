@@ -8,7 +8,7 @@ using namespace std;
 int main (int argc, char* argv[])  /// < Main function that create and calls for reading and writing in memory
 {
     Control *control = new Control();
-    ReadMem *read = new ReadMem();
+    Encoder *encoder = new Encoder();
     int quit =-1;
     do
     {
@@ -17,7 +17,6 @@ int main (int argc, char* argv[])  /// < Main function that create and calls for
     while (quit != 0);
 
     delete control;
-    delete read;
 
     return EXIT_SUCCESS;
 }

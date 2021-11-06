@@ -69,7 +69,7 @@ int ReadMem::run()
        Minha_velocidade = my_data.velocidade;                               // Inicio da lógica de controle. 
        auxiliar = Velocidade_requerida-Minha_velocidade;
 
-      if(auxiliar > 0){   
+      if(auxiliar > 0){
                                                   // Compara os valor da diferença entre a velocidade_requerida e a Minha_velocidade e toma a decisão necessária.
             std::cout<< "ACELERAR" <<std::endl;
            //analogWrite(PINO_MOTORFREIO,0);

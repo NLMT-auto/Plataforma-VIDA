@@ -26,6 +26,7 @@ Encoder::Encoder()
 {
     this->data = new PosixShMem("SH_MEM",sizeof(TIMESTAMPED_TEST_DATA));
     this->startActivity();
+    cout << "thread Encoder funcionando" << endl;
 }
 
 Encoder::~Encoder()
@@ -46,7 +47,7 @@ void Encoder::stopActivity()
 
 int Encoder::run()
 {
-  
+    
 	this->is_running = 1;
 	this->is_alive = 1;
 	this->tim1.tv_sec = 0;
@@ -70,48 +71,49 @@ int Encoder::run()
 	road_time_t current_time;
 
     ifstream arqEst;
-    arqEst.open("Arquivo_dados_controle_esteçamento.txt");
+    arqEst.open("Arquivo_dados_controle_encoder.txt");
     int valor_est = 0;
 
     if(arqEst.is_open()){
 
-	int previous_state = 0;
-	int current_state;
-	
-	long long unsigned int enc_counter = 0;
-
-    while(this->is_alive)
-    {    
-        arqEst >> valor_est;
-		current_state = valor_est;
-		
-        if(previous_state != current_state)
-		{
-			++enc_counter;
-			
-			previous_state = current_state;
-			
-			current_time = road_time();
-			
-			velocity_angular = 2*PI*MIN_ANGLE/((double)(current_time - previous_time)/1000000.0);		//rad/s
-
-            previous_time = current_time;
-			
-			my_data.velocidade = velocity_angular*RADIUS;
-			
-			my_data.time1 = current_time;
-			
-			my_data.data.contador = enc_counter;
-        }
+        int previous_state = 0;
+        int current_state;
         
-		
-		this->data->write(&my_data, sizeof(TIMESTAMPED_TEST_DATA));             //Writes linear velocity values to shared memory. 
-		std:: cout<< "Escrita"<< std:: endl;
-		
-		nanosleep(&this->tim1, &this->tim2);
-       
-    }
+        long long unsigned int enc_counter = 0;
 
+        while(this->is_alive)
+        {    
+            cout << "thread Encoder funcionando" << endl;
+
+            arqEst >> valor_est;
+            current_state = valor_est;
+            
+            if(previous_state != current_state)
+            {
+                ++enc_counter;
+                
+                previous_state = current_state;
+                
+                current_time = road_time();
+                
+                velocity_angular = 2*PI*MIN_ANGLE/((double)(current_time - previous_time)/1000000.0);		//rad/s
+
+                previous_time = current_time;
+                
+                my_data.velocidade = velocity_angular*RADIUS;
+                
+                my_data.time1 = current_time;
+                
+                my_data.data.contador = enc_counter;
+            }
+            
+            
+            this->data->write(&my_data, sizeof(TIMESTAMPED_TEST_DATA));             //Writes linear velocity values to shared memory. 
+            std:: cout<< "Escrita"<< std:: endl;
+            
+            nanosleep(&this->tim1, &this->tim2);
+        
+    }
     }else{
 
         cout << "Nao foi possivel abrir o arquivo de teste com os dados para o esterçamento, checa se ele foi feito !!!" << endl;
@@ -162,6 +164,8 @@ int Control::run()
     
     while(this->is_alive)
     {
+        cout << "thread Control funcionando" << endl;
+
         this->potendata->read(&potentiometer, sizeof(POTEN_DATA));  // leitura do valor lido no potenciometro  
             
             potentiometer.value_poten_out = (potentiometer.value_poten_in/27300.0)*255; // transormação da tensão lida no potenciômetro em angulo

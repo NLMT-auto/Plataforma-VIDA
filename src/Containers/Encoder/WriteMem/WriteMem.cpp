@@ -38,11 +38,8 @@ int ReadFiles(const char* name) {
     Arquivo.close();
 }
 
-
 WriteMem::WriteMem()
-{
-    
-    
+{    
     this->data = new PosixShMem("SH_MEM",sizeof(TIMESTAMPED_TEST_DATA));
     this->startActivity();
 }
@@ -65,7 +62,6 @@ void WriteMem::stopActivity()
 
 int WriteMem::run()
 {
-
     ReadFiles("M");
     
     this->is_running = 1;

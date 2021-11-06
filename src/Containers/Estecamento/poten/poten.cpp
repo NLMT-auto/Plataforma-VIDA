@@ -47,6 +47,10 @@ int poten::run(){
 
    // void pinMode(mydata.analogpin, INPUT);
 
+   if (arq.is_open()){
+
+       cout << "ABRIU O ARQUIVO" << endl;
+
     while(this->is_alive){
 
         // mydata.value_poten_in = analogRead(mydata.analogin);                    //Leitura do valor de tensão do potenciômetro
@@ -62,6 +66,10 @@ int poten::run(){
         nanosleep(&this->tim1, &this->tim2);
 
     }
+
+   }else{
+       cout << "Nao foi possivel abrir o arquivo" << endl;
+   }
     this->is_running = 0;
     pthread_exit(NULL);
     arq.close();
