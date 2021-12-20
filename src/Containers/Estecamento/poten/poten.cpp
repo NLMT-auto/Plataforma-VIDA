@@ -29,7 +29,7 @@ void poten::startActivity()
 void poten::stopActivity()
 {
     ThreadBase::stopActivity();
-     printf("Control\n");
+     printf("Parou a poten\n");
 }
 
 int poten::run(){
@@ -56,7 +56,8 @@ int poten::run(){
         // mydata.value_poten_in = analogRead(mydata.analogin);                    //Leitura do valor de tensão do potenciômetro
 
         arq >> tensao;
-        cout << "\n valor de saída do arquivo: " << tensao << endl;
+        mydata.value_poten_in = tensao;
+        //cout << "\n Valor de tensão: " << mydata.value_poten_in << endl;
 
         //Passando para a SheredMemory
 
@@ -64,7 +65,7 @@ int poten::run(){
         mydata.time = road_time();
         this->poten_data->write(&mydata,sizeof(POTEN_DATA));
         nanosleep(&this->tim1, &this->tim2);
-
+        
     }
 
    }else{

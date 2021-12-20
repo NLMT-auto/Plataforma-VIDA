@@ -18,7 +18,7 @@ private:
     void stopActivity() override;
     int run() override;
 
-    PosixShMem* poten_data;
+    PosixShMem *poten_data;
     
 };
 #endif

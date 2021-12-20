@@ -58,7 +58,7 @@ int ReadMem::run()
 
     while(this->is_alive)
     {
-        //std::cout<<" teste"<<std::endl;
+        std::cout<<" teste"<<std::endl;
         this->data->read(&my_data, sizeof(TIMESTAMPED_TEST_DATA));         //busca na posição de memoria da máquina os valores de velocidade salvos na memoria compartilhada.
 
         std::cout<<" Velocidade: "<<my_data.velocidade<<std::endl;

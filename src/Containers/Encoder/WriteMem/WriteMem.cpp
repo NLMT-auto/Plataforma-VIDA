@@ -57,7 +57,7 @@ void WriteMem::startActivity()
 void WriteMem::stopActivity()
 {
     ThreadBase::stopActivity();
-    std::cout << "WRITE" << std::endl;
+    std::cout << "STOP WRITE" << std::endl;
 }
 
 int WriteMem::run()

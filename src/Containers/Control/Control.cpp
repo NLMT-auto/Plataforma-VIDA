@@ -83,7 +83,7 @@ int Encoder::run()
 
         while(this->is_alive)
         {    
-            cout << "thread Encoder funcionando" << endl;
+            cout << "\nthread Encoder funcionando" << endl;
 
             arqEst >> valor_est;
             current_state = valor_est;
@@ -106,7 +106,6 @@ int Encoder::run()
                 
                 my_data.data.contador = enc_counter;
             }
-            
             
             this->data->write(&my_data, sizeof(TIMESTAMPED_TEST_DATA));             //Writes linear velocity values to shared memory. 
             std:: cout<< "Escrita"<< std:: endl;
@@ -131,14 +130,14 @@ int Encoder::run()
 //Steering cotrol
 Control::Control()
 {
-    this->potendata = new PosixShMem("POTEN_DATA", sizeof(POTEN_DATA));
+    this->dataCtrl = new PosixShMem("POTEN_DATA", sizeof(POTEN_DATA));
     this->startActivity();
 }
 
 Control::~Control()
 {
     this->stopActivity();
-    this->potendata = NULL;
+    this->dataCtrl = NULL;
 }
 
 void Control::startActivity()
@@ -154,6 +153,7 @@ void Control::stopActivity()
 
 int Control::run()
 {
+
     this->is_running = 1;
     this->is_alive = 1;
 
@@ -164,14 +164,14 @@ int Control::run()
     
     while(this->is_alive)
     {
-        cout << "thread Control funcionando" << endl;
 
-        this->potendata->read(&potentiometer, sizeof(POTEN_DATA));  // leitura do valor lido no potenciometro  
+        this->dataCtrl->read(&potentiometer, sizeof(POTEN_DATA));  // leitura do valor lido no potenciometro  
             
             potentiometer.value_poten_out = (potentiometer.value_poten_in/27300.0)*255; // transormação da tensão lida no potenciômetro em angulo
             potentiometer.time = road_time();   //contador de tempo
-            cout << "\n valor do angulo: " << potentiometer.value_poten_out << endl;
-            this->potendata->write(&potentiometer,sizeof(POTEN_DATA)); //gravação dos dados na memoria compartilhada
+            //cout << "\n valor do angulo: " << potentiometer.value_poten_out << endl;
+            cout << "\nvalor do angulo: " << potentiometer.value_poten_in << endl;
+            this->dataCtrl->write(&potentiometer,sizeof(POTEN_DATA)); //gravação dos dados na memoria compartilhada
 		    nanosleep(&this->tim1, &this->tim2);
 
     }

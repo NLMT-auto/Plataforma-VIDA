@@ -32,8 +32,8 @@ public:
     ~Control();
 
 private:
-    PosixShMem* potendata;
 
+    PosixShMem *dataCtrl;
     void startActivity() override;
     void stopActivity() override;
     int run() override;
