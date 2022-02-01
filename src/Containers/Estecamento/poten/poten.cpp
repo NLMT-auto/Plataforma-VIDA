@@ -49,7 +49,7 @@ int poten::run(){
 
    if (arq.is_open()){
 
-       cout << "ABRIU O ARQUIVO" << endl;
+       //cout << "ABRIU O ARQUIVO" << endl;
 
     while(this->is_alive){
 

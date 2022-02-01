@@ -58,12 +58,6 @@ stdio.h
 iostream
 -
 
-/var/www/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.h
-../../../Utils/PosixShMem/PosixShMem.h
-/var/www/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.h
-../../../Utils/ThreadBase/ThreadBase.h
-/var/www/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.h
-
 /var/www/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.cpp
 poten.h
 /var/www/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.h
@@ -119,16 +113,4 @@ stdint.h
 -
 sys/time.h
 -
-
-/var/www/Plataforma-VIDA/src/main.cpp
-iostream
--
-cstdlib
--
-Containers/Control/Control.h
-/var/www/Plataforma-VIDA/src/Containers/Control/Control.h
-Containers/Encoder/ReadMem/ReadMem.h
-/var/www/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.h
-Containers/Estecamento/poten/poten.h
-/var/www/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.h
 
