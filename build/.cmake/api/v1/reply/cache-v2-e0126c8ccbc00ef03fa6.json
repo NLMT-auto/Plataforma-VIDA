@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/var/www/Plataforma-VIDA/build"
+			"value" : "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -302,6 +302,18 @@
 			"value" : "CMAKE_DLLTOOL-NOTFOUND"
 		},
 		{
+			"name" : "CMAKE_EDIT_COMMAND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to cache edit program executable."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/bin/cmake-gui"
+		},
+		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
 			"properties" : 
 			[
@@ -527,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/var/www/Plataforma-VIDA/src"
+			"value" : "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1075,7 +1087,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/var/www/Plataforma-VIDA/build"
+			"value" : "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build"
 		},
 		{
 			"name" : "nlmt_SOURCE_DIR",
@@ -1087,7 +1099,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/var/www/Plataforma-VIDA/src"
+			"value" : "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src"
 		}
 	],
 	"kind" : "cache",

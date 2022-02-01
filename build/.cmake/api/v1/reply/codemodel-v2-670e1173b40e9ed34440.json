@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/var/www/Plataforma-VIDA/build",
-		"source" : "/var/www/Plataforma-VIDA/src"
+		"build" : "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build",
+		"source" : "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src"
 	},
 	"version" : 
 	{

@@ -7,6 +7,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.16.3/CMakeSystem.cmake"
+  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/CMakeLists.txt"
   "/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake"
@@ -29,9 +32,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.16/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake"
-  "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.16.3/CMakeSystem.cmake"
-  "/var/www/Plataforma-VIDA/src/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
