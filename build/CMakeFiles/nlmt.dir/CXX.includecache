@@ -58,18 +58,6 @@ stdio.h
 iostream
 -
 
-/var/www/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.cpp
-poten.h
-/var/www/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.h
-iostream
--
-math.h
--
-poten_struct.h
-/var/www/Plataforma-VIDA/src/Containers/Estecamento/poten/poten_struct.h
-fstream
--
-
 /var/www/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.h
 ../../../Utils/PosixShMem/PosixShMem.h
 /var/www/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.h

@@ -166,11 +166,12 @@ int Control::run()
     {
 
         this->dataCtrl->read(&potentiometer, sizeof(POTEN_DATA));  // leitura do valor lido no potenciometro  
+
             
-            potentiometer.value_poten_out = (potentiometer.value_poten_in/27300.0)*255; // transormação da tensão lida no potenciômetro em angulo
             potentiometer.time = road_time();   //contador de tempo
-            //cout << "\n valor do angulo: " << potentiometer.value_poten_out << endl;
-            cout << "\nvalor do angulo(poten): " << potentiometer.value_poten_in << endl;
+            double var = (potentiometer.value_poten_in/27300.0)*255; // transormação da tensão lida no potenciômetro em angulo
+            potentiometer.value_poten_out = var;
+            cout << "\nvalor do angulo convertido: " << potentiometer.value_poten_out << endl;
             this->dataCtrl->write(&potentiometer,sizeof(POTEN_DATA)); //gravação dos dados na memoria compartilhada
 		    nanosleep(&this->tim1, &this->tim2);
 

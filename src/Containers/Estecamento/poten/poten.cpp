@@ -44,6 +44,7 @@ int poten::run(){
     float tensao = 0;
 
     POTEN_DATA mydata;
+    POTEN_DATA mydataEscrita;
 
    // void pinMode(mydata.analogpin, INPUT);
 
@@ -61,11 +62,10 @@ int poten::run(){
 
         //Passando para a SheredMemory
 
-        this->poten_data->read(&mydata,sizeof(POTEN_DATA));
+        
         mydata.time = road_time();
         this->poten_data->write(&mydata,sizeof(POTEN_DATA));
         nanosleep(&this->tim1, &this->tim2);
-        
     }
 
    }else{
