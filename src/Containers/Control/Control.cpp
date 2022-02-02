@@ -108,7 +108,7 @@ int Encoder::run()
             }
             
             this->data->write(&my_data, sizeof(TIMESTAMPED_TEST_DATA));             //Writes linear velocity values to shared memory. 
-            //std:: cout<< "Escrita"<< std:: endl;
+            std:: cout<< "\nEncoder"<< std:: endl;
             
             nanosleep(&this->tim1, &this->tim2);
         
@@ -168,10 +168,11 @@ int Control::run()
         this->dataCtrl->read(&potentiometer, sizeof(POTEN_DATA));  // leitura do valor lido no potenciometro  
 
             
+            
             potentiometer.time = road_time();   //contador de tempo
             double var = (potentiometer.value_poten_in/27300.0)*255; // transormação da tensão lida no potenciômetro em angulo
             potentiometer.value_poten_out = var;
-            cout << "\nvalor do angulo convertido: " << potentiometer.value_poten_out << endl;
+            cout << "\nEsterçamento" << endl;
             this->dataCtrl->write(&potentiometer,sizeof(POTEN_DATA)); //gravação dos dados na memoria compartilhada
 		    nanosleep(&this->tim1, &this->tim2);
 
