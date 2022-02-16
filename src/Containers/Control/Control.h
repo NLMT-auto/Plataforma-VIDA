@@ -2,8 +2,6 @@
 #define CONTROL_H
 #include "../../Utils/PosixShMem/PosixShMem.h"
 #include "../../Utils/ThreadBase/ThreadBase.h"
-#include "../Estecamento/poten/poten.h"
-#include "../Estecamento/poten/poten_struct.h"
 #include <string>
 #include <stdio.h>
 #include <iostream>

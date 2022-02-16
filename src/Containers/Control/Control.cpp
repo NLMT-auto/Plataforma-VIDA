@@ -1,5 +1,5 @@
 #include "Control.h"                                //Arquivo de declaração da classe Control
-#include "../Estecamento/poten/poten_struct.h"
+#include "../Estecamento/Utils_poten/poten_struct.h"
 #include "../files/test_struct.h"
 #include <stdio.h>
 #include <iostream>                                 
@@ -42,7 +42,7 @@ void Encoder::startActivity()
 void Encoder::stopActivity()
 {
     ThreadBase::stopActivity();
-    std::cout << "WRITE" << std::endl;
+    std::cout << "Thread de controle do Encoder foi desligada" << std::endl;
 }
 
 int Encoder::run()
@@ -142,13 +142,14 @@ Control::~Control()
 
 void Control::startActivity()
 {
+    cout << "Inicializando o a thread de controle" << endl;
     ThreadBase::startActivity();
 }
 
 void Control::stopActivity()
 {
     ThreadBase::stopActivity();
-     printf("Control\n");
+     printf("Thread de controle desligada");
 }
 
 int Control::run()
@@ -161,19 +162,24 @@ int Control::run()
     this->tim1.tv_nsec = 100000000L;
 
     POTEN_DATA potentiometer;
+
+    double required_angle = 5; // Ângulo solcitado para virar -> usado como referência para o movimento
     
     while(this->is_alive)
     {
 
         this->dataCtrl->read(&potentiometer, sizeof(POTEN_DATA));  // leitura do valor lido no potenciometro  
-
             
             
-            potentiometer.time = road_time();   //contador de tempo
-            double var = (potentiometer.value_poten_in/27300.0)*255; // transormação da tensão lida no potenciômetro em angulo
+            double var = (potentiometer.value_poten_in/27300.0)*255;  // transormação da tensão lida no potenciômetro em angulo
             potentiometer.value_poten_out = var;
-            cout << "\nEsterçamento" << endl;
-            this->dataCtrl->write(&potentiometer,sizeof(POTEN_DATA)); //gravação dos dados na memoria compartilhada
+
+            double giro_qnt = required_angle - var;
+
+            potentiometer.value_poten_out = (giro_qnt/255)*27300.0;
+
+            potentiometer.time = road_time();   //contador de tempo
+            this->dataCtrl->write(&potentiometer, sizeof(POTEN_DATA)); //gravação dos dados na memoria compartilhada
 		    nanosleep(&this->tim1, &this->tim2);
 
     }

@@ -1,42 +1,47 @@
 [
 {
   "directory": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Containers/Control/Control.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Control/Control.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/vida.dir/Containers/Control/Control.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Control/Control.cpp",
   "file": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Control/Control.cpp"
 },
 {
   "directory": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Containers/Estecamento/poten/poten.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.cpp",
-  "file": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/poten/poten.cpp"
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenRead/PotenRead.cpp",
+  "file": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenRead/PotenRead.cpp"
 },
 {
   "directory": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp",
+  "file": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp"
+},
+{
+  "directory": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp",
   "file": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp"
 },
 {
   "directory": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp",
   "file": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp"
 },
 {
   "directory": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/WriteMem/WriteMem.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/WriteMem/WriteMem.cpp",
   "file": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/WriteMem/WriteMem.cpp"
 },
 {
   "directory": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Utils/PosixShMem/PosixShMem.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp",
   "file": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp"
 },
 {
   "directory": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/Utils/ThreadBase/ThreadBase.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.cpp",
   "file": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.cpp"
 },
 {
   "directory": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/nlmt.dir/main.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/main.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/vida.dir/main.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/main.cpp",
   "file": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/main.cpp"
 }
 ]

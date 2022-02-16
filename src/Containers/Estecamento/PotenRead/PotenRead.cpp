@@ -1,38 +1,41 @@
-#include "poten.h"
+#include "PotenRead.h"
 #include <iostream>
 #include <math.h>
-#include "poten_struct.h"
+#include "../Utils_poten/poten_struct.h"
 #include <fstream>
 //#include <wiringPi.h>
 
 using namespace std;
 
+// Tem que fazer a leitura dos dados do potenciômetro e transmitir os dados pra memória compartilhada
+
 //wiringPiSetup();
 
-poten::poten()
+PotenRead::PotenRead()
 {
-    this->poten_data = new PosixShMem("POTEN_DATA", sizeof(POTEN_DATA));
+    this->poten_read_data = new PosixShMem("POTEN_DATA", sizeof(POTEN_DATA));
     this->startActivity();
 }
 
-poten::~poten()
+PotenRead::~PotenRead()
 {
-    this->poten_data = NULL;
+    this->poten_read_data = NULL;
     this->stopActivity();
 }
 
-void poten::startActivity()
+void PotenRead::startActivity()
 {
+    cout << "Iniciando a leitura do potenciômetro" << endl;
     ThreadBase::startActivity();
 }
 
-void poten::stopActivity()
+void PotenRead::stopActivity()
 {
     ThreadBase::stopActivity();
-     printf("Parou a poten\n");
+     printf("Leitura do potenciômetro desligada\n");
 }
 
-int poten::run(){
+int PotenRead::run(){
 
     this->is_running = 1;
     this->is_alive = 1;
@@ -44,7 +47,6 @@ int poten::run(){
     float tensao = 0;
 
     POTEN_DATA mydata;
-    POTEN_DATA mydataEscrita;
 
    // void pinMode(mydata.analogpin, INPUT);
 
@@ -64,7 +66,7 @@ int poten::run(){
 
         
         mydata.time = road_time();
-        this->poten_data->write(&mydata,sizeof(POTEN_DATA));
+        this->poten_read_data->write(&mydata,sizeof(POTEN_DATA));
         nanosleep(&this->tim1, &this->tim2);
     }
 

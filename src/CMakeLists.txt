@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.15)
 project(nlmt CXX)
 
-add_executable(nlmt)
+add_executable(vida)
 find_package (Threads)
-target_link_libraries(nlmt ${CMAKE_THREAD_LIBS_INIT} rt)
+target_link_libraries(vida ${CMAKE_THREAD_LIBS_INIT} rt)
 target_sources(
-    nlmt
+    vida
 
     PRIVATE
         Containers/Control/Control.cpp
@@ -13,9 +13,11 @@ target_sources(
         Containers/files/general_defines.h
         Containers/files/shmem_struct.h
         Containers/files/test_struct.h
-        Containers/Estecamento/poten/poten_struct.h
-        Containers/Estecamento/poten/poten.cpp
-        Containers/Estecamento/poten/poten.h
+        Containers/Estecamento/Utils_poten/poten_struct.h
+        Containers/Estecamento/PotenRead/PotenRead.cpp
+        Containers/Estecamento/PotenRead/PotenRead.h
+        Containers/Estecamento/PotenWhrite/PotenWhrite.cpp
+        Containers/Estecamento/PotenWhrite/PotenWhrite.h
         Containers/Encoder/ReadMem/ReadMem.cpp
         Containers/Encoder/ReadMem/ReadMem.h
         Containers/Encoder/SetPoint/SetPoint.cpp
