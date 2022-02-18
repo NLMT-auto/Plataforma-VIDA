@@ -171,12 +171,12 @@ int Control::run()
         this->dataCtrl->read(&potentiometer, sizeof(POTEN_DATA));  // leitura do valor lido no potenciometro  
             
             
-            double var = (potentiometer.value_poten_in/27300.0)*255;  // transormação da tensão lida no potenciômetro em angulo
+            double var = (potentiometer.value_poten_in/CONST_TRANSF_TENSAO_UM)*CONST_TRANSF_TENSAO_DOIS;  // transormação da tensão lida no potenciômetro em angulo
             potentiometer.value_poten_out = var;
 
             double giro_qnt = required_angle - var;
 
-            potentiometer.value_poten_out = (giro_qnt/255)*27300.0;
+            potentiometer.value_poten_out = (giro_qnt/CONST_TRANSF_TENSAO_DOIS)*CONST_TRANSF_TENSAO_UM;
 
             potentiometer.time = road_time();   //contador de tempo
             this->dataCtrl->write(&potentiometer, sizeof(POTEN_DATA)); //gravação dos dados na memoria compartilhada
