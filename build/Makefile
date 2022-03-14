@@ -258,33 +258,6 @@ Containers/Estecamento/PotenRead/PotenRead.cpp.s:
 	$(MAKE) -f CMakeFiles/vida.dir/build.make CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.s
 .PHONY : Containers/Estecamento/PotenRead/PotenRead.cpp.s
 
-Containers/Estecamento/PotenWhrite/PotenWhrite.o: Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o
-
-.PHONY : Containers/Estecamento/PotenWhrite/PotenWhrite.o
-
-# target to build an object file
-Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o:
-	$(MAKE) -f CMakeFiles/vida.dir/build.make CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o
-.PHONY : Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o
-
-Containers/Estecamento/PotenWhrite/PotenWhrite.i: Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.i
-
-.PHONY : Containers/Estecamento/PotenWhrite/PotenWhrite.i
-
-# target to preprocess a source file
-Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.i:
-	$(MAKE) -f CMakeFiles/vida.dir/build.make CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.i
-.PHONY : Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.i
-
-Containers/Estecamento/PotenWhrite/PotenWhrite.s: Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.s
-
-.PHONY : Containers/Estecamento/PotenWhrite/PotenWhrite.s
-
-# target to generate assembly for a file
-Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.s:
-	$(MAKE) -f CMakeFiles/vida.dir/build.make CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.s
-.PHONY : Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.s
-
 Utils/PosixShMem/PosixShMem.o: Utils/PosixShMem/PosixShMem.cpp.o
 
 .PHONY : Utils/PosixShMem/PosixShMem.o
@@ -390,9 +363,6 @@ help:
 	@echo "... Containers/Estecamento/PotenRead/PotenRead.o"
 	@echo "... Containers/Estecamento/PotenRead/PotenRead.i"
 	@echo "... Containers/Estecamento/PotenRead/PotenRead.s"
-	@echo "... Containers/Estecamento/PotenWhrite/PotenWhrite.o"
-	@echo "... Containers/Estecamento/PotenWhrite/PotenWhrite.i"
-	@echo "... Containers/Estecamento/PotenWhrite/PotenWhrite.s"
 	@echo "... Utils/PosixShMem/PosixShMem.o"
 	@echo "... Utils/PosixShMem/PosixShMem.i"
 	@echo "... Utils/PosixShMem/PosixShMem.s"

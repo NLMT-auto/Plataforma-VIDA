@@ -39,13 +39,6 @@ CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.o: /home/max/
 CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.h
 CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/road_time.h
 
-CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp
-CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenWhrite/PotenWhrite.h
-CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/Utils_poten/poten_struct.h
-CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.h
-CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.h
-CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/road_time.h
-
 CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp
 CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.h
 
@@ -55,7 +48,6 @@ CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o: /home/max/Documentos/Cód
 CMakeFiles/vida.dir/main.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Control/Control.h
 CMakeFiles/vida.dir/main.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.h
 CMakeFiles/vida.dir/main.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenRead/PotenRead.h
-CMakeFiles/vida.dir/main.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenWhrite/PotenWhrite.h
 CMakeFiles/vida.dir/main.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.h
 CMakeFiles/vida.dir/main.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.h
 CMakeFiles/vida.dir/main.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/main.cpp

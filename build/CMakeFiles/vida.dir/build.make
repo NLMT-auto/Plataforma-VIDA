@@ -83,22 +83,9 @@ CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.s"
 	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenRead/PotenRead.cpp -o CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.s
 
-CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o: CMakeFiles/vida.dir/flags.make
-CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp
-
-CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp > CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.i
-
-CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp -o CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.s
-
 CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o: CMakeFiles/vida.dir/flags.make
 CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp
 
 CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.s: cmake_force
 
 CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o: CMakeFiles/vida.dir/flags.make
 CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp
 
 CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.s: cmake_force
 
 CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o: CMakeFiles/vida.dir/flags.make
 CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/WriteMem/WriteMem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/WriteMem/WriteMem.cpp
 
 CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.i: cmake_force
@@ -137,7 +124,7 @@ CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.s: cmake_force
 
 CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o: CMakeFiles/vida.dir/flags.make
 CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp
 
 CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.s: cmake_force
 
 CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o: CMakeFiles/vida.dir/flags.make
 CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.cpp
 
 CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.s: cmake_force
 
 CMakeFiles/vida.dir/main.cpp.o: CMakeFiles/vida.dir/flags.make
 CMakeFiles/vida.dir/main.cpp.o: /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/vida.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/vida.dir/main.cpp.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vida.dir/main.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/main.cpp
 
 CMakeFiles/vida.dir/main.cpp.i: cmake_force
@@ -178,7 +165,6 @@ CMakeFiles/vida.dir/main.cpp.s: cmake_force
 vida_OBJECTS = \
 "CMakeFiles/vida.dir/Containers/Control/Control.cpp.o" \
 "CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.o" \
-"CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o" \
 "CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o" \
 "CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o" \
 "CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o" \
@@ -191,7 +177,6 @@ vida_EXTERNAL_OBJECTS =
 
 vida: CMakeFiles/vida.dir/Containers/Control/Control.cpp.o
 vida: CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.o
-vida: CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o
 vida: CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o
 vida: CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o
 vida: CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o
@@ -200,7 +185,7 @@ vida: CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o
 vida: CMakeFiles/vida.dir/main.cpp.o
 vida: CMakeFiles/vida.dir/build.make
 vida: CMakeFiles/vida.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable vida"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable vida"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vida.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

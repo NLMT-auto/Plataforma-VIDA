@@ -180,6 +180,30 @@ int Control::run()
 
             potentiometer.time = road_time();   //contador de tempo
 
+            //receber os dados de controle 
+
+            double dados_controle = 0; //recebe o ângulo desejado do controle para realizar as correções
+
+            double diferenca = dados_controle - var; //Verifica a diferemça entre o ângulo desejado e o âmgulo atual
+
+            double atuador = 0; //variável que recebe o valor convertido para atuar no motor
+
+            //Atua no motor - Parte de escrita do potenciômetro
+
+            if (diferenca < 0) // significa que a direção do esterçamento está mais a esquerda que o necessário
+            {
+                // atuador =  (diferenca/CONST_TRANSF_TENSAO_UM)*CONST_TRANSF_TENSAO_DOIS); // Transformação de angulo para tensâo
+                //atua em um pino determinado da GPIO
+            }else if (diferenca = 0)
+            {
+                cout << "O carro está na direção certa" << endl;
+            }
+            else if (diferenca > 0)
+            {
+                // atuador = (diferenca/CONST_TRANSF_TENSAO_UM)*CONST_TRANSF_TENSAO_DOIS); // Transformação de angulo para tensâo
+                //atua em um pino determinado da GPIO
+            }
+
     }
     this->is_running = 0;
     pthread_exit(NULL);

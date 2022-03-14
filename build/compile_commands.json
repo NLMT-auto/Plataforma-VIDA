@@ -11,11 +11,6 @@
 },
 {
   "directory": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/vida.dir/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp",
-  "file": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenWhrite/PotenWhrite.cpp"
-},
-{
-  "directory": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build",
   "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o -c /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp",
   "file": "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp"
 },
