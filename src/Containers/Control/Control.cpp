@@ -179,8 +179,6 @@ int Control::run()
             potentiometer.value_poten_out = (giro_qnt/CONST_TRANSF_TENSAO_DOIS)*CONST_TRANSF_TENSAO_UM;
 
             potentiometer.time = road_time();   //contador de tempo
-            this->dataCtrl->write(&potentiometer, sizeof(POTEN_DATA)); //gravação dos dados na memoria compartilhada
-		    nanosleep(&this->tim1, &this->tim2);
 
     }
     this->is_running = 0;
