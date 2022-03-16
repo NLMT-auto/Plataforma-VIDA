@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Control/Control.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Control/Control.cpp.o"
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o"
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o"
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/WriteMem/WriteMem.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o"
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenRead/PotenRead.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.o"
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o"
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o"
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/main.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/main.cpp.o"
+  "/home/eron/Plataforma-VIDA/src/Containers/Control/Control.cpp" "/home/eron/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Control/Control.cpp.o"
+  "/home/eron/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp" "/home/eron/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o"
+  "/home/eron/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp" "/home/eron/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o"
+  "/home/eron/Plataforma-VIDA/src/Containers/Encoder/WriteMem/WriteMem.cpp" "/home/eron/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o"
+  "/home/eron/Plataforma-VIDA/src/Containers/Estecamento/PotenRead/PotenRead.cpp" "/home/eron/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.o"
+  "/home/eron/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp" "/home/eron/Plataforma-VIDA/build/CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o"
+  "/home/eron/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.cpp" "/home/eron/Plataforma-VIDA/build/CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o"
+  "/home/eron/Plataforma-VIDA/src/main.cpp" "/home/eron/Plataforma-VIDA/build/CMakeFiles/vida.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
