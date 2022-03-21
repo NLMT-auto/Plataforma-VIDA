@@ -1,21 +1,20 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Control/Control.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Control/Control.cpp.o"
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o"
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o"
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Containers/Estecamento/PotenRead/PotenRead.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.o"
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o"
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o"
-  "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src/main.cpp" "/home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/vida.dir/main.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/lmt/Documentos/Plataforma-VIDA/src/Containers/Control/Control.cpp" "CMakeFiles/vida.dir/Containers/Control/Control.cpp.o" "gcc" "CMakeFiles/vida.dir/Containers/Control/Control.cpp.o.d"
+  "/home/lmt/Documentos/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.cpp" "CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o" "gcc" "CMakeFiles/vida.dir/Containers/Encoder/ReadMem/ReadMem.cpp.o.d"
+  "/home/lmt/Documentos/Plataforma-VIDA/src/Containers/Encoder/SetPoint/SetPoint.cpp" "CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o" "gcc" "CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.o.d"
+  "/home/lmt/Documentos/Plataforma-VIDA/src/Containers/Estecamento/PotenRead/PotenRead.cpp" "CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.o" "gcc" "CMakeFiles/vida.dir/Containers/Estecamento/PotenRead/PotenRead.cpp.o.d"
+  "/home/lmt/Documentos/Plataforma-VIDA/src/Utils/PosixShMem/PosixShMem.cpp" "CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o" "gcc" "CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o.d"
+  "/home/lmt/Documentos/Plataforma-VIDA/src/Utils/ThreadBase/ThreadBase.cpp" "CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o" "gcc" "CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o.d"
+  "/home/lmt/Documentos/Plataforma-VIDA/src/main.cpp" "CMakeFiles/vida.dir/main.cpp.o" "gcc" "CMakeFiles/vida.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
