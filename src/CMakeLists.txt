@@ -20,8 +20,6 @@ target_sources(
         Containers/Encoder/ReadMem/ReadMem.h
         Containers/Encoder/SetPoint/SetPoint.cpp
         Containers/Encoder/SetPoint/SetPoint.h
-        Containers/Encoder/WriteMem/WriteMem.cpp
-        Containers/Encoder/WriteMem/WriteMem.h
         Utils/PosixShMem/PosixShMem.cpp
         Utils/PosixShMem/PosixShMem.h
         Utils/ThreadBase/ThreadBase.cpp

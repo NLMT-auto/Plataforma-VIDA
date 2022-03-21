@@ -23,6 +23,23 @@ private:
     
 };
 
+//Write memory of Encoder
+class WriteMem: public ThreadBase
+{
+public:
+    WriteMem();
+    ~WriteMem();
+
+private:
+
+    PosixShMem *data;
+    void startActivity() override;
+    void stopActivity() override;
+    int run() override;
+    
+    
+};
+
 class Control: public ThreadBase
 {
 public:

@@ -17,7 +17,6 @@
 #include "../../Utils/ThreadBase/ThreadBase.h"
 #include <fstream>
 //Libraries Encoder
-#include "../Encoder/WriteMem/WriteMem.h"
 #include "../files/test_struct.h"  
 
 
@@ -138,7 +137,7 @@ int Encoder::run()
             }
             
             this->data->write(&my_data, sizeof(TIMESTAMPED_TEST_DATA));             //Writes linear velocity values to shared memory. 
-            std:: cout<< "\nEncoder"<< std:: endl;
+            std:: cout<< "\nFuncionando (Thread de controle)"<< std:: endl;
             
             nanosleep(&this->tim1, &this->tim2);
             }   

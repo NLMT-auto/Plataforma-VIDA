@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eron/Plataforma-VIDA/src
+CMAKE_SOURCE_DIR = /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eron/Plataforma-VIDA/build
+CMAKE_BINARY_DIR = /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eron/Plataforma-VIDA/build/CMakeFiles /home/eron/Plataforma-VIDA/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eron/Plataforma-VIDA/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/max/Documentos/Códigos/NLMT/Plataforma-VIDA/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -203,33 +203,6 @@ Containers/Encoder/SetPoint/SetPoint.s: Containers/Encoder/SetPoint/SetPoint.cpp
 Containers/Encoder/SetPoint/SetPoint.cpp.s:
 	$(MAKE) -f CMakeFiles/vida.dir/build.make CMakeFiles/vida.dir/Containers/Encoder/SetPoint/SetPoint.cpp.s
 .PHONY : Containers/Encoder/SetPoint/SetPoint.cpp.s
-
-Containers/Encoder/WriteMem/WriteMem.o: Containers/Encoder/WriteMem/WriteMem.cpp.o
-
-.PHONY : Containers/Encoder/WriteMem/WriteMem.o
-
-# target to build an object file
-Containers/Encoder/WriteMem/WriteMem.cpp.o:
-	$(MAKE) -f CMakeFiles/vida.dir/build.make CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.o
-.PHONY : Containers/Encoder/WriteMem/WriteMem.cpp.o
-
-Containers/Encoder/WriteMem/WriteMem.i: Containers/Encoder/WriteMem/WriteMem.cpp.i
-
-.PHONY : Containers/Encoder/WriteMem/WriteMem.i
-
-# target to preprocess a source file
-Containers/Encoder/WriteMem/WriteMem.cpp.i:
-	$(MAKE) -f CMakeFiles/vida.dir/build.make CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.i
-.PHONY : Containers/Encoder/WriteMem/WriteMem.cpp.i
-
-Containers/Encoder/WriteMem/WriteMem.s: Containers/Encoder/WriteMem/WriteMem.cpp.s
-
-.PHONY : Containers/Encoder/WriteMem/WriteMem.s
-
-# target to generate assembly for a file
-Containers/Encoder/WriteMem/WriteMem.cpp.s:
-	$(MAKE) -f CMakeFiles/vida.dir/build.make CMakeFiles/vida.dir/Containers/Encoder/WriteMem/WriteMem.cpp.s
-.PHONY : Containers/Encoder/WriteMem/WriteMem.cpp.s
 
 Containers/Estecamento/PotenRead/PotenRead.o: Containers/Estecamento/PotenRead/PotenRead.cpp.o
 
@@ -357,9 +330,6 @@ help:
 	@echo "... Containers/Encoder/SetPoint/SetPoint.o"
 	@echo "... Containers/Encoder/SetPoint/SetPoint.i"
 	@echo "... Containers/Encoder/SetPoint/SetPoint.s"
-	@echo "... Containers/Encoder/WriteMem/WriteMem.o"
-	@echo "... Containers/Encoder/WriteMem/WriteMem.i"
-	@echo "... Containers/Encoder/WriteMem/WriteMem.s"
 	@echo "... Containers/Estecamento/PotenRead/PotenRead.o"
 	@echo "... Containers/Estecamento/PotenRead/PotenRead.i"
 	@echo "... Containers/Estecamento/PotenRead/PotenRead.s"
