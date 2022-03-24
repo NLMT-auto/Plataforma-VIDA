@@ -3,13 +3,13 @@
 #include <math.h>
 #include "../Utils_poten/poten_struct.h"
 #include <fstream>
-//#include <wiringPi.h>
+#include <wiringPi.h>
 
 using namespace std;
 
 // Tem que fazer a leitura dos dados do potenciômetro e transmitir os dados pra memória compartilhada
 
-//wiringPiSetup();
+wiringPiSetup();
 
 PotenRead::PotenRead()
 {
@@ -48,19 +48,19 @@ int PotenRead::run(){
 
     POTEN_DATA mydata;
 
-   // void pinMode(mydata.analogpin, INPUT);
+    void pinMode(mydata.analogpin, INPUT);
 
    if (arq.is_open()){
 
-       //cout << "ABRIU O ARQUIVO" << endl;
+       cout << "ABRIU O ARQUIVO" << endl;
 
     while(this->is_alive){
 
-        // mydata.value_poten_in = analogRead(mydata.analogin);                    //Leitura do valor de tensão do potenciômetro
+        mydata.value_poten_in = analogRead(mydata.analogin);                    //Leitura do valor de tensão do potenciômetro
 
         arq >> tensao;
         mydata.value_poten_in = tensao;
-        //cout << "\n Valor de tensão: " << mydata.value_poten_in << endl;
+        cout << "\n Valor de tensão: " << mydata.value_poten_in << endl;
 
         //Passando para a SheredMemory
 
