@@ -10,7 +10,7 @@
 #include <utility>  
 #include <math.h>
 #include <ctime>
-//#include <wiringPi.h>                             //Biblioteca de manipulação de GPIO para raspberry/odroid
+#include <wiringPi.h>                             //Biblioteca de manipulação de GPIO para raspberry/odroid
 #include <vector>
 #include "../../Utils/road_time.h"
 #include "../files/general_defines.h"
@@ -26,13 +26,13 @@
 int Vetor_velocidades[100];
 int cont_aux=0;
 
-//wiringPiSetup();
+wiringPiSetup();
 
-int ReadFiles(const char* name) {       //Função de leitura de arquivo usado na escrita da função da Write memory
+int ReadFiles(const char* name) {       //Funcao de leitura de arquivo usado na escrita da funcao da Write memory
     int aux;
     fstream Arquivo(name, ios::in);
     if (!Arquivo) {
-        cout << "Error to read the file " << name << endl;                //Caso não exista o arquivo retorna error
+        cout << "Error to read the file " << name << endl;                //Caso nao exista o arquivo retorna error
         return (1);
     }  
     while (Arquivo>>aux){
@@ -85,7 +85,7 @@ int Encoder::run()
     int cont=0;                                 //if controler
     double velocity_angular;                    //Saves the angular velocity value. 
 
-    //void pinMode(PINOSENSOR, INPUT);
+    void pinMode(PINOSENSOR, INPUT);
 
     clock_t t1, t0,t3;                          //Variables for time manipulation. 
     double t2;                                      
@@ -142,7 +142,7 @@ int Encoder::run()
             nanosleep(&this->tim1, &this->tim2);
             }   
 
-            //Escrita da função
+            //Escrita da funcao
 
             clock_t t1, t0,t3,t6,t7;
             double t2;
@@ -241,7 +241,7 @@ int Control::run()
 
     POTEN_DATA potentiometer;
 
-    double required_angle = 5; // Ângulo solcitado para virar -> usado como referência para o movimento
+    double required_angle = 5; // angulo solcitado para virar -> usado como referencia para o movimento
     
     while(this->is_alive)
     {
@@ -249,7 +249,7 @@ int Control::run()
         this->dataCtrl->read(&potentiometer, sizeof(POTEN_DATA));  // leitura do valor lido no potenciometro  
             
             
-            double var = (potentiometer.value_poten_in/CONST_TRANSF_TENSAO_UM)*CONST_TRANSF_TENSAO_DOIS;  // transormação da tensão lida no potenciômetro em angulo
+            double var = (potentiometer.value_poten_in/CONST_TRANSF_TENSAO_UM)*CONST_TRANSF_TENSAO_DOIS;  // transormacao da tensao lida no potenciometro em angulo
             potentiometer.value_poten_out = var;
 
             double giro_qnt = required_angle - var;
@@ -260,17 +260,17 @@ int Control::run()
 
             //receber os dados de controle 
 
-            double dados_controle = 0; //recebe o ângulo desejado do controle para realizar as correções
+            double dados_controle = 0; //recebe o angulo desejado do controle para realizar as correcoes
 
-            double diferenca = dados_controle - var; //Verifica a diferemça entre o ângulo desejado e o âmgulo atual
+            double diferenca = dados_controle - var; //Verifica a diferencas entre o angulo desejado e o amgulo atual
 
-            double atuador = 0; //variável que recebe o valor convertido para atuar no motor
+            double atuador = 0; //variavel que recebe o valor convertido para atuar no motor
 
-            //Atua no motor - Parte de escrita do potenciômetro
+            //Atua no motor - Parte de escrita do potenciometro
 
-            if (diferenca < 0) // significa que a direção do esterçamento está mais a esquerda que o necessário
+            if (diferenca < 0) // significa que a direcao do estersamento estao mais a esquerda que o necessario
             {
-                // atuador =  (diferenca/CONST_TRANSF_TENSAO_UM)*CONST_TRANSF_TENSAO_DOIS); // Transformação de angulo para tensâo
+                 atuador =  (diferenca/CONST_TRANSF_TENSAO_UM)*CONST_TRANSF_TENSAO_DOIS); // Transformacao de angulo para tensao
                 //atua em um pino determinado da GPIO
             }else if (diferenca = 0)
             {
@@ -278,7 +278,7 @@ int Control::run()
             }
             else if (diferenca > 0)
             {
-                // atuador = (diferenca/CONST_TRANSF_TENSAO_UM)*CONST_TRANSF_TENSAO_DOIS); // Transformação de angulo para tensâo
+                atuador = (diferenca/CONST_TRANSF_TENSAO_UM)*CONST_TRANSF_TENSAO_DOIS); // Transformacao de angulo para tensao
                 //atua em um pino determinado da GPIO
             }
 
