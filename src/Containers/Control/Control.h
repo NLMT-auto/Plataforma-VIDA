@@ -7,39 +7,6 @@
 #include <iostream>
 
 using namespace std;
-class Encoder: public ThreadBase
-{
-public:
-    Encoder();
-    ~Encoder();
-
-private:
-
-    PosixShMem *data;
-    void startActivity() override;
-    void stopActivity() override;
-    int run() override;
-    
-    
-};
-
-//Write memory of Encoder
-class WriteMem: public ThreadBase
-{
-public:
-    WriteMem();
-    ~WriteMem();
-
-private:
-
-    PosixShMem *data;
-    void startActivity() override;
-    void stopActivity() override;
-    int run() override;
-    
-    
-};
-
 class Control: public ThreadBase
 {
 public:
@@ -48,10 +15,11 @@ public:
 
 private:
 
-    PosixShMem *dataCtrl;
+    PosixShMem *data;
     void startActivity() override;
     void stopActivity() override;
     int run() override;
+    
+    
 };
-
 #endif

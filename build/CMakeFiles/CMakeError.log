@@ -1,22 +1,22 @@
 Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_7cc41/fast && /usr/bin/make  -f CMakeFiles/cmTC_7cc41.dir/build.make CMakeFiles/cmTC_7cc41.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ac446/fast && /usr/bin/make  -f CMakeFiles/cmTC_ac446.dir/build.make CMakeFiles/cmTC_ac446.dir/build
 make[1]: Entrando no diretório '/home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7cc41.dir/src.cxx.o
-/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_7cc41.dir/src.cxx.o -c /home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_7cc41
-/snap/cmake/1035/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cc41.dir/link.txt --verbose=1
-/usr/bin/c++ CMakeFiles/cmTC_7cc41.dir/src.cxx.o -o cmTC_7cc41 
-/usr/bin/ld: CMakeFiles/cmTC_7cc41.dir/src.cxx.o: na função "main":
+Building CXX object CMakeFiles/cmTC_ac446.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ac446.dir/src.cxx.o -c /home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ac446
+/snap/cmake/1088/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac446.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_ac446.dir/src.cxx.o -o cmTC_ac446 
+/usr/bin/ld: CMakeFiles/cmTC_ac446.dir/src.cxx.o: na função "main":
 src.cxx:(.text+0x46): referência não definida para "pthread_create"
 /usr/bin/ld: src.cxx:(.text+0x52): referência não definida para "pthread_detach"
 /usr/bin/ld: src.cxx:(.text+0x5e): referência não definida para "pthread_cancel"
 /usr/bin/ld: src.cxx:(.text+0x6f): referência não definida para "pthread_join"
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_7cc41.dir/build.make:99: cmTC_7cc41] Erro 1
+make[1]: *** [CMakeFiles/cmTC_ac446.dir/build.make:99: cmTC_ac446] Erro 1
 make[1]: Saindo do diretório '/home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_7cc41/fast] Erro 2
+make: *** [Makefile:127: cmTC_ac446/fast] Erro 2
 
 
 Source file was:
@@ -43,18 +43,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_5910e/fast && /usr/bin/make  -f CMakeFiles/cmTC_5910e.dir/build.make CMakeFiles/cmTC_5910e.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7953b/fast && /usr/bin/make  -f CMakeFiles/cmTC_7953b.dir/build.make CMakeFiles/cmTC_7953b.dir/build
 make[1]: Entrando no diretório '/home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5910e.dir/CheckFunctionExists.cxx.o
-/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_5910e.dir/CheckFunctionExists.cxx.o -c /home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
-Linking CXX executable cmTC_5910e
-/snap/cmake/1035/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5910e.dir/link.txt --verbose=1
-/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_5910e.dir/CheckFunctionExists.cxx.o -o cmTC_5910e  -lpthreads 
+Building CXX object CMakeFiles/cmTC_7953b.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_7953b.dir/CheckFunctionExists.cxx.o -c /home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_7953b
+/snap/cmake/1088/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7953b.dir/link.txt --verbose=1
+/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_7953b.dir/CheckFunctionExists.cxx.o -o cmTC_7953b  -lpthreads 
 /usr/bin/ld: não foi possível localizar -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_5910e.dir/build.make:99: cmTC_5910e] Erro 1
+make[1]: *** [CMakeFiles/cmTC_7953b.dir/build.make:99: cmTC_7953b] Erro 1
 make[1]: Saindo do diretório '/home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_5910e/fast] Erro 2
+make: *** [Makefile:127: cmTC_7953b/fast] Erro 2
 
 
 

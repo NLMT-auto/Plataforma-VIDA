@@ -150,10 +150,4 @@ CMakeFiles/vida.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mman-linux.h \
  /usr/include/x86_64-linux-gnu/bits/mman-shared.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Control/../../Utils/ThreadBase/ThreadBase.h \
- /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Encoder/ReadMem/ReadMem.h \
- /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Encoder/ReadMem/../../../Utils/PosixShMem/PosixShMem.h \
- /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Encoder/ReadMem/../../../Utils/ThreadBase/ThreadBase.h \
- /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Estecamento/PotenRead/PotenRead.h \
- /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Estecamento/PotenRead/../../../Utils/PosixShMem/PosixShMem.h \
- /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Estecamento/PotenRead/../../../Utils/ThreadBase/ThreadBase.h
+ /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Control/../../Utils/ThreadBase/ThreadBase.h
