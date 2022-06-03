@@ -155,13 +155,11 @@ CMakeFiles/vida.dir/Containers/Control/Control.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Control/../Estecamento/Utils_poten/poten_struct.h \
- /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Control/../Estecamento/Utils_poten/../../../Utils/road_time.h \
- /usr/include/x86_64-linux-gnu/sys/time.h \
  /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Control/../files/test_struct.h \
  /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Control/../files/../../Utils/road_time.h \
- /usr/include/c++/9/iomanip /usr/include/c++/9/locale \
- /usr/include/c++/9/bits/locale_facets_nonio.h /usr/include/c++/9/ctime \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/c++/9/iomanip \
+ /usr/include/c++/9/locale /usr/include/c++/9/bits/locale_facets_nonio.h \
+ /usr/include/c++/9/ctime \
  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/9/bits/codecvt.h \
@@ -188,6 +186,7 @@ CMakeFiles/vida.dir/Containers/Control/Control.cpp.o: \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
  /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Control/../../Utils/road_time.h \
  /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Control/../files/general_defines.h \
+ /home/lmt/Documentos/Plataforma-VIDA/src/Containers/Control/../files/control_struct.h \
  /usr/include/c++/9/fstream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
