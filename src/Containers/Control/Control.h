@@ -7,11 +7,11 @@
 #include <iostream>
 
 using namespace std;
-class Encoder: public ThreadBase
+class Control: public ThreadBase
 {
 public:
-    Encoder();
-    ~Encoder();
+    Control();
+    ~Control();
 
 private:
 
@@ -22,19 +22,4 @@ private:
     
     
 };
-
-class Control: public ThreadBase
-{
-public:
-    Control();
-    ~Control();
-
-private:
-
-    PosixShMem *dataCtrl;
-    void startActivity() override;
-    void stopActivity() override;
-    int run() override;
-};
-
 #endif

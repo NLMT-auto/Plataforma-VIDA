@@ -1,27 +1,28 @@
 Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /var/www/Plataforma-VIDA/build/CMakeFiles/CMakeTmp
+Change Dir: /home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_08e11/fast && /usr/bin/make -f CMakeFiles/cmTC_08e11.dir/build.make CMakeFiles/cmTC_08e11.dir/build
-make[1]: Entering directory '/var/www/Plataforma-VIDA/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_08e11.dir/src.cxx.o
-/bin/x86_64-linux-gnu-g++-9    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_08e11.dir/src.cxx.o -c /var/www/Plataforma-VIDA/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_08e11
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08e11.dir/link.txt --verbose=1
-/bin/x86_64-linux-gnu-g++-9   -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_08e11.dir/src.cxx.o  -o cmTC_08e11 
-/usr/bin/ld: CMakeFiles/cmTC_08e11.dir/src.cxx.o: in function `main':
-src.cxx:(.text+0x46): undefined reference to `pthread_create'
-/usr/bin/ld: src.cxx:(.text+0x52): undefined reference to `pthread_detach'
-/usr/bin/ld: src.cxx:(.text+0x63): undefined reference to `pthread_join'
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ac446/fast && /usr/bin/make  -f CMakeFiles/cmTC_ac446.dir/build.make CMakeFiles/cmTC_ac446.dir/build
+make[1]: Entrando no diretório '/home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ac446.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ac446.dir/src.cxx.o -c /home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ac446
+/snap/cmake/1088/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac446.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_ac446.dir/src.cxx.o -o cmTC_ac446 
+/usr/bin/ld: CMakeFiles/cmTC_ac446.dir/src.cxx.o: na função "main":
+src.cxx:(.text+0x46): referência não definida para "pthread_create"
+/usr/bin/ld: src.cxx:(.text+0x52): referência não definida para "pthread_detach"
+/usr/bin/ld: src.cxx:(.text+0x5e): referência não definida para "pthread_cancel"
+/usr/bin/ld: src.cxx:(.text+0x6f): referência não definida para "pthread_join"
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_08e11.dir/build.make:87: cmTC_08e11] Error 1
-make[1]: Leaving directory '/var/www/Plataforma-VIDA/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_08e11/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_ac446.dir/build.make:99: cmTC_ac446] Erro 1
+make[1]: Saindo do diretório '/home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_ac446/fast] Erro 2
 
 
 Source file was:
 #include <pthread.h>
 
-void* test_func(void* data)
+static void* test_func(void* data)
 {
   return data;
 }
@@ -31,6 +32,7 @@ int main(void)
   pthread_t thread;
   pthread_create(&thread, NULL, test_func, NULL);
   pthread_detach(thread);
+  pthread_cancel(thread);
   pthread_join(thread, NULL);
   pthread_atfork(NULL, NULL, NULL);
   pthread_exit(NULL);
@@ -39,20 +41,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /var/www/Plataforma-VIDA/build/CMakeFiles/CMakeTmp
+Change Dir: /home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_888e4/fast && /usr/bin/make -f CMakeFiles/cmTC_888e4.dir/build.make CMakeFiles/cmTC_888e4.dir/build
-make[1]: Entering directory '/var/www/Plataforma-VIDA/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_888e4.dir/CheckFunctionExists.cxx.o
-/bin/x86_64-linux-gnu-g++-9    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_888e4.dir/CheckFunctionExists.cxx.o -c /var/www/Plataforma-VIDA/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
-Linking CXX executable cmTC_888e4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_888e4.dir/link.txt --verbose=1
-/bin/x86_64-linux-gnu-g++-9   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_888e4.dir/CheckFunctionExists.cxx.o  -o cmTC_888e4  -lpthreads 
-/usr/bin/ld: cannot find -lpthreads
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7953b/fast && /usr/bin/make  -f CMakeFiles/cmTC_7953b.dir/build.make CMakeFiles/cmTC_7953b.dir/build
+make[1]: Entrando no diretório '/home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7953b.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_7953b.dir/CheckFunctionExists.cxx.o -c /home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_7953b
+/snap/cmake/1088/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7953b.dir/link.txt --verbose=1
+/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_7953b.dir/CheckFunctionExists.cxx.o -o cmTC_7953b  -lpthreads 
+/usr/bin/ld: não foi possível localizar -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_888e4.dir/build.make:87: cmTC_888e4] Error 1
-make[1]: Leaving directory '/var/www/Plataforma-VIDA/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_888e4/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_7953b.dir/build.make:99: cmTC_7953b] Erro 1
+make[1]: Saindo do diretório '/home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_7953b/fast] Erro 2
 
 
 

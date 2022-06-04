@@ -13,17 +13,6 @@ target_sources(
         Containers/files/general_defines.h
         Containers/files/shmem_struct.h
         Containers/files/test_struct.h
-        Containers/Estecamento/Utils_poten/poten_struct.h
-        Containers/Estecamento/PotenRead/PotenRead.cpp
-        Containers/Estecamento/PotenRead/PotenRead.h
-        Containers/Estecamento/PotenWhrite/PotenWhrite.cpp
-        Containers/Estecamento/PotenWhrite/PotenWhrite.h
-        Containers/Encoder/ReadMem/ReadMem.cpp
-        Containers/Encoder/ReadMem/ReadMem.h
-        Containers/Encoder/SetPoint/SetPoint.cpp
-        Containers/Encoder/SetPoint/SetPoint.h
-        Containers/Encoder/WriteMem/WriteMem.cpp
-        Containers/Encoder/WriteMem/WriteMem.h
         Utils/PosixShMem/PosixShMem.cpp
         Utils/PosixShMem/PosixShMem.h
         Utils/ThreadBase/ThreadBase.cpp
