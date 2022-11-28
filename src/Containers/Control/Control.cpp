@@ -58,7 +58,7 @@ int Control::run()
     {
 
         std::cout << "Thread de controle limpa !!!" << std::endl;
-        //Precisa adicionar os códigos de controle de sensores e atuadores do arduíno
+        //Precisa adicionar os códigos de controle de sensores e atuadores do arduíno 
 
     }
     this->is_running = 0;
