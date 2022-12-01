@@ -26,13 +26,14 @@ private:
 
     //variables
     PosixShMem *data;
+    int serial_port;
     
 
     //methods
     void startActivity() override;
     void stopActivity() override;
     int run() override;
-    int setup(const char *device, int rate);
+    void setup(const char *device, int rate);
     void close(int serial_port);
     void readUSB(const char *device, int rate, int serial_port); 
     void writeUSB(int serial_port, char mensagem); 
