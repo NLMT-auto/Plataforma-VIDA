@@ -1,3 +1,0 @@
-/home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/vida.dir
-/home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/edit_cache.dir
-/home/lmt/Documentos/Plataforma-VIDA/build/CMakeFiles/rebuild_cache.dir
