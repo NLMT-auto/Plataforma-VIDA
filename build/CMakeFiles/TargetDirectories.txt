@@ -1,3 +1,0 @@
-/home/lmt/Desktop/testeGPIO/build/CMakeFiles/vida.dir
-/home/lmt/Desktop/testeGPIO/build/CMakeFiles/edit_cache.dir
-/home/lmt/Desktop/testeGPIO/build/CMakeFiles/rebuild_cache.dir

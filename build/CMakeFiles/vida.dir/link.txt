@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/vida.dir/main.cpp.o CMakeFiles/vida.dir/Containers/Control/Control.cpp.o CMakeFiles/vida.dir/Containers/Registro/Registro.cpp.o CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o CMakeFiles/vida.dir/Utils/Serial/Serial.cpp.o CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o -o vida  -Wl,-rpath,/usr/local/lib -lrt /usr/local/lib/libwiringPi.so 
