@@ -21,13 +21,19 @@ target_sources(
         
         main.cpp
 
-        #Controle
+        #Control
         Containers/Control/Control.cpp
         Containers/Control/Control.h
 
+        Containers/Control/files/control_struct.h
         Containers/Control/files/general_defines.h
         Containers/Control/files/shmem_struct.h
         Containers/Control/files/test_struct.h
+
+        #Controle
+        Containers/Controle/Controle.cpp
+        Containers/Controle/Controle.h
+        Containers/Controle/DefinePin.h       
 
         #Registro
         Containers/Registro/Registro.cpp
@@ -37,13 +43,17 @@ target_sources(
         Utils/PosixShMem/PosixShMem.cpp
         Utils/PosixShMem/PosixShMem.h
 
-        #Comunicação serial(GPIO)
+        #Comunicação serial
         Utils/Serial/Serial.h
         Utils/Serial/Serial.cpp
 
         #ThreadBase
         Utils/ThreadBase/ThreadBase.cpp
         Utils/ThreadBase/ThreadBase.h
+
+        #Comunicação UDP
+        Utils/UDP/UDP.cpp
+        Utils/UDP/UDP.h
 
         #Tempo
         Utils/road_time.h
