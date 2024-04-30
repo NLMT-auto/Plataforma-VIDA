@@ -1,24 +1,8 @@
 #include "Serial.h"
 
-int Serial::serialport = -1;
-int Serial::tx = 0;
-int Serial::rx = 0;
-int Serial::baudRate = -1;
-
-
-
-Serial::Serial(int tx, int rx, int interrupt, int baudRate)
-{
-    if (this->serialport < 0)
-    {
-        this->serialport = serialOpen("/dev/ttyS0", baudRate);
-        this->baudRate = baudRate;
-        this->tx = tx;
-        this->rx = rx;
-
-        wiringPiSetup();
-    }
-
+Serial::Serial(int interrupt, int baudRate)
+{    
+    this->serialport = serialOpen("/dev/ttyS0", baudRate);          
     this->interrupt = interrupt;    
 }
 
@@ -26,15 +10,14 @@ Serial::~Serial(){
     serialClose(serialport);
 }
 
-void Serial::envia(string s){
+void Serial::write(string s){
 
-
-    serialPrintf(serialport, "%d %s\n",interrupt, s.c_str());    
+    serialPrintf(serialport, "%s\n",s.c_str());    
 }
 
-/*string Serial::leitura(char c){
+string Serial::read(char c){
 
-    string receivedData;
+    /*string receivedData;
     char receivedChar;
 
     do
@@ -53,6 +36,6 @@ void Serial::envia(string s){
 
     }while(receivedChar != c);
 
-    return receivedData;
-}*/
+    return receivedData;*/
+}
 
