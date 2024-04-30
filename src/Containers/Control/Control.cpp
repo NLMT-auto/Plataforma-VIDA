@@ -24,6 +24,13 @@ Control::Control()
 {
     this->controlData = NULL;
     this->startActivity();
+
+    //pinMode(0, OUTPUT);
+    //digitalWrite(0, HIGH);
+
+    //delay(1000);
+
+    
 }
 
 Control::~Control()
@@ -31,17 +38,17 @@ Control::~Control()
     this->stopActivity();
 
     // Delete all shared memory, but should be called once in the main.cpp
-    if (this->controlData)
-        delete this->controlData;
+    if (this->memoriaCompartilhada)
+        delete this->memoriaCompartilhada;
 
-    this->controlData = NULL;
+    this->memoriaCompartilhada = NULL;
 }
 
 void Control::startActivity()
 {
     cout << "Inicializando o a thread de controle" << endl;
 
-    this->controlData = new PosixShMem("ControlData", sizeof(CONTROL_DATA));
+    this->memoriaCompartilhada = new PosixShMem("memoriaCompartilhada", sizeof(CONTROL_DATA));
 
     ThreadBase::startActivity();
 }
@@ -49,10 +56,10 @@ void Control::startActivity()
 void Control::stopActivity()
 {
     // Delete all shared memory, but should be called once in the main.cpp
-    if (this->controlData)
-        delete this->controlData;
+    if (this->memoriaCompartilhada)
+        delete this->memoriaCompartilhada;
 
-    this->controlData = NULL;
+    this->memoriaCompartilhada = NULL;
 
     ThreadBase::stopActivity();
     printf("Thread de controle desligada");
@@ -69,19 +76,13 @@ int Control::run()
 
     while (this->is_alive)
     {
-        this->myData.time = road_time();
-        this->myData.value_out = this->myData.value_out + 1.0;
+        
+        this->myData.time = road_time();        
+        this->myData.value_out += 1;
 
-        this->controlData->write(&this->myData, sizeof(CONTROL_DATA));
+        this->memoriaCompartilhada->write(&this->myData, sizeof(CONTROL_DATA));
 
-        CONTROL_DATA myData2;
-
-        this->controlData->read(&myData2, sizeof(CONTROL_DATA));
-
-        std::cout
-            << "Thread de controle = " << myData2.time << "    Valor = " << myData2.value_out << std::endl;
-        // Precisa adicionar os códigos de controle de sensores e atuadores do arduíno
-
+        
         nanosleep(&this->tim1, &this->tim2);
     }
     this->is_running = 0;

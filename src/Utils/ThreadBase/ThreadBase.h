@@ -21,8 +21,8 @@ protected:
     virtual int run() = 0;            /// < Thread function
 
 public:
-virtual void startActivity();        /// < Function when starting a thread
-virtual void stopActivity();        /// < Function when ending a thread
+    virtual void startActivity();        /// < Function when starting a thread
+    virtual void stopActivity();        /// < Function when ending a thread
 
 };
 
