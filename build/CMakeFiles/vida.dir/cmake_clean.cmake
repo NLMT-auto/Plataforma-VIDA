@@ -1,12 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/vida.dir/Containers/Control/Control.cpp.o"
-  "CMakeFiles/vida.dir/Containers/Control/Control.cpp.o.d"
   "CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o"
-  "CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o.d"
   "CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o"
-  "CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o.d"
   "CMakeFiles/vida.dir/main.cpp.o"
-  "CMakeFiles/vida.dir/main.cpp.o.d"
   "vida"
   "vida.pdb"
 )

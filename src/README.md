@@ -10,3 +10,9 @@ Caso não funcione é so excluir a pasta build da seguinte maneira:
 2- cmake -S src -B build -----------------Identificar as pastas src e build
 3- cmake --build build -------------------Compilar
 4- ./build/exercices3 OU ./build/no ------Executar
+
+# Steering control and encoder
+
+Video: https://youtu.be/gFds-Ci4kwE
+
+This repository contains the VIDA standalone platform codes.

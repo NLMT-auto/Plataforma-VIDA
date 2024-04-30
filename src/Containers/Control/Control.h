@@ -2,6 +2,7 @@
 #define CONTROL_H
 #include "../../Utils/PosixShMem/PosixShMem.h"
 #include "../../Utils/ThreadBase/ThreadBase.h"
+#include "../files/control_struct.h"
 #include <string>
 #include <stdio.h>
 #include <iostream>
@@ -15,11 +16,11 @@ public:
 
 private:
 
-    PosixShMem *data;
+    PosixShMem *controlData;
     void startActivity() override;
     void stopActivity() override;
     int run() override;
-    
-    
+
+    CONTROL_DATA myData;
 };
 #endif
