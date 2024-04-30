@@ -1,12 +1,10 @@
-#ifndef CONTROL_H
-#define CONTROL_H
+#ifndef CONTROLE_H
+#define CONTROLE_H
 
-#include <iostream> 
+#include <iostream>
 #include "../../Utils/PosixShMem/PosixShMem.h" //biblioteca para uso da memoria Compartilhada
 #include "../../Utils/ThreadBase/ThreadBase.h" //biblioteca para multThread
 #include <wiringPi.h>                          // biblioteca para uso das GPIO
-
-#include "files/control_struct.h"
 
 using namespace std;
 

@@ -1,4 +1,4 @@
-#include "Control.h" //Arquivo de declaração da classe Control
+#include "Control.h"
 #include "../files/test_struct.h"
 #include <stdio.h>
 #include <iostream>
