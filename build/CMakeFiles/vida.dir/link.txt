@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/vida.dir/Containers/Control/Control.cpp.o CMakeFiles/vida.dir/Utils/PosixShMem/PosixShMem.cpp.o CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o CMakeFiles/vida.dir/main.cpp.o  -o vida  -lpthread -lrt 

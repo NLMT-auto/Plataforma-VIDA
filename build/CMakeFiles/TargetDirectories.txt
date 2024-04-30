@@ -1,3 +1,0 @@
-/home/whilker/Documentos/GitHub/Plataforma-VIDA/build/CMakeFiles/rebuild_cache.dir
-/home/whilker/Documentos/GitHub/Plataforma-VIDA/build/CMakeFiles/edit_cache.dir
-/home/whilker/Documentos/GitHub/Plataforma-VIDA/build/CMakeFiles/vida.dir
