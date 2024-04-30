@@ -1,5 +1,5 @@
 #include "Control.h" //Arquivo de declaração da classe Control
-#include "../files/test_struct.h"
+#include "files/test_struct.h"
 #include <stdio.h>
 #include <iostream>
 #include <cstdlib>
@@ -9,28 +9,20 @@
 #include <utility>
 #include <math.h>
 #include <ctime>
-// #include <wiringPi.h>                             //Biblioteca de manipulação de GPIO para raspberry/odroid
+#include <wiringPi.h>             //Biblioteca de manipulação de GPIO para raspberry/odroid
 #include <vector>
 #include "../../Utils/road_time.h"
-#include "../files/general_defines.h"
-#include "../files/control_struct.h"
+#include "files/general_defines.h"
+#include "files/control_struct.h"
 #include "../../Utils/ThreadBase/ThreadBase.h"
 #include <fstream>
-// Libraries Encoder
-#include "../files/test_struct.h"
+#include "files/test_struct.h"
 
 // Steering cotrol
 Control::Control()
 {
-    this->controlData = NULL;
-    this->startActivity();
-
-    //pinMode(0, OUTPUT);
-    //digitalWrite(0, HIGH);
-
-    //delay(1000);
-
-    
+    this->memoriaCompartilhada = NULL;
+    this->startActivity();    
 }
 
 Control::~Control()

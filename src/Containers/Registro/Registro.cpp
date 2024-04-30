@@ -1,6 +1,5 @@
 #include "Registro.h"
 #include "../../Utils/Serial/Serial.h"
-#include "../DefinePin.h"
 
 
 Registro::Registro()
