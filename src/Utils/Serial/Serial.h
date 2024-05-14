@@ -4,6 +4,7 @@
 #include <iostream>
 #include <wiringPi.h>
 #include <wiringSerial.h>
+#include <string>
 
 using namespace std;
 
@@ -16,6 +17,7 @@ private:
     int interrupt;  
     
 public: 
+
     Serial(int interrupt, int baudRate);
     ~Serial();
     

@@ -22,18 +22,21 @@ target_sources(
         main.cpp
 
         #Control
-        Containers/Control/Control.cpp
-        Containers/Control/Control.h
+        #Containers/Control/Control.cpp
+        #Containers/Control/Control.h
 
-        Containers/Control/files/control_struct.h
-        Containers/Control/files/general_defines.h
-        Containers/Control/files/shmem_struct.h
-        Containers/Control/files/test_struct.h
+        #Containers/Control/files/control_struct.h
+        #Containers/Control/files/general_defines.h
+        #Containers/Control/files/shmem_struct.h
+        #Containers/Control/files/test_struct.h
+
+        #Files
+        Files/DefinePin.h
+        Files/Struct_encoders.h
 
         #Controle
         Containers/Controle/Controle.cpp
-        Containers/Controle/Controle.h
-        Containers/Controle/DefinePin.h       
+        Containers/Controle/Controle.h      
 
         #Registro
         Containers/Registro/Registro.cpp

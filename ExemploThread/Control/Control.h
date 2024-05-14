@@ -1,4 +1,4 @@
-#ifndef CONTROL_H
+#ifndef CONTROLH
 #define CONTROL_H
 
 #include <iostream> 
@@ -6,7 +6,7 @@
 #include "../../Utils/ThreadBase/ThreadBase.h" //biblioteca para multThread
 #include <wiringPi.h>                          // biblioteca para uso das GPIO
 
-#include "files/control_struct.h"
+#include "../files/control_struct.h"
 
 using namespace std;
 

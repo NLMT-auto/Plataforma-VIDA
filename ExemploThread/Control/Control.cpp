@@ -1,5 +1,5 @@
 #include "Control.h" //Arquivo de declaração da classe Control
-#include "files/test_struct.h"
+#include "../files/test_struct.h"
 #include <stdio.h>
 #include <iostream>
 #include <cstdlib>
@@ -12,11 +12,11 @@
 #include <wiringPi.h>             //Biblioteca de manipulação de GPIO para raspberry/odroid
 #include <vector>
 #include "../../Utils/road_time.h"
-#include "files/general_defines.h"
-#include "files/control_struct.h"
+#include "../files/general_defines.h"
+#include "../files/control_struct.h"
 #include "../../Utils/ThreadBase/ThreadBase.h"
 #include <fstream>
-#include "files/test_struct.h"
+#include "../files/test_struct.h"
 
 // Steering cotrol
 Control::Control()

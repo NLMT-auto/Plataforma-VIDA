@@ -1,7 +1,7 @@
 #ifndef CONTROL_STRUCUT_H
 #define CONTROL_STRUCUT_H
 #include <stdint.h>
-#include "../../../Utils/road_time.h"
+#include "../../Utils/road_time.h"
 
 typedef struct{
     road_time_t time;
