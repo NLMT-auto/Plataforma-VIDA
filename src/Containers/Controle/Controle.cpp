@@ -1,50 +1,41 @@
 #include "Controle.h"
 
-
-Controle::Controle(){
+Controle::Controle()
+{
     this->udp = NULL; 
-    this->serialMotor = NULL;   
+    this->serialMotor = NULL;
     this->startActivity();
 }
 
-Controle::Controle(Serial *serialMotor){
-    this->udp = NULL; 
-    this->serialMotor = serialMotor;   
-    this->startActivity();
-}
-
-Controle::~Controle(){
-    this->stopActivity();
-}
-
-void Controle::startActivity() {
-
-    cout << "Inicializando o a thread de controle" << endl;
+void Controle::startActivity()
+{
+    cout << "Inicializando a thread de controle" << endl;
 
     this->udp = new UDP();
-
-    if(serialMotor == NULL)
-    {  
-        serialMotor = new Serial(motorInterrupt, BAUD_RATE);
-    }
-
-
+    this->serialMotor = new Serial(motorInterrupt, BAUD_RATE); 
     ThreadBase::startActivity();
 }
 
-void Controle::stopActivity() {
+Controle::~Controle()
+{
+    this->stopActivity();
+}
+
+void Controle::stopActivity() 
+{
 
     delete this->udp;
-    delete serialMotor;
+    delete this->serialMotor;
     
     this->udp = NULL;
     serialMotor = NULL;
 
     ThreadBase::stopActivity();
-    printf("Thread de controle desligada");
+    cout << "Finalizando a thread de controle" << endl;
 }
 
-int Controle::run() {
+int Controle::run()
+{
 
     this->is_running = 1;
     this->is_alive = 1;
@@ -52,9 +43,7 @@ int Controle::run() {
     this->tim1.tv_sec = 0;
     this->tim1.tv_nsec = 10L;
 
-    
-
-   while (this->is_alive)
+    while (this->is_alive)
     {
         serialMotor->write(udp->read());        
         nanosleep(&this->tim1, &this->tim2);

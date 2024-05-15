@@ -10,12 +10,11 @@
 using namespace std;
 
 int main (int argc, char* argv[])  /// < Main function that create and calls for reading and writing in memory
-{   
-    Serial *serialMotor = new Serial(motorInterrupt, BAUD_RATE);    
-    //Controle *controle = new Controle(serialMotor);
-    Registro * registro = new Registro(NULL, serialMotor);   
+{      
+    Controle *controle = new Controle();
+    //Registro * registro = new Registro(NULL, serialMotor);
 
-   
+    11;
 
     int quit = -1;
     do
@@ -24,8 +23,8 @@ int main (int argc, char* argv[])  /// < Main function that create and calls for
     }
     while (quit != 0);
 
-    //delete controle;
-    delete registro;
+    delete controle;
+    //delete registro;
 
     return EXIT_SUCCESS;
 }
