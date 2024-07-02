@@ -2,25 +2,24 @@
 #define SERIAL_H
 
 #include <iostream>
-#include <wiringPi.h>
 #include <wiringSerial.h>
 #include <string>
+
+#include "../../Files/DefinePin.h"
+#include "../../Utils/road_time.h"
 
 using namespace std;
 
 class Serial
-{    
+{
 private:
+    int serialport;
+    road_time_t time;
 
-    int serialport; 
-    int baudRate; 
-    int interrupt;  
-    
-public: 
-
-    Serial(int interrupt, int baudRate);
+public:
+    Serial(string port);
     ~Serial();
-    
+
     void write(string s);
     string read(char c);
 };

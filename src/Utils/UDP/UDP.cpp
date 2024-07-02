@@ -1,8 +1,9 @@
 #include "UDP.h"
 
-UDP::UDP(){      
-       
-    // CriaÃ§o do socket UDP
+UDP::UDP()
+{
+
+    // Criaçao do socket UDP
     if ((sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
     {
         cerr << "Erro ao criar o socket" << endl;
@@ -25,15 +26,15 @@ UDP::UDP(){
     len = sizeof(cliaddr);
 }
 
-UDP::~UDP(){
+UDP::~UDP()
+{
     close(sockfd);
 }
 
-string UDP::read(){
-
+string UDP::read()
+{
     int n = recvfrom(sockfd, (char *)buffer, BUFFER_SIZE, MSG_WAITALL, (struct sockaddr *)&cliaddr, &len);
     buffer[n] = '\0';
-   
+
     return buffer;
 }
-

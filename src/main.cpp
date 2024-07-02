@@ -1,30 +1,29 @@
 #include <iostream>
-#include <cstdlib>
 
-#include "Containers/Controle/Controle.h"
-#include "Containers/Registro/Registro.h"
-#include "Utils/Serial/Serial.h"
-#include "Files/DefinePin.h"
-
+#include "Containers/Control/Control.h"
+#include "Containers/Encoder/Encoder.h"
+#include "Containers/Steering/Steering.h"
+#include "Containers/Record/Record.h"
 
 using namespace std;
 
-int main (int argc, char* argv[])  /// < Main function that create and calls for reading and writing in memory
-{      
-    Controle *controle = new Controle();
-    //Registro * registro = new Registro(NULL, serialMotor);
-
-    11;
+int main(int argc, char *argv[])
+{
+    Control *control = new Control();
+    Encoder *encoder = new Encoder();
+    Steering *steering = new Steering();
+    Record *registro = new Record();
 
     int quit = -1;
     do
-    {   
+    {
         cin >> quit;
-    }
-    while (quit != 0);
+    } while (quit != 0);
 
-    delete controle;
-    //delete registro;
+    delete control;
+    delete encoder;
+    delete steering;
+    delete registro;
 
     return EXIT_SUCCESS;
 }
