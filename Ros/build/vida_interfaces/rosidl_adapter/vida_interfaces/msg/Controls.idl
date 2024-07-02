@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from vida_interfaces/msg/Controls.msg
+// generated code does not contain a copyright notice
+
+
+module vida_interfaces {
+  module msg {
+    struct Controls {
+      int64 x;
+
+      int64 y;
+    };
+  };
+};

@@ -1,0 +1,7 @@
+[0.080s] Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces -DCMAKE_INSTALL_PREFIX=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces
+[0.101s] [31mCMake Error at CMakeLists.txt:21:
+[0.102s]   Parse error.  Expected a newline, got identifier with text "cc".
+[0.102s] 
+[0.102s] [0m
+[0.104s] -- Configuring incomplete, errors occurred!
+[0.111s] Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces -DCMAKE_INSTALL_PREFIX=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces
