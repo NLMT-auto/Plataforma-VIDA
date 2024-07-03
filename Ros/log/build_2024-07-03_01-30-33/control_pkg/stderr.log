@@ -1,0 +1,25 @@
+[33mCMake Warning at CMakeLists.txt:12 (find_package):
+  By not providing "FindUtils.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Utils", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Utils" with any of
+  the following names:
+
+    UtilsConfig.cmake
+    utils-config.cmake
+
+  Add the installation prefix of "Utils" to CMAKE_PREFIX_PATH or set
+  "Utils_DIR" to a directory containing one of the above files.  If "Utils"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+[0m
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+  ament_target_dependencies() the passed package name 'Utils' was not found
+  before
+Call Stack (most recent call first):
+  CMakeLists.txt:18 (ament_target_dependencies)
+
+[0m
+gmake: *** [Makefile:294: cmake_check_build_system] Erro 1

@@ -1,0 +1,112 @@
+[0.000000] (-) TimerEvent: {}
+[0.001021] (-) JobUnselected: {'identifier': 'vida_interfaces'}
+[0.002014] (control_pkg) JobQueued: {'identifier': 'control_pkg', 'dependencies': OrderedDict([('vida_interfaces', '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces')])}
+[0.002632] (control_pkg) JobStarted: {'identifier': 'control_pkg'}
+[0.091511] (control_pkg) JobProgress: {'identifier': 'control_pkg', 'progress': 'cmake'}
+[0.092092] (control_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg', '-DCMAKE_INSTALL_PREFIX=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg'], 'cwd': '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'pt_BR:pt:pt_PT:en'), ('USER', 'odroid'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/odroid'), ('OLDPWD', '/home/odroid'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('ROS_IP', '192.168.0.6'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '16438'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/odroid/Documentos/Plataforma-VIDA/Ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'odroid'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/odroid:@/tmp/.ICE-unix/3458,unix/odroid:/tmp/.ICE-unix/3458'), ('GDM_LANG', 'pt_BR'), ('PAPERSIZE', 'a4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('media_arm_audio_decoder', 'ape,flac,dts,ac3,eac3,wma,wmapro,mp3,aac,aac_latm,vorbis,raac,cook,amr,pcm,adpcm'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'pt_BR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/odroid/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/odroid/data'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/odroid'), ('AMENT_PREFIX_PATH', '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:7755bb6a-cb0d-40b8-88fe-7bcf26386efb'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://192.168.0.5:11311'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('XDG_VTNR', '7'), ('PWD', '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/mate:/usr/share/mate:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', '192.168.0.6'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('media_libplayer_modules', 'libcurl_mod.so,libdash_mod.so,libvhls_mod.so'), ('CMAKE_PREFIX_PATH', '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[0.100068] (-) TimerEvent: {}
+[0.203095] (-) TimerEvent: {}
+[0.304104] (-) TimerEvent: {}
+[0.405177] (-) TimerEvent: {}
+[0.505858] (-) TimerEvent: {}
+[0.607377] (-) TimerEvent: {}
+[0.708070] (-) TimerEvent: {}
+[0.809053] (-) TimerEvent: {}
+[0.909948] (-) TimerEvent: {}
+[0.971964] (control_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.010223] (-) TimerEvent: {}
+[1.111560] (-) TimerEvent: {}
+[1.213174] (-) TimerEvent: {}
+[1.315473] (-) TimerEvent: {}
+[1.416490] (-) TimerEvent: {}
+[1.517389] (-) TimerEvent: {}
+[1.618300] (-) TimerEvent: {}
+[1.719147] (-) TimerEvent: {}
+[1.733700] (control_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.778241] (control_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.819386] (-) TimerEvent: {}
+[1.920474] (-) TimerEvent: {}
+[2.021524] (-) TimerEvent: {}
+[2.070321] (control_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.099559] (control_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.101433] (control_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.103864] (control_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.113049] (control_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.121689] (-) TimerEvent: {}
+[2.222318] (-) TimerEvent: {}
+[2.323069] (-) TimerEvent: {}
+[2.424245] (-) TimerEvent: {}
+[2.431525] (control_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.449038] (control_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.453626] (control_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.455363] (control_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.467387] (control_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.524456] (-) TimerEvent: {}
+[2.625469] (-) TimerEvent: {}
+[2.726471] (-) TimerEvent: {}
+[2.827165] (-) TimerEvent: {}
+[2.928007] (-) TimerEvent: {}
+[2.938509] (control_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.028174] (-) TimerEvent: {}
+[3.128763] (-) TimerEvent: {}
+[3.229441] (-) TimerEvent: {}
+[3.296783] (control_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.329636] (-) TimerEvent: {}
+[3.425013] (control_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.429848] (-) TimerEvent: {}
+[3.440322] (control_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.467551] (control_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.523450] (control_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.529980] (-) TimerEvent: {}
+[3.589872] (control_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.630155] (-) TimerEvent: {}
+[3.730790] (-) TimerEvent: {}
+[3.822935] (control_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.831056] (-) TimerEvent: {}
+[3.831958] (control_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.931225] (-) TimerEvent: {}
+[4.031975] (-) TimerEvent: {}
+[4.133709] (-) TimerEvent: {}
+[4.195772] (control_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.233956] (-) TimerEvent: {}
+[4.266353] (control_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.334151] (-) TimerEvent: {}
+[4.378078] (control_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.407998] (control_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.434393] (-) TimerEvent: {}
+[4.535472] (-) TimerEvent: {}
+[4.610043] (control_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.611999] (control_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.635652] (-) TimerEvent: {}
+[4.736312] (-) TimerEvent: {}
+[4.837013] (-) TimerEvent: {}
+[4.851010] (control_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.851621] (control_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.937198] (-) TimerEvent: {}
+[5.037885] (-) TimerEvent: {}
+[5.138541] (-) TimerEvent: {}
+[5.239451] (-) TimerEvent: {}
+[5.340057] (-) TimerEvent: {}
+[5.415040] (control_pkg) StdoutLine: {'line': b'-- Found vida_interfaces: 0.0.0 (/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake)\n'}
+[5.440206] (-) TimerEvent: {}
+[5.475939] (control_pkg) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:13 (find_package):\n'}
+[5.476962] (control_pkg) StderrLine: {'line': b'  find_package called with invalid argument "wiringPi"\n'}
+[5.477392] (control_pkg) StderrLine: {'line': b'\n'}
+[5.477967] (control_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[5.478360] (control_pkg) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[5.478637] (control_pkg) StderrLine: {'line': b'  find_package called with invalid argument "wiringPiDev"\n'}
+[5.478874] (control_pkg) StderrLine: {'line': b'\n'}
+[5.479153] (control_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[5.479388] (control_pkg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[5.479626] (control_pkg) StdoutLine: {'line': b'See also "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/CMakeOutput.log".\n'}
+[5.480056] (control_pkg) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):\n'}
+[5.480406] (control_pkg) StderrLine: {'line': b"  ament_target_dependencies() the passed package name 'wiringPi' was not\n"}
+[5.480712] (control_pkg) StderrLine: {'line': b'  found before\n'}
+[5.480973] (control_pkg) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.481230] (control_pkg) StderrLine: {'line': b'  CMakeLists.txt:17 (ament_target_dependencies)\n'}
+[5.481481] (control_pkg) StderrLine: {'line': b'\n'}
+[5.481731] (control_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[5.506354] (control_pkg) CommandEnded: {'returncode': 1}
+[5.540560] (-) TimerEvent: {}
+[5.595743] (control_pkg) JobEnded: {'identifier': 'control_pkg', 'rc': 1}
+[5.606804] (-) EventReactorShutdown: {}

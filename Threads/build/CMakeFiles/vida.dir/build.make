@@ -220,8 +220,8 @@ vida: CMakeFiles/vida.dir/Utils/Serial/Serial.cpp.o
 vida: CMakeFiles/vida.dir/Utils/ThreadBase/ThreadBase.cpp.o
 vida: CMakeFiles/vida.dir/Utils/UDP/UDP.cpp.o
 vida: CMakeFiles/vida.dir/build.make
-vida: /usr/lib/aarch64-linux-gnu/libwiringPi.so
-vida: /usr/lib/aarch64-linux-gnu/libwiringPiDev.so
+vida: /usr/local/lib/libwiringPi.so
+vida: /usr/local/lib/libwiringPiDev.so
 vida: CMakeFiles/vida.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/odroid/Documentos/Plataforma-VIDA/Threads/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable vida"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vida.dir/link.txt --verbose=$(VERBOSE)

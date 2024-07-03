@@ -1,0 +1,10 @@
+/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/uninstall.dir
+/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/control_pkg_uninstall.dir
+/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/control.dir
+/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/test.dir
+/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/edit_cache.dir
+/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/rebuild_cache.dir
+/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/list_install_components.dir
+/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/install.dir
+/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/install/local.dir
+/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/install/strip.dir

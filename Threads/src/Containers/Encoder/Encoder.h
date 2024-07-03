@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <sstream>
-#include <wiringPi.h>
+#include <wiringpi2/wiringPi.h>
 
 #include "../../Utils/PosixShMem/PosixShMem.h"
 #include "../../Utils/ThreadBase/ThreadBase.h"

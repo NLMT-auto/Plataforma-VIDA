@@ -2,7 +2,7 @@
 #define CONTROL_H
 
 #include <iostream>
-#include <wiringPi.h>
+#include <wiringpi2/wiringPi.h>
 
 #include "../../Utils/UDP/UDP.h"
 #include "../../Utils/Serial/Serial.h"
