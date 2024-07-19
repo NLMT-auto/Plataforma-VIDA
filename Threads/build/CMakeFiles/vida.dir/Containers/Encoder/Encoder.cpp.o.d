@@ -149,8 +149,7 @@ CMakeFiles/vida.dir/Containers/Encoder/Encoder.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/sstream \
- /usr/include/c++/11/bits/sstream.tcc \
- /usr/local/include/wiringpi2/wiringPi.h \
+ /usr/include/c++/11/bits/sstream.tcc /usr/include/wiringpi2/wiringPi.h \
  /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Containers/Encoder/../../Utils/PosixShMem/PosixShMem.h \
  /usr/include/unistd.h /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
  /usr/include/aarch64-linux-gnu/bits/environments.h \
@@ -167,7 +166,7 @@ CMakeFiles/vida.dir/Containers/Encoder/Encoder.cpp.o: \
  /usr/include/semaphore.h /usr/include/aarch64-linux-gnu/bits/semaphore.h \
  /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Containers/Encoder/../../Utils/ThreadBase/ThreadBase.h \
  /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Containers/Encoder/../../Utils/Serial/Serial.h \
- /usr/local/include/wiringpi2/wiringSerial.h \
+ /usr/include/wiringpi2/wiringSerial.h \
  /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Containers/Encoder/../../Utils/Serial/../../Files/DefinePin.h \
  /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Containers/Encoder/../../Utils/Serial/../../Utils/road_time.h \
  /usr/include/aarch64-linux-gnu/sys/time.h \

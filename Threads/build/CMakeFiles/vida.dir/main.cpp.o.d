@@ -148,7 +148,7 @@ CMakeFiles/vida.dir/main.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
  /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Containers/Control/Control.h \
- /usr/local/include/wiringpi2/wiringPi.h \
+ /usr/include/wiringpi2/wiringPi.h \
  /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Containers/Control/../../Utils/UDP/UDP.h \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
@@ -176,7 +176,7 @@ CMakeFiles/vida.dir/main.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
  /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Containers/Control/../../Utils/Serial/Serial.h \
- /usr/local/include/wiringpi2/wiringSerial.h \
+ /usr/include/wiringpi2/wiringSerial.h \
  /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Containers/Control/../../Utils/Serial/../../Files/DefinePin.h \
  /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Containers/Control/../../Utils/Serial/../../Utils/road_time.h \
  /usr/include/aarch64-linux-gnu/sys/time.h \
