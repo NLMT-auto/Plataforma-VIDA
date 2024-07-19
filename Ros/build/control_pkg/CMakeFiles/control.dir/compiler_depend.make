@@ -182,7 +182,7 @@ CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /usr/local/include/wiringpi2/wiringSerial.h \
+  /usr/include/wiringpi2/wiringSerial.h \
   /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Files/DefinePin.h \
   /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/road_time.h \
   /usr/include/aarch64-linux-gnu/sys/time.h
@@ -370,7 +370,7 @@ CMakeFiles/control.dir/src/Control/Control.cpp.o: /home/odroid/Documentos/Plataf
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /usr/local/include/wiringpi2/wiringPi.h \
+  /usr/include/wiringpi2/wiringPi.h \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -877,7 +877,7 @@ CMakeFiles/control.dir/src/Control/Control.cpp.o: /home/odroid/Documentos/Plataf
   /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__builder.hpp \
   /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__traits.hpp \
   /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.h \
-  /usr/local/include/wiringpi2/wiringSerial.h \
+  /usr/include/wiringpi2/wiringSerial.h \
   /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Files/DefinePin.h \
   /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/road_time.h \
   /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Files/DefinePin.h
@@ -1173,8 +1173,6 @@ CMakeFiles/control.dir/src/Control/Control.cpp.o: /home/odroid/Documentos/Plataf
 
 /usr/lib/gcc/aarch64-linux-gnu/11/include/stdarg.h:
 
-/usr/local/include/wiringpi2/wiringSerial.h:
-
 /usr/include/c++/11/bits/istream.tcc:
 
 /usr/include/strings.h:
@@ -1211,6 +1209,8 @@ CMakeFiles/control.dir/src/Control/Control.cpp.o: /home/odroid/Documentos/Plataf
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
 
+/usr/include/wiringpi2/wiringPi.h:
+
 /usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
@@ -1226,10 +1226,6 @@ CMakeFiles/control.dir/src/Control/Control.cpp.o: /home/odroid/Documentos/Plataf
 /usr/include/c++/11/bits/basic_string.tcc:
 
 /usr/include/asm-generic/errno.h:
-
-/usr/local/include/wiringpi2/wiringPi.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
 
 /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Files/DefinePin.h:
 
@@ -1887,6 +1883,8 @@ CMakeFiles/control.dir/src/Control/Control.cpp.o: /home/odroid/Documentos/Plataf
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
 
+/usr/include/wiringpi2/wiringSerial.h:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
@@ -2242,6 +2240,8 @@ CMakeFiles/control.dir/src/Control/Control.cpp.o: /home/odroid/Documentos/Plataf
 /usr/include/c++/11/thread:
 
 /opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:
 

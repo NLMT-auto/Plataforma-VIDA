@@ -4,3 +4,5 @@ vida_interfaces.egg-info/PKG-INFO
 vida_interfaces.egg-info/SOURCES.txt
 vida_interfaces.egg-info/dependency_links.txt
 vida_interfaces.egg-info/top_level.txt
+vida_interfaces/msg/__init__.py
+vida_interfaces/msg/_controls.py
