@@ -83,6 +83,7 @@ rosidl_generator_c/vida_interfaces/msg/controls.h: /opt/ros/humble/share/rosidl_
 rosidl_generator_c/vida_interfaces/msg/controls.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/vida_interfaces/msg/controls.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/vida_interfaces/msg/controls.h: rosidl_adapter/vida_interfaces/msg/Controls.idl
+rosidl_generator_c/vida_interfaces/msg/controls.h: rosidl_adapter/vida_interfaces/msg/SensorDatas.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c__arguments.json
 
@@ -95,8 +96,23 @@ rosidl_generator_c/vida_interfaces/msg/detail/controls__struct.h: rosidl_generat
 rosidl_generator_c/vida_interfaces/msg/detail/controls__type_support.h: rosidl_generator_c/vida_interfaces/msg/controls.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vida_interfaces/msg/detail/controls__type_support.h
 
+rosidl_generator_c/vida_interfaces/msg/sensor_datas.h: rosidl_generator_c/vida_interfaces/msg/controls.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vida_interfaces/msg/sensor_datas.h
+
+rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.h: rosidl_generator_c/vida_interfaces/msg/controls.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.h
+
+rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__struct.h: rosidl_generator_c/vida_interfaces/msg/controls.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__struct.h
+
+rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__type_support.h: rosidl_generator_c/vida_interfaces/msg/controls.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__type_support.h
+
 rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.c: rosidl_generator_c/vida_interfaces/msg/controls.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.c
+
+rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c: rosidl_generator_c/vida_interfaces/msg/controls.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c
 
 CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.c.o: CMakeFiles/vida_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.c.o: rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.c
@@ -112,19 +128,35 @@ CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_inter
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.c -o CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.c.s
 
+CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.o: CMakeFiles/vida_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.o: rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c
+CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.o: CMakeFiles/vida_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.o -MF CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.o.d -o CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.o -c /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c
+
+CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c > CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.i
+
+CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c -o CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.s
+
 # Object files for target vida_interfaces__rosidl_generator_c
 vida_interfaces__rosidl_generator_c_OBJECTS = \
-"CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.c.o"
+"CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.c.o" \
+"CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.o"
 
 # External object files for target vida_interfaces__rosidl_generator_c
 vida_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libvida_interfaces__rosidl_generator_c.so: CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.c.o
+libvida_interfaces__rosidl_generator_c.so: CMakeFiles/vida_interfaces__rosidl_generator_c.dir/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c.o
 libvida_interfaces__rosidl_generator_c.so: CMakeFiles/vida_interfaces__rosidl_generator_c.dir/build.make
 libvida_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libvida_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libvida_interfaces__rosidl_generator_c.so: CMakeFiles/vida_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libvida_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libvida_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vida_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -140,6 +172,11 @@ CMakeFiles/vida_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vi
 CMakeFiles/vida_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.h
 CMakeFiles/vida_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vida_interfaces/msg/detail/controls__struct.h
 CMakeFiles/vida_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vida_interfaces/msg/detail/controls__type_support.h
+CMakeFiles/vida_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.c
+CMakeFiles/vida_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.h
+CMakeFiles/vida_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__struct.h
+CMakeFiles/vida_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__type_support.h
+CMakeFiles/vida_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/vida_interfaces/msg/sensor_datas.h
 	cd /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces /home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/CMakeFiles/vida_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/vida_interfaces__rosidl_generator_c.dir/depend
 

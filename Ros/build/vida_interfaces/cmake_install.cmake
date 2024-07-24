@@ -360,7 +360,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vida_interfaces/msg" TYPE FILE FILES "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_adapter/vida_interfaces/msg/SensorDatas.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vida_interfaces/msg" TYPE FILE FILES "/home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces/msg/Controls.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vida_interfaces/msg" TYPE FILE FILES "/home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces/msg/SensorDatas.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

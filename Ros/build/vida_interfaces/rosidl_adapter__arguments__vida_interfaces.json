@@ -1,6 +1,7 @@
 {
   "package_name": "vida_interfaces",
   "non_idl_tuples": [
-    "/home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces:msg/Controls.msg"
+    "/home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces:msg/Controls.msg",
+    "/home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces:msg/SensorDatas.msg"
   ]
 }

@@ -78,11 +78,18 @@ rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__rosidl_t
 rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
 rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__rosidl_typesupport_introspection_c.h: rosidl_adapter/vida_interfaces/msg/Controls.idl
+rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__rosidl_typesupport_introspection_c.h: rosidl_adapter/vida_interfaces/msg/SensorDatas.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_typesupport_introspection_c__arguments.json
 
+rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__type_support.c: rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__type_support.c
+
+rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c: rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c
 
 CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__type_support.c.o: CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__type_support.c.o: rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__type_support.c
@@ -98,21 +105,37 @@ CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__type_support.c -o CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__type_support.c.s
 
+CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.o: CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.o: rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c
+CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.o: CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.o -MF CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.o.d -o CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.o -c /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c
+
+CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c > CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.i
+
+CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c -o CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.s
+
 # Object files for target vida_interfaces__rosidl_typesupport_introspection_c
 vida_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
-"CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__type_support.c.o"
+"CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__type_support.c.o" \
+"CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.o"
 
 # External object files for target vida_interfaces__rosidl_typesupport_introspection_c
 vida_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libvida_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__type_support.c.o
+libvida_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c.o
 libvida_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/build.make
 libvida_interfaces__rosidl_typesupport_introspection_c.so: libvida_interfaces__rosidl_generator_c.so
 libvida_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 libvida_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libvida_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libvida_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libvida_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libvida_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,6 +148,8 @@ CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__rosidl_typesupport_introspection_c.h
 CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/controls__type_support.c
+CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__rosidl_typesupport_introspection_c.h
+CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/vida_interfaces/msg/detail/sensor_datas__type_support.c
 	cd /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces /home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c.dir/depend
 

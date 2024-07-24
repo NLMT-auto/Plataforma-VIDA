@@ -67,6 +67,7 @@ include CMakeFiles/vida_interfaces.dir/compiler_depend.make
 include CMakeFiles/vida_interfaces.dir/progress.make
 
 CMakeFiles/vida_interfaces: /home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces/msg/Controls.msg
+CMakeFiles/vida_interfaces: /home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces/msg/SensorDatas.msg
 
 vida_interfaces: CMakeFiles/vida_interfaces
 vida_interfaces: CMakeFiles/vida_interfaces.dir/build.make

@@ -5,7 +5,7 @@
 #include <string.h>
 #include "rclcpp/rclcpp.hpp"
 #include "vida_interfaces/msg/controls.hpp"
-#include "vida_interfaces/msg/*"
+#include "vida_interfaces/msg/sensor_datas.hpp"
 #include <fstream>
 #include <sstream>
 #include <string>
@@ -20,18 +20,18 @@ class Record : public Node
 private:
     
     ofstream outputSensors;
-    string BufferDataRecived;      
+    ostringstream BufferDataRecived;      
     int count = 0;  
 
-    Subscription<vida_interfaces::msg::SensorData>::SharedPtr subscriber;
+    Subscription<vida_interfaces::msg::SensorDatas>::SharedPtr subscriber;
     
     
-    void sensorDataCallBack(const vida_interfaces::msg::SensorData::SharedPtr msg);
+    void sensorDataCallBack(const vida_interfaces::msg::SensorDatas::SharedPtr msg);
     void saveSensors();
 
 public:
-    Sensors(string name);
-    ~Sensors();
+    Record(string name);
+    ~Record();
 };
 
 #endif

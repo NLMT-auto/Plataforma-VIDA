@@ -2,7 +2,7 @@
 
 Record::Record(string name) : Node(name)
 {
-    subscriber = this->create_subscription<vida_interfaces::msg::SensorData>("sensorData", 10, bind(&Control::sensorDataCallBack, this, _1));
+    subscriber = this->create_subscription<vida_interfaces::msg::SensorDatas>("sensorData", 10, bind(&Record::sensorDataCallBack, this, _1));
     RCLCPP_INFO(this->get_logger(), "record has been started");
 }
 
@@ -11,17 +11,24 @@ Record::~Record()
     saveSensors();
 }
 
-void Control::callbackControls(const vida_interfaces::msg::Controls::SharedPtr msg)
+void Record::sensorDataCallBack(const vida_interfaces::msg::SensorDatas::SharedPtr msg)
 {
-    BufferDataRecived << this->get_clock() << ";"
-                      << msg->leftPulses << ";"
-                      << msg->rigthPulses << ";"
-                      << msg->backPulses << ";"
+
+    auto timestamp = this->get_clock()->now();
+    auto time_t_now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+
+    stringstream ss;
+    ss << std::put_time(std::localtime(&time_t_now), "%Y-%m-%d %H:%M:%S");
+
+    BufferDataRecived << ss.str()<< ";"
+                      << msg->left_pulses << ";"
+                      << msg->right_pulses << ";"
+                      << msg->back_pulses << ";"
                       << msg->steering << endl;
 
     ++count;
 
-    if ((count % 100) == 0)
+    if ((count % 10) == 0)
     {
         saveSensors();
         BufferDataRecived.str("");

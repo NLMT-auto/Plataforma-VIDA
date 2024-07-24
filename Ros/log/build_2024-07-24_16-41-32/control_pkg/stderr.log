@@ -1,0 +1,31 @@
+gmake[2]: *** Sem regra para processar o alvo '/usr/local/lib/libwiringPi.so', necessário por 'control'.  Pare.
+gmake[2]: ** Esperando que outros processos terminem.
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:[m[K In constructor ‘[01m[KSerial::Serial(std::string)[m[K’:
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:8:24:[m[K [01;31m[Kerror: [m[K‘[01m[KserialOpen[m[K’ was not declared in this scope
+    8 |     this->serialport = [01;31m[KserialOpen[m[K(port.c_str(), BAUD_RATE);
+      |                        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:[m[K In destructor ‘[01m[KSerial::~Serial()[m[K’:
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:13:5:[m[K [01;31m[Kerror: [m[K‘[01m[KserialClose[m[K’ was not declared in this scope
+   13 |     [01;31m[KserialClose[m[K(serialport);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:[m[K In member function ‘[01m[Kvoid Serial::write(std::string)[m[K’:
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:18:5:[m[K [01;31m[Kerror: [m[K‘[01m[KserialPrintf[m[K’ was not declared in this scope; did you mean ‘[01m[Kserialport[m[K’?
+   18 |     [01;31m[KserialPrintf[m[K(serialport, "%s\n", s.c_str());
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[Kserialport[m[K
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:[m[K In member function ‘[01m[Kstd::string Serial::read(char)[m[K’:
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:31:13:[m[K [01;31m[Kerror: [m[K‘[01m[KserialDataAvail[m[K’ was not declared in this scope
+   31 |         if ([01;31m[KserialDataAvail[m[K(serialport))
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:33:33:[m[K [01;31m[Kerror: [m[K‘[01m[KserialGetchar[m[K’ was not declared in this scope
+   33 |             char incomingByte = [01;31m[KserialGetchar[m[K(serialport); // Lê um byte da porta serial
+      |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/control.dir/build.make:90: CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o] Erro 1
+In file included from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Threads/src/Utils/Serial/Serial.h:9[m[K,
+                 from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/Control.h:12[m[K,
+                 from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/Control.cpp:1[m[K:
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Threads/src/Utils/Serial/../../Utils/road_time.h:16:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kroad_time_t road_time()[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+   16 | static road_time_t [01;35m[Kroad_time[m[K(void)      // Function that returns the time (ms) since midnight on 01/01/1970
+      |                    [01;35m[K^~~~~~~~~[m[K
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/control.dir/all] Erro 2
+gmake: *** [Makefile:146: all] Erro 2

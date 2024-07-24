@@ -11,7 +11,7 @@ Sensors::Sensors(string name) : Node(name)
     pinMode(encoderInterrupt, OUTPUT);
     digitalWrite(encoderInterrupt, LOW);
 
-    publisher = this->create_publisher<vida_interfaces::msg::SensorData>("sensorData", 10);
+    publisher = this->create_publisher<vida_interfaces::msg::SensorDatas>("sensorData", 10);
     timer = this->create_wall_timer(chrono::nanoseconds((int)(1e9 / frequencyPublish)), bind(&Sensors::readSensors, this));
     RCLCPP_INFO(this->get_logger(), "sensors has been started");
 }
@@ -27,13 +27,12 @@ void Sensors::readSensors()
     dataRecived = sensorSerial->read('\n');
     digitalWrite(encoderInterrupt, LOW);
 
-    auto msg = vida_interfaces::msg::SensorData;
+    auto msg = vida_interfaces::msg::SensorDatas();
 
-    istringstream stream(buffer);
-    stream >> msg.leftPulses
-                  stream >>
-        msg.rigthPulses;
-    stream >> msg.backPulses;
+    istringstream stream(dataRecived);
+    stream >> msg.left_pulses;
+    stream >> msg.right_pulses;
+    stream >> msg.back_pulses;
     stream >> msg.steering;
 
     publisher->publish(msg);

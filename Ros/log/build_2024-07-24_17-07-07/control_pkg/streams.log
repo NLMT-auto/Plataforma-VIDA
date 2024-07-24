@@ -1,0 +1,29 @@
+[0.513s] Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg -- -j6 -l6
+[0.719s] [35m[1mConsolidate compiler generated dependencies of target control[0m
+[0.935s] gmake[2]: *** Sem regra para processar o alvo '/usr/local/lib/libwiringPi.so', necessário por 'control'.  Pare.
+[0.936s] gmake[2]: ** Esperando que outros processos terminem.
+[0.953s] [ 33%] [32mBuilding CXX object CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o[0m
+[2.047s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:[m[K In constructor ‘[01m[KSerial::Serial(std::string)[m[K’:
+[2.047s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:8:24:[m[K [01;31m[Kerror: [m[K‘[01m[KserialOpen[m[K’ was not declared in this scope
+[2.048s]     8 |     this->serialport = [01;31m[KserialOpen[m[K(port.c_str(), BAUD_RATE);
+[2.048s]       |                        [01;31m[K^~~~~~~~~~[m[K
+[2.065s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:[m[K In destructor ‘[01m[KSerial::~Serial()[m[K’:
+[2.065s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:13:5:[m[K [01;31m[Kerror: [m[K‘[01m[KserialClose[m[K’ was not declared in this scope
+[2.065s]    13 |     [01;31m[KserialClose[m[K(serialport);
+[2.066s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.083s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:[m[K In member function ‘[01m[Kvoid Serial::write(std::string)[m[K’:
+[2.083s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:18:5:[m[K [01;31m[Kerror: [m[K‘[01m[KserialPrintf[m[K’ was not declared in this scope; did you mean ‘[01m[Kserialport[m[K’?
+[2.083s]    18 |     [01;31m[KserialPrintf[m[K(serialport, "%s\n", s.c_str());
+[2.084s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[2.084s]       |     [32m[Kserialport[m[K
+[2.102s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:[m[K In member function ‘[01m[Kstd::string Serial::read(char)[m[K’:
+[2.102s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:31:13:[m[K [01;31m[Kerror: [m[K‘[01m[KserialDataAvail[m[K’ was not declared in this scope
+[2.103s]    31 |         if ([01;31m[KserialDataAvail[m[K(serialport))
+[2.103s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.119s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:33:33:[m[K [01;31m[Kerror: [m[K‘[01m[KserialGetchar[m[K’ was not declared in this scope
+[2.119s]    33 |             char incomingByte = [01;31m[KserialGetchar[m[K(serialport); // Lê um byte da porta serial
+[2.120s]       |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[2.509s] gmake[2]: *** [CMakeFiles/control.dir/build.make:90: CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o] Erro 1
+[2.512s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/control.dir/all] Erro 2
+[2.513s] gmake: *** [Makefile:146: all] Erro 2
+[2.517s] Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg' returned '2': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg -- -j6 -l6

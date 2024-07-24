@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/vida_interfaces/msg/__init__.py"
   "../rosidl_generator_py/vida_interfaces/msg/_controls.py"
   "../rosidl_generator_py/vida_interfaces/msg/_controls_s.c"
+  "../rosidl_generator_py/vida_interfaces/msg/_sensor_datas.py"
+  "../rosidl_generator_py/vida_interfaces/msg/_sensor_datas_s.c"
   "CMakeFiles/vida_interfaces__py"
 )
 

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_py/vida_interfaces/msg/_controls_s.c" "CMakeFiles/vida_interfaces__rosidl_generator_py.dir/rosidl_generator_py/vida_interfaces/msg/_controls_s.c.o" "gcc" "CMakeFiles/vida_interfaces__rosidl_generator_py.dir/rosidl_generator_py/vida_interfaces/msg/_controls_s.c.o.d"
+  "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_py/vida_interfaces/msg/_sensor_datas_s.c" "CMakeFiles/vida_interfaces__rosidl_generator_py.dir/rosidl_generator_py/vida_interfaces/msg/_sensor_datas_s.c.o" "gcc" "CMakeFiles/vida_interfaces__rosidl_generator_py.dir/rosidl_generator_py/vida_interfaces/msg/_sensor_datas_s.c.o.d"
   )
 
 # Targets to which this target links.

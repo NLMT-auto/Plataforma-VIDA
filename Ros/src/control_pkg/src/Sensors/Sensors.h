@@ -5,8 +5,8 @@
 #include <string.h>
 #include "rclcpp/rclcpp.hpp"
 #include "vida_interfaces/msg/controls.hpp"
-#include "vida_interfaces/msg/*"
-#include <wiringPi.h>
+#include "vida_interfaces/msg/sensor_datas.hpp"
+#include <wiringpi2/wiringPi.h>
 #include "../../../../../Threads/src/Utils/Serial/Serial.h"
 #include "../../../../../Threads/src/Files/DefinePin.h"
 
@@ -22,7 +22,7 @@ private:
 
     Serial *sensorSerial;
     TimerBase::SharedPtr timer;
-    Publisher<vida_interfaces::msg::SensorData>::SharedPtr publisher;
+    Publisher<vida_interfaces::msg::SensorDatas>::SharedPtr publisher;
     
     
     void readSensors();

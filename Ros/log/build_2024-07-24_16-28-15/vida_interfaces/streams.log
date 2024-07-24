@@ -1,0 +1,57 @@
+[0.077s] Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces -- -j6 -l6
+[0.139s] [33mCMake Warning (dev) at CMakeLists.txt:18:
+[0.139s]   Syntax Warning in cmake code at column 21
+[0.140s] 
+[0.141s]   Argument not separated from preceding token by whitespace.
+[0.142s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.155s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.156s] [0m
+[0.526s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.530s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.539s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.618s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.063s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[1.068s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.069s]   vida_interfaces --arguments-file
+[1.070s]   /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_adapter__arguments__vida_interfaces.json
+[1.070s]   --output-dir
+[1.071s]   /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_adapter/vida_interfaces
+[1.072s]   --output-file
+[1.085s]   /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_adapter/vida_interfaces.idls)
+[1.086s]   returned error code 1:
+[1.086s] 
+[1.087s]   Error processing 'int64 leftPulses' of 'vida_interfaces/SensorDatas':
+[1.087s]   ''leftPulses' is an invalid field name.  It should have the pattern
+[1.087s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[1.087s] 
+[1.088s]   Traceback (most recent call last):
+[1.088s] 
+[1.088s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[1.088s]       return _run_code(code, main_globals, None,
+[1.089s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[1.089s]       exec(code, run_globals)
+[1.089s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.089s]       sys.exit(main())
+[1.089s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[1.090s]       abs_idl_file = convert_to_idl(
+[1.090s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.090s]       return convert_msg_to_idl(
+[1.090s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.091s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.091s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 519, in parse_message_string
+[1.091s]       fields.append(Field(
+[1.091s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 354, in __init__
+[1.091s]       raise NameError(
+[1.092s] 
+[1.092s]   NameError: 'leftPulses' is an invalid field name.  It should have the
+[1.092s]   pattern '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[1.092s] 
+[1.093s] Call Stack (most recent call first):
+[1.093s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.093s]   CMakeLists.txt:17 (rosidl_generate_interfaces)
+[1.093s] 
+[1.093s] [0m
+[1.094s] -- Configuring incomplete, errors occurred!
+[1.094s] See also "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/CMakeFiles/CMakeOutput.log".
+[1.094s] gmake: *** [Makefile:747: cmake_check_build_system] Erro 1
+[1.095s] Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces -- -j6 -l6

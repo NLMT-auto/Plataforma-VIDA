@@ -204,4 +204,7 @@ CMakeFiles/vida_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/
  /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c/vida_interfaces/msg/detail/controls__type_support.h \
  /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c/vida_interfaces/msg/rosidl_generator_c__visibility_control.h \
  /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c/vida_interfaces/msg/detail/controls__struct.h \
- /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.h
+ /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.h \
+ /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__type_support.h \
+ /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__struct.h \
+ /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.h

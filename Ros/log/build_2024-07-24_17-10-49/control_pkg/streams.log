@@ -1,0 +1,15 @@
+[0.086s] Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg -- -j6 -l6
+[0.244s] [35m[1mConsolidate compiler generated dependencies of target control[0m
+[0.283s] gmake[2]: *** Sem regra para processar o alvo '/usr/local/lib/libwiringPi.so', necessário por 'control'.  Pare.
+[0.285s] gmake[2]: ** Esperando que outros processos terminem.
+[0.299s] [ 33%] [32mBuilding CXX object CMakeFiles/control.dir/src/Control/Control.cpp.o[0m
+[0.320s] [ 66%] [32mBuilding CXX object CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o[0m
+[17.538s] In file included from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Threads/src/Utils/Serial/Serial.h:9[m[K,
+[17.539s]                  from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/Control.h:12[m[K,
+[17.539s]                  from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/Control.cpp:1[m[K:
+[17.539s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Threads/src/Utils/Serial/../../Utils/road_time.h:16:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kroad_time_t road_time()[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[17.540s]    16 | static road_time_t [01;35m[Kroad_time[m[K(void)      // Function that returns the time (ms) since midnight on 01/01/1970
+[17.540s]       |                    [01;35m[K^~~~~~~~~[m[K
+[30.243s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/control.dir/all] Erro 2
+[30.245s] gmake: *** [Makefile:146: all] Erro 2
+[30.251s] Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg' returned '2': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg -- -j6 -l6

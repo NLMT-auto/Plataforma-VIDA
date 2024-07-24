@@ -3,7 +3,8 @@
   "output_dir": "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_c/vida_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_adapter/vida_interfaces:msg/Controls.idl"
+    "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_adapter/vida_interfaces:msg/Controls.idl",
+    "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_adapter/vida_interfaces:msg/SensorDatas.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -19,6 +20,7 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_adapter/vida_interfaces/msg/Controls.idl"
+    "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_adapter/vida_interfaces/msg/Controls.idl",
+    "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_adapter/vida_interfaces/msg/SensorDatas.idl"
   ]
 }

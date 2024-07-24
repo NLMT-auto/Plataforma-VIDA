@@ -15,6 +15,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/detail/controls__builder.hpp" "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/controls.hpp"
   "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/detail/controls__struct.hpp" "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/controls.hpp"
   "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/detail/controls__traits.hpp" "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/controls.hpp"
+  "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/detail/sensor_datas__builder.hpp" "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/controls.hpp"
+  "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/detail/sensor_datas__struct.hpp" "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/controls.hpp"
+  "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/detail/sensor_datas__traits.hpp" "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/controls.hpp"
+  "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/sensor_datas.hpp" "/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces/rosidl_generator_cpp/vida_interfaces/msg/controls.hpp"
   )
 
 

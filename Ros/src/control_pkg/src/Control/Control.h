@@ -7,7 +7,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "vida_interfaces/msg/controls.hpp"
 
-#include <wiringPi.h>
+#include <wiringpi2/wiringPi.h>
 
 #include "../../../../../Threads/src/Utils/Serial/Serial.h"
 

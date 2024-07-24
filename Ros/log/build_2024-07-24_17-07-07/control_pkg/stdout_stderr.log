@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target control[0m
+gmake[2]: *** Sem regra para processar o alvo '/usr/local/lib/libwiringPi.so', necessário por 'control'.  Pare.
+gmake[2]: ** Esperando que outros processos terminem.
+[ 33%] [32mBuilding CXX object CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o[0m
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:[m[K In constructor ‘[01m[KSerial::Serial(std::string)[m[K’:
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:8:24:[m[K [01;31m[Kerror: [m[K‘[01m[KserialOpen[m[K’ was not declared in this scope
+    8 |     this->serialport = [01;31m[KserialOpen[m[K(port.c_str(), BAUD_RATE);
+      |                        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:[m[K In destructor ‘[01m[KSerial::~Serial()[m[K’:
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:13:5:[m[K [01;31m[Kerror: [m[K‘[01m[KserialClose[m[K’ was not declared in this scope
+   13 |     [01;31m[KserialClose[m[K(serialport);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:[m[K In member function ‘[01m[Kvoid Serial::write(std::string)[m[K’:
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:18:5:[m[K [01;31m[Kerror: [m[K‘[01m[KserialPrintf[m[K’ was not declared in this scope; did you mean ‘[01m[Kserialport[m[K’?
+   18 |     [01;31m[KserialPrintf[m[K(serialport, "%s\n", s.c_str());
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[Kserialport[m[K
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:[m[K In member function ‘[01m[Kstd::string Serial::read(char)[m[K’:
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:31:13:[m[K [01;31m[Kerror: [m[K‘[01m[KserialDataAvail[m[K’ was not declared in this scope
+   31 |         if ([01;31m[KserialDataAvail[m[K(serialport))
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp:33:33:[m[K [01;31m[Kerror: [m[K‘[01m[KserialGetchar[m[K’ was not declared in this scope
+   33 |             char incomingByte = [01;31m[KserialGetchar[m[K(serialport); // Lê um byte da porta serial
+      |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/control.dir/build.make:90: CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o] Erro 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/control.dir/all] Erro 2
+gmake: *** [Makefile:146: all] Erro 2
