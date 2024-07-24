@@ -3,11 +3,14 @@
 
 #include <iostream>
 #include <string.h>
-#include <wiringpi2/wiringPi.h>
+
 #include "rclcpp/rclcpp.hpp"
 #include "vida_interfaces/msg/controls.hpp"
+
+#include <wiringPi.h>
+
 #include "../../../../../Threads/src/Utils/Serial/Serial.h"
-#include "../../../../../Threads/src/Files/DefinePin.h"
+
 
 using namespace std;
 using namespace rclcpp;

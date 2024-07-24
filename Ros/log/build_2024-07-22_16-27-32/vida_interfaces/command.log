@@ -1,0 +1,2 @@
+Invoking command in '/home/whilker/Documents/Plataforma-VIDA/Ros/build/vida_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/whilker/Documents/Plataforma-VIDA/Ros/build/vida_interfaces -- -j8 -l8
+Invoked command in '/home/whilker/Documents/Plataforma-VIDA/Ros/build/vida_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/whilker/Documents/Plataforma-VIDA/Ros/build/vida_interfaces -- -j8 -l8

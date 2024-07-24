@@ -5,22 +5,25 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# find dependencies
+# Busca de bibliotecas
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(vida_interfaces)
-
 find_library(WIRINGPI_LIB wiringPi)
 find_library(WIRINGPI_DEV_LIB wiringPiDev)
 
-add_executable(control)
-ament_target_dependencies(control rclcpp vida_interfaces) 
 
+#Executável Nó control
+add_executable(control)
+
+#vincula as dependencia do nó control
+ament_target_dependencies(control rclcpp vida_interfaces) 
 target_link_libraries(control    
     ${WIRINGPI_LIB}
     ${WIRINGPI_DEV_LIB}    
 )
 
+#faz ligação dos arquivos usados em control
 target_sources(
   control
 
@@ -31,8 +34,6 @@ target_sources(
 
     ../../../Threads/src/Utils/Serial/Serial.h
     ../../../Threads/src/Utils/Serial/Serial.cpp
-    
-    ../../../Threads/src/Files/DefinePin.h
 )
 
 install(TARGETS

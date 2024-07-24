@@ -2,7 +2,7 @@
 #define SERIAL_H
 
 #include <iostream>
-#include <wiringpi2/wiringSerial.h>
+#include <wiringSerial.h>
 #include <string>
 
 #include "../../Files/DefinePin.h"

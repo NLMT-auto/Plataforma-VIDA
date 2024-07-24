@@ -1,0 +1,6 @@
+[0.012s] Invoking command in '/home/whilker/Documents/Plataforma-VIDA/Ros/build/vida_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/whilker/Documents/Plataforma-VIDA/Ros/build/vida_interfaces -- -j8 -l8
+[0.019s] [0mCMake Error: The current CMakeCache.txt directory /home/whilker/Documents/Plataforma-VIDA/Ros/build/vida_interfaces/CMakeCache.txt is different than the directory /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.032s] [0mCMake Error: The source directory "/home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces" does not exist.
+[0.032s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.034s] gmake: *** [Makefile:747: cmake_check_build_system] Erro 1
+[0.035s] Invoked command in '/home/whilker/Documents/Plataforma-VIDA/Ros/build/vida_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/whilker/Documents/Plataforma-VIDA/Ros/build/vida_interfaces -- -j8 -l8
