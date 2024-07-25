@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target record[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/control.dir/src/Control/Control.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/sensors.dir/src/Sensors/Sensors.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/sensors.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/record.dir/src/Record/Record.cpp.o[0m

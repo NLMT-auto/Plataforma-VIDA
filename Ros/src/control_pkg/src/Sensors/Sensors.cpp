@@ -5,11 +5,11 @@ Sensors::Sensors(string name) : Node(name)
     this->declare_parameter("frequency_publish", 100.0);
     frequencyPublish = this->get_parameter("frequency_publish").as_double();
 
-    //sensorSerial = new Serial("ttyUSB0");
+    sensorSerial = new Serial("ttyACM0");
 
     wiringPiSetup();
-    pinMode(encoderInterrupt, OUTPUT);
-    digitalWrite(encoderInterrupt, LOW);
+    pinMode(sensorInterrupt, OUTPUT);
+    digitalWrite(sensorInterrupt, LOW);
 
     publisher = this->create_publisher<vida_interfaces::msg::SensorDatas>("sensorData", 10);
     timer = this->create_wall_timer(chrono::nanoseconds((int)(1e9 / frequencyPublish)), bind(&Sensors::readSensors, this));
@@ -23,10 +23,9 @@ Sensors::~Sensors()
 
 void Sensors::readSensors()
 {
-    digitalWrite(encoderInterrupt, HIGH);
-    //dataRecived = sensorSerial->read('\n');
-    dataRecived = "15 1564 515 41";
-    digitalWrite(encoderInterrupt, LOW);
+    digitalWrite(sensorInterrupt, HIGH);
+    dataRecived = sensorSerial->read('\n');
+    digitalWrite(sensorInterrupt, LOW);
 
     auto msg = vida_interfaces::msg::SensorDatas();
 
