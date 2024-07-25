@@ -9,7 +9,7 @@
 
 #include <wiringpi2/wiringPi.h>
 
-#include "../../../../../Threads/src/Utils/Serial/Serial.h"
+#include "../../../../../Utils/Serial/Serial.h"
 
 
 using namespace std;

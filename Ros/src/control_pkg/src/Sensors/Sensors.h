@@ -7,8 +7,8 @@
 #include "vida_interfaces/msg/controls.hpp"
 #include "vida_interfaces/msg/sensor_datas.hpp"
 #include <wiringpi2/wiringPi.h>
-#include "../../../../../Threads/src/Utils/Serial/Serial.h"
-#include "../../../../../Threads/src/Files/DefinePin.h"
+#include "../../../../../Utils/Serial/Serial.h"
+#include "../../../../../Utils/Files/DefinePin.h"
 
 using namespace std;
 using namespace rclcpp;

@@ -5,8 +5,8 @@
 #include <wiringpi2/wiringSerial.h>
 #include <string>
 
-#include "../../Files/DefinePin.h"
-#include "../../Utils/road_time.h"
+#include "../Files/DefinePin.h"
+#include "../road_time.h"
 
 using namespace std;
 
