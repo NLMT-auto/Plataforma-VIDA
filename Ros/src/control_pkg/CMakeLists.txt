@@ -32,8 +32,9 @@ target_sources(
     src/Control/Control.cpp
     src/Control/Control.h
 
-    ../../../Threads/src/Utils/Serial/Serial.h
-    ../../../Threads/src/Utils/Serial/Serial.cpp
+    ../../../Utils/Serial/Serial.h
+    ../../../Utils/Serial/Serial.cpp
+    ../../../Utils/road_time.h
 )
 
 install(TARGETS
