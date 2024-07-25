@@ -37,8 +37,50 @@ target_sources(
     ../../../Utils/road_time.h
 )
 
+add_executable(sensors)
+
+#vincula as dependencia do nó sensors
+ament_target_dependencies(sensors rclcpp vida_interfaces) 
+target_link_libraries(sensors    
+    ${WIRINGPI_LIB}
+    ${WIRINGPI_DEV_LIB}    
+)
+
+#faz ligação dos arquivos usados em sensors
+target_sources(
+  sensors
+
+  PRIVATE
+
+    src/Sensors/Sensors.cpp
+    src/Sensors/Sensors.h
+
+    ../../../Utils/Serial/Serial.h
+    ../../../Utils/Serial/Serial.cpp
+
+    ../../../Utils/Files/DefinePin.h
+    ../../../Utils/road_time.h
+)
+
+
+add_executable(record)
+ament_target_dependencies(record rclcpp vida_interfaces) 
+
+target_sources(
+  record
+
+  PRIVATE
+
+    src/Record/Record.cpp
+    src/Record/Record.h  
+)
+
+
+
 install(TARGETS
-  control  
+  control 
+  sensors 
+  record
   DESTINATION lib/${PROJECT_NAME}
 )
 
