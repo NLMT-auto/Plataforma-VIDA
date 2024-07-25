@@ -210,29 +210,58 @@ control/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/control.dir/build.make CMakeFiles/control.dir/build
 .PHONY : control/fast
 
-home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.o: home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o
-.PHONY : home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.o
+#=============================================================================
+# Target rules for targets named sensors
+
+# Build rule for target.
+sensors: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensors
+.PHONY : sensors
+
+# fast build rule for target.
+sensors/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensors.dir/build.make CMakeFiles/sensors.dir/build
+.PHONY : sensors/fast
+
+#=============================================================================
+# Target rules for targets named record
+
+# Build rule for target.
+record: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 record
+.PHONY : record
+
+# fast build rule for target.
+record/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/record.dir/build.make CMakeFiles/record.dir/build
+.PHONY : record/fast
+
+home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.o: home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o
+.PHONY : home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.o
 
 # target to build an object file
-home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/control.dir/build.make CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o
-.PHONY : home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o
+home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/control.dir/build.make CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensors.dir/build.make CMakeFiles/sensors.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o
+.PHONY : home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o
 
-home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.i: home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.i
-.PHONY : home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.i
+home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.i: home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.i
+.PHONY : home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.i
 
 # target to preprocess a source file
-home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/control.dir/build.make CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.i
-.PHONY : home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.i
+home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/control.dir/build.make CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensors.dir/build.make CMakeFiles/sensors.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.i
+.PHONY : home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.i
 
-home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.s: home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.s
-.PHONY : home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.s
+home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.s: home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.s
+.PHONY : home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.s
 
 # target to generate assembly for a file
-home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/control.dir/build.make CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.s
-.PHONY : home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.s
+home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/control.dir/build.make CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensors.dir/build.make CMakeFiles/sensors.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.s
+.PHONY : home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.s
 
 src/Control/Control.o: src/Control/Control.cpp.o
 .PHONY : src/Control/Control.o
@@ -258,6 +287,54 @@ src/Control/Control.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/control.dir/build.make CMakeFiles/control.dir/src/Control/Control.cpp.s
 .PHONY : src/Control/Control.cpp.s
 
+src/Record/Record.o: src/Record/Record.cpp.o
+.PHONY : src/Record/Record.o
+
+# target to build an object file
+src/Record/Record.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/record.dir/build.make CMakeFiles/record.dir/src/Record/Record.cpp.o
+.PHONY : src/Record/Record.cpp.o
+
+src/Record/Record.i: src/Record/Record.cpp.i
+.PHONY : src/Record/Record.i
+
+# target to preprocess a source file
+src/Record/Record.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/record.dir/build.make CMakeFiles/record.dir/src/Record/Record.cpp.i
+.PHONY : src/Record/Record.cpp.i
+
+src/Record/Record.s: src/Record/Record.cpp.s
+.PHONY : src/Record/Record.s
+
+# target to generate assembly for a file
+src/Record/Record.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/record.dir/build.make CMakeFiles/record.dir/src/Record/Record.cpp.s
+.PHONY : src/Record/Record.cpp.s
+
+src/Sensors/Sensors.o: src/Sensors/Sensors.cpp.o
+.PHONY : src/Sensors/Sensors.o
+
+# target to build an object file
+src/Sensors/Sensors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensors.dir/build.make CMakeFiles/sensors.dir/src/Sensors/Sensors.cpp.o
+.PHONY : src/Sensors/Sensors.cpp.o
+
+src/Sensors/Sensors.i: src/Sensors/Sensors.cpp.i
+.PHONY : src/Sensors/Sensors.i
+
+# target to preprocess a source file
+src/Sensors/Sensors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensors.dir/build.make CMakeFiles/sensors.dir/src/Sensors/Sensors.cpp.i
+.PHONY : src/Sensors/Sensors.cpp.i
+
+src/Sensors/Sensors.s: src/Sensors/Sensors.cpp.s
+.PHONY : src/Sensors/Sensors.s
+
+# target to generate assembly for a file
+src/Sensors/Sensors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensors.dir/build.make CMakeFiles/sensors.dir/src/Sensors/Sensors.cpp.s
+.PHONY : src/Sensors/Sensors.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -274,12 +351,20 @@ help:
 	@echo "... control_pkg_uninstall"
 	@echo "... uninstall"
 	@echo "... control"
-	@echo "... home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.o"
-	@echo "... home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.i"
-	@echo "... home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.s"
+	@echo "... record"
+	@echo "... sensors"
+	@echo "... home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.o"
+	@echo "... home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.i"
+	@echo "... home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.s"
 	@echo "... src/Control/Control.o"
 	@echo "... src/Control/Control.i"
 	@echo "... src/Control/Control.s"
+	@echo "... src/Record/Record.o"
+	@echo "... src/Record/Record.i"
+	@echo "... src/Record/Record.s"
+	@echo "... src/Sensors/Sensors.o"
+	@echo "... src/Sensors/Sensors.i"
+	@echo "... src/Sensors/Sensors.s"
 .PHONY : help
 
 

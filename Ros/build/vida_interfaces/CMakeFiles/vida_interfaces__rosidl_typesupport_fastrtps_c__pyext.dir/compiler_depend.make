@@ -244,8 +244,15 @@ CMakeFiles/vida_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_gene
   rosidl_generator_c/vida_interfaces/msg/detail/controls__type_support.h \
   rosidl_generator_c/vida_interfaces/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/vida_interfaces/msg/detail/controls__struct.h \
-  rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.h
+  rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.h \
+  rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__type_support.h \
+  rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__struct.h \
+  rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.h
 
+
+rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.h:
+
+rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__type_support.h:
 
 rosidl_generator_c/vida_interfaces/msg/detail/controls__type_support.h:
 
@@ -394,6 +401,8 @@ rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.h:
 /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/asm-generic/errno.h:
+
+rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__struct.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdio_lim.h:
 

@@ -1,0 +1,30 @@
+[0.086s] Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg -- -j6 -l6
+[0.474s] [35m[1mConsolidate compiler generated dependencies of target sensors[0m
+[0.515s] [ 37%] Built target control
+[0.549s] [ 75%] Built target sensors
+[0.564s] [ 87%] [32mBuilding CXX object CMakeFiles/record.dir/src/Record/Record.cpp.o[0m
+[33.255s] [100%] [32m[1mLinking CXX executable record[0m
+[35.319s] [100%] Built target record
+[35.375s] Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg' returned '0': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg -- -j6 -l6
+[35.570s] Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg
+[35.612s] -- Install configuration: ""
+[35.617s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/control
+[35.618s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/sensors
+[35.626s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/record
+[35.633s] -- Set runtime path of "/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/record" to ""
+[35.634s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/ament_index/resource_index/package_run_dependencies/control_pkg
+[35.635s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/ament_index/resource_index/parent_prefix_path/control_pkg
+[35.635s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/ament_prefix_path.sh
+[35.636s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/ament_prefix_path.dsv
+[35.637s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/path.sh
+[35.638s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/path.dsv
+[35.639s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.bash
+[35.640s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.sh
+[35.643s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.zsh
+[35.646s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.dsv
+[35.647s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.dsv
+[35.648s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/ament_index/resource_index/packages/control_pkg
+[35.648s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/cmake/control_pkgConfig.cmake
+[35.648s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/cmake/control_pkgConfig-version.cmake
+[35.648s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.xml
+[35.649s] Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg' returned '0': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg

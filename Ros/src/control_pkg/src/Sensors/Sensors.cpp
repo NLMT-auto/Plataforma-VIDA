@@ -3,9 +3,9 @@
 Sensors::Sensors(string name) : Node(name)
 {
     this->declare_parameter("frequency_publish", 100.0);
-    frequencyPublish = this->get_parameter("frequencyPublish").as_double();
+    frequencyPublish = this->get_parameter("frequency_publish").as_double();
 
-    sensorSerial = new Serial("ttyUSB0");
+    //sensorSerial = new Serial("ttyUSB0");
 
     wiringPiSetup();
     pinMode(encoderInterrupt, OUTPUT);
@@ -24,7 +24,8 @@ Sensors::~Sensors()
 void Sensors::readSensors()
 {
     digitalWrite(encoderInterrupt, HIGH);
-    dataRecived = sensorSerial->read('\n');
+    //dataRecived = sensorSerial->read('\n');
+    dataRecived = "15 1564 515 41";
     digitalWrite(encoderInterrupt, LOW);
 
     auto msg = vida_interfaces::msg::SensorDatas();

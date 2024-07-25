@@ -1,0 +1,188 @@
+[0.082s] Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces -- -j6 -l6
+[0.247s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.726s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.741s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.758s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.861s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.819s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.397s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.137s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.211s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.294s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.295s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.296s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[3.361s] -- Configuring done
+[3.513s] -- Generating done
+[3.522s] -- Build files have been written to: /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces
+[3.638s] [35m[1mConsolidate compiler generated dependencies of target vida_interfaces__rosidl_generator_c[0m
+[3.654s] [  2%] Built target vida_interfaces__cpp
+[3.703s] [  2%] Built target ament_cmake_python_copy_vida_interfaces
+[3.717s] [ 12%] Built target vida_interfaces__rosidl_generator_c
+[3.725s] [35m[1mConsolidate compiler generated dependencies of target vida_interfaces__rosidl_typesupport_cpp[0m
+[3.731s] [35m[1mConsolidate compiler generated dependencies of target vida_interfaces__rosidl_typesupport_introspection_cpp[0m
+[3.734s] [35m[1mConsolidate compiler generated dependencies of target vida_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[3.760s] [35m[1mConsolidate compiler generated dependencies of target vida_interfaces__rosidl_typesupport_introspection_c[0m
+[3.774s] [ 23%] Built target vida_interfaces__rosidl_typesupport_cpp
+[3.776s] [35m[1mConsolidate compiler generated dependencies of target vida_interfaces__rosidl_typesupport_fastrtps_c[0m
+[3.785s] [ 33%] Built target vida_interfaces__rosidl_typesupport_introspection_cpp
+[3.803s] [ 43%] Built target vida_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.805s] [ 53%] Built target vida_interfaces__rosidl_typesupport_introspection_c
+[3.814s] [35m[1mConsolidate compiler generated dependencies of target vida_interfaces__rosidl_typesupport_c[0m
+[3.825s] [ 64%] Built target vida_interfaces__rosidl_typesupport_fastrtps_c
+[3.838s] [ 74%] Built target vida_interfaces__rosidl_typesupport_c
+[3.886s] [ 74%] Built target vida_interfaces
+[3.929s] [ 76%] Built target vida_interfaces__py
+[3.955s] [35m[1mConsolidate compiler generated dependencies of target vida_interfaces__rosidl_generator_py[0m
+[3.987s] [ 84%] Built target vida_interfaces__rosidl_generator_py
+[4.020s] [35m[1mConsolidate compiler generated dependencies of target vida_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[4.022s] [35m[1mConsolidate compiler generated dependencies of target vida_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[4.030s] [35m[1mConsolidate compiler generated dependencies of target vida_interfaces__rosidl_typesupport_c__pyext[0m
+[4.047s] [ 89%] Built target vida_interfaces__rosidl_typesupport_introspection_c__pyext
+[4.051s] [ 94%] Built target vida_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[4.071s] [100%] Built target vida_interfaces__rosidl_typesupport_c__pyext
+[4.644s] running egg_info
+[4.648s] writing vida_interfaces.egg-info/PKG-INFO
+[4.648s] writing dependency_links to vida_interfaces.egg-info/dependency_links.txt
+[4.649s] writing top-level names to vida_interfaces.egg-info/top_level.txt
+[4.663s] reading manifest file 'vida_interfaces.egg-info/SOURCES.txt'
+[4.667s] writing manifest file 'vida_interfaces.egg-info/SOURCES.txt'
+[4.797s] [100%] Built target ament_cmake_python_build_vida_interfaces_egg
+[4.823s] Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces -- -j6 -l6
+[4.994s] Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces
+[5.015s] -- Install configuration: ""
+[5.027s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/ament_index/resource_index/rosidl_interfaces/vida_interfaces
+[5.029s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces
+[5.030s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg
+[5.030s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/rosidl_generator_c__visibility_control.h
+[5.031s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/controls.h
+[5.031s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail
+[5.032s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/sensor_datas__functions.c
+[5.032s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/sensor_datas__type_support.h
+[5.033s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/sensor_datas__functions.h
+[5.034s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__functions.h
+[5.034s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__type_support.h
+[5.035s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__struct.h
+[5.036s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__functions.c
+[5.036s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/sensor_datas__struct.h
+[5.037s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/sensor_datas.h
+[5.038s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/environment/library_path.sh
+[5.038s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/environment/library_path.dsv
+[5.038s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib/libvida_interfaces__rosidl_generator_c.so
+[5.039s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces
+[5.039s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg
+[5.040s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail
+[5.040s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/sensor_datas__rosidl_typesupport_fastrtps_c.h
+[5.040s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__rosidl_typesupport_fastrtps_c.h
+[5.041s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.041s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib/libvida_interfaces__rosidl_typesupport_fastrtps_c.so
+[5.041s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces
+[5.042s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg
+[5.042s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.043s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail
+[5.043s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/sensor_datas__rosidl_typesupport_introspection_c.h
+[5.043s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/sensor_datas__type_support.c
+[5.044s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__type_support.c
+[5.044s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__rosidl_typesupport_introspection_c.h
+[5.045s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib/libvida_interfaces__rosidl_typesupport_introspection_c.so
+[5.045s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib/libvida_interfaces__rosidl_typesupport_c.so
+[5.045s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces
+[5.048s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg
+[5.048s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail
+[5.048s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__struct.hpp
+[5.049s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__builder.hpp
+[5.049s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__traits.hpp
+[5.049s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/sensor_datas__builder.hpp
+[5.050s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/sensor_datas__traits.hpp
+[5.050s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/sensor_datas__struct.hpp
+[5.050s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/sensor_datas.hpp
+[5.051s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/controls.hpp
+[5.051s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces
+[5.051s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg
+[5.052s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.052s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail
+[5.053s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/dds_fastrtps
+[5.053s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__rosidl_typesupport_fastrtps_cpp.hpp
+[5.053s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/sensor_datas__rosidl_typesupport_fastrtps_cpp.hpp
+[5.054s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib/libvida_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[5.054s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces
+[5.055s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg
+[5.055s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail
+[5.055s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/sensor_datas__rosidl_typesupport_introspection_cpp.hpp
+[5.056s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__type_support.cpp
+[5.056s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/sensor_datas__type_support.cpp
+[5.057s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__rosidl_typesupport_introspection_cpp.hpp
+[5.057s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib/libvida_interfaces__rosidl_typesupport_introspection_cpp.so
+[5.057s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib/libvida_interfaces__rosidl_typesupport_cpp.so
+[5.058s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/environment/pythonpath.sh
+[5.058s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/environment/pythonpath.dsv
+[5.058s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces-0.0.0-py3.10.egg-info
+[5.059s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[5.059s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[5.060s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[5.060s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[5.060s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces
+[5.061s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/__init__.py
+[5.061s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/libvida_interfaces__rosidl_generator_py.so
+[5.062s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/_vida_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.062s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/vida_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[5.063s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/_vida_interfaces_s.ep.rosidl_typesupport_c.c
+[5.063s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/msg
+[5.063s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/msg/_controls.py
+[5.064s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/msg/_controls_s.c
+[5.064s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/msg/__init__.py
+[5.065s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/msg/_sensor_datas_s.c
+[5.065s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/msg/_sensor_datas.py
+[5.066s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/_vida_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[5.066s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/vida_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[5.066s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/vida_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[5.165s] Listing '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces'...
+[5.166s] Compiling '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/__init__.py'...
+[5.167s] Listing '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/msg'...
+[5.197s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/vida_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[5.199s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/vida_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[5.200s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/local/lib/python3.10/dist-packages/vida_interfaces/vida_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[5.202s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib/libvida_interfaces__rosidl_generator_py.so
+[5.203s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/msg/Controls.idl
+[5.203s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/msg/SensorDatas.idl
+[5.204s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/msg/Controls.msg
+[5.204s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/msg/SensorDatas.msg
+[5.205s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/ament_index/resource_index/package_run_dependencies/vida_interfaces
+[5.206s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/ament_index/resource_index/parent_prefix_path/vida_interfaces
+[5.206s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/environment/ament_prefix_path.sh
+[5.207s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/environment/ament_prefix_path.dsv
+[5.207s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/environment/path.sh
+[5.207s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/environment/path.dsv
+[5.208s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/local_setup.bash
+[5.208s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/local_setup.sh
+[5.209s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/local_setup.zsh
+[5.209s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/local_setup.dsv
+[5.210s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/package.dsv
+[5.211s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/ament_index/resource_index/packages/vida_interfaces
+[5.212s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/export_vida_interfaces__rosidl_generator_cExport.cmake
+[5.212s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/export_vida_interfaces__rosidl_generator_cExport-noconfig.cmake
+[5.212s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/export_vida_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[5.213s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/export_vida_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.213s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/vida_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[5.214s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/vida_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.215s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/vida_interfaces__rosidl_typesupport_cExport.cmake
+[5.216s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/vida_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[5.217s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/export_vida_interfaces__rosidl_generator_cppExport.cmake
+[5.218s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/export_vida_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.218s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/export_vida_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.220s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/vida_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[5.220s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/vida_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.221s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/vida_interfaces__rosidl_typesupport_cppExport.cmake
+[5.221s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/vida_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[5.223s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/export_vida_interfaces__rosidl_generator_pyExport.cmake
+[5.224s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/export_vida_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[5.225s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/rosidl_cmake-extras.cmake
+[5.226s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.228s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[5.228s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[5.229s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.230s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.232s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.233s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/vida_interfacesConfig.cmake
+[5.233s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/cmake/vida_interfacesConfig-version.cmake
+[5.233s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/package.xml
+[5.234s] Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces

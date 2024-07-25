@@ -244,8 +244,15 @@ CMakeFiles/vida_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl
   rosidl_generator_c/vida_interfaces/msg/detail/controls__type_support.h \
   rosidl_generator_c/vida_interfaces/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/vida_interfaces/msg/detail/controls__struct.h \
-  rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.h
+  rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.h \
+  rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__type_support.h \
+  rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__struct.h \
+  rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.h
 
+
+rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__functions.h:
+
+rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__type_support.h:
 
 rosidl_generator_c/vida_interfaces/msg/detail/controls__type_support.h:
 
@@ -404,6 +411,8 @@ rosidl_generator_c/vida_interfaces/msg/detail/controls__functions.h:
 /usr/lib/gcc/aarch64-linux-gnu/11/include/stdarg.h:
 
 /usr/include/asm-generic/errno.h:
+
+rosidl_generator_c/vida_interfaces/msg/detail/sensor_datas__struct.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdio_lim.h:
 

@@ -1,6 +1,8 @@
 /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/uninstall.dir
 /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/control_pkg_uninstall.dir
 /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/control.dir
+/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/sensors.dir
+/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/record.dir
 /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/test.dir
 /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/edit_cache.dir
 /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles/rebuild_cache.dir

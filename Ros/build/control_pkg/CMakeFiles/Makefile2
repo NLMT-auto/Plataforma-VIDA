@@ -64,6 +64,8 @@ CMAKE_BINARY_DIR = /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg
 
 # The main recursive "all" target.
 all: CMakeFiles/control.dir/all
+all: CMakeFiles/sensors.dir/all
+all: CMakeFiles/record.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +76,8 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/control_pkg_uninstall.dir/clean
 clean: CMakeFiles/control.dir/clean
+clean: CMakeFiles/sensors.dir/clean
+clean: CMakeFiles/record.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -153,6 +157,58 @@ control: CMakeFiles/control.dir/rule
 CMakeFiles/control.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/control.dir/build.make CMakeFiles/control.dir/clean
 .PHONY : CMakeFiles/control.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sensors.dir
+
+# All Build rule for target.
+CMakeFiles/sensors.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensors.dir/build.make CMakeFiles/sensors.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensors.dir/build.make CMakeFiles/sensors.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles --progress-num=6,7,8 "Built target sensors"
+.PHONY : CMakeFiles/sensors.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sensors.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sensors.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/sensors.dir/rule
+
+# Convenience name for target.
+sensors: CMakeFiles/sensors.dir/rule
+.PHONY : sensors
+
+# clean rule for target.
+CMakeFiles/sensors.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensors.dir/build.make CMakeFiles/sensors.dir/clean
+.PHONY : CMakeFiles/sensors.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/record.dir
+
+# All Build rule for target.
+CMakeFiles/record.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/record.dir/build.make CMakeFiles/record.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/record.dir/build.make CMakeFiles/record.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles --progress-num=4,5 "Built target record"
+.PHONY : CMakeFiles/record.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/record.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/record.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/record.dir/rule
+
+# Convenience name for target.
+record: CMakeFiles/record.dir/rule
+.PHONY : record
+
+# clean rule for target.
+CMakeFiles/record.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/record.dir/build.make CMakeFiles/record.dir/clean
+.PHONY : CMakeFiles/record.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -621,8 +621,8 @@ CMakeFiles/control.dir/src/Control/Control.cpp.o: \
  /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__struct.hpp \
  /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__builder.hpp \
  /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/include/vida_interfaces/vida_interfaces/msg/detail/controls__traits.hpp \
- /usr/include/wiringpi2/wiringPi.h \
- /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Threads/src/Utils/Serial/Serial.h \
- /usr/include/wiringpi2/wiringSerial.h \
- /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Threads/src/Utils/Serial/../../Files/DefinePin.h \
- /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Threads/src/Utils/Serial/../../Utils/road_time.h
+ /usr/local/include/wiringpi2/wiringPi.h \
+ /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Utils/Serial/Serial.h \
+ /usr/local/include/wiringpi2/wiringSerial.h \
+ /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Utils/Serial/../Files/DefinePin.h \
+ /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Utils/Serial/../road_time.h

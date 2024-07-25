@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o"
-  "CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o.d"
+  "CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o"
+  "CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o.d"
   "CMakeFiles/control.dir/src/Control/Control.cpp.o"
   "CMakeFiles/control.dir/src/Control/Control.cpp.o.d"
   "control"

@@ -83,30 +83,30 @@ CMakeFiles/control.dir/src/Control/Control.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/src/Control/Control.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/Control.cpp -o CMakeFiles/control.dir/src/Control/Control.cpp.s
 
-CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o: CMakeFiles/control.dir/flags.make
-CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o: /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp
-CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o: CMakeFiles/control.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o -MF CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o.d -o CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o -c /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp
+CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o: CMakeFiles/control.dir/flags.make
+CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o: /home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp
+CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o: CMakeFiles/control.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o -MF CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o.d -o CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o -c /home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp
 
-CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp > CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.i
+CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp > CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.i
 
-CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp -o CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.s
+CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp -o CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.s
 
 # Object files for target control
 control_OBJECTS = \
 "CMakeFiles/control.dir/src/Control/Control.cpp.o" \
-"CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o"
+"CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o"
 
 # External object files for target control
 control_EXTERNAL_OBJECTS =
 
 control: CMakeFiles/control.dir/src/Control/Control.cpp.o
-control: CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Threads/src/Utils/Serial/Serial.cpp.o
+control: CMakeFiles/control.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Serial.cpp.o
 control: CMakeFiles/control.dir/build.make
 control: /opt/ros/humble/lib/librclcpp.so
 control: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib/libvida_interfaces__rosidl_typesupport_fastrtps_c.so

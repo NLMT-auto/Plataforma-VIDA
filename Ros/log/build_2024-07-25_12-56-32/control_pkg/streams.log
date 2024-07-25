@@ -1,0 +1,36 @@
+[0.086s] Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg -- -j6 -l6
+[0.243s] [35m[1mConsolidate compiler generated dependencies of target sensors[0m
+[0.285s] [ 37%] Built target control
+[0.290s] [ 62%] Built target record
+[0.304s] [ 75%] [32mBuilding CXX object CMakeFiles/sensors.dir/src/Sensors/Sensors.cpp.o[0m
+[11.925s] In file included from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/../../../../../Utils/Serial/Serial.h:9[m[K,
+[11.926s]                  from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.h:10[m[K,
+[11.926s]                  from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.cpp:1[m[K:
+[11.926s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/../../../../../Utils/Serial/../road_time.h:16:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kroad_time_t road_time()[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[11.926s]    16 | static road_time_t [01;35m[Kroad_time[m[K(void)      // Function that returns the time (ms) since midnight on 01/01/1970
+[11.927s]       |                    [01;35m[K^~~~~~~~~[m[K
+[16.284s] [ 87%] [32m[1mLinking CXX executable sensors[0m
+[17.168s] [100%] Built target sensors
+[17.193s] Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg' returned '0': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg -- -j6 -l6
+[17.283s] Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg
+[17.301s] -- Install configuration: ""
+[17.303s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/control
+[17.304s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/sensors
+[17.308s] -- Set runtime path of "/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/sensors" to ""
+[17.308s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/record
+[17.309s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/ament_index/resource_index/package_run_dependencies/control_pkg
+[17.309s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/ament_index/resource_index/parent_prefix_path/control_pkg
+[17.310s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/ament_prefix_path.sh
+[17.311s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/ament_prefix_path.dsv
+[17.311s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/path.sh
+[17.311s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/path.dsv
+[17.312s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.bash
+[17.312s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.sh
+[17.312s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.zsh
+[17.313s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.dsv
+[17.315s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.dsv
+[17.316s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/ament_index/resource_index/packages/control_pkg
+[17.317s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/cmake/control_pkgConfig.cmake
+[17.317s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/cmake/control_pkgConfig-version.cmake
+[17.318s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.xml
+[17.319s] Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg' returned '0': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg
