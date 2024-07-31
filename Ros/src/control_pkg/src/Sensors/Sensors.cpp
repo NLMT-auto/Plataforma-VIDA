@@ -2,7 +2,7 @@
 
 Sensors::Sensors(string name) : Node(name)
 {
-    this->declare_parameter("frequency_publish", 20.0);
+    this->declare_parameter("frequency_publish", 2.0);
     frequencyPublish = this->get_parameter("frequency_publish").as_double();
 
     sensorSerial = new Serial("ttyACM0");
@@ -29,11 +29,7 @@ void Sensors::readSensors()
 
     auto msg = vida_interfaces::msg::SensorDatas();
    
-    istringstream stream(dataRecived);
-    stream >> msg.left_pulses;
-    stream >> msg.right_pulses;
-    stream >> msg.back_pulses;
-    stream >> msg.steering;
+    sscanf(dataRecived.c_str(), "%d %d %d %d", &msg.left_pulses, &msg.right_pulses, &msg.back_pulses, &msg.steering);
 
     publisher->publish(msg);
 }

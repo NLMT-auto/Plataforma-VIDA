@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string.h>
+#include <cstdio>
 #include "rclcpp/rclcpp.hpp"
 #include "vida_interfaces/msg/controls.hpp"
 #include "vida_interfaces/msg/sensor_datas.hpp"
