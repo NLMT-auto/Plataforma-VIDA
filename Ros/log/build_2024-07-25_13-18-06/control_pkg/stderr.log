@@ -1,0 +1,6 @@
+gmake[2]: ** Aviso: O arquivo 'record' está com a hora 1539 s adiantada
+gmake[2]: aviso: O relógio está errado. Sua compilação pode ficar incompleta.
+gmake[2]: ** Aviso: O arquivo 'control' está com a hora 7032 s adiantada
+gmake[2]: aviso: O relógio está errado. Sua compilação pode ficar incompleta.
+gmake[2]: ** Aviso: O arquivo 'sensors' está com a hora 7017 s adiantada
+gmake[2]: aviso: O relógio está errado. Sua compilação pode ficar incompleta.

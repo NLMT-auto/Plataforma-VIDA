@@ -14,8 +14,7 @@ Control::~Control()
 
 void Control::callbackControls(const vida_interfaces::msg::Controls::SharedPtr msg)
 {
-    string data = to_string(msg->x) + " " + to_string(msg->y);
-    
+    string data = to_string(msg->x) + " " + to_string(msg->y);    
     RCLCPP_INFO(this->get_logger(), "%s", data.c_str());
     motorSerial->write(data);
 }

@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.000836] (-) JobUnselected: {'identifier': 'control_pkg'}
+[0.001334] (-) JobUnselected: {'identifier': 'vida_interfaces'}
+[0.001999] (-) EventReactorShutdown: {}

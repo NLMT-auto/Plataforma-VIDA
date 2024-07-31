@@ -1,0 +1,213 @@
+[0.466s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.467s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f9a40c790>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f9a40c0a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f9a40c0a0>>, mixin_verb=('build',))
+[1.110s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.111s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.111s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.111s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.111s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.112s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.112s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/odroid/Documentos/Plataforma-VIDA/Ros'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pkg) by extension 'ignore'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pkg) by extension 'ignore_ament_install'
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pkg) by extensions ['colcon_pkg']
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pkg) by extension 'colcon_pkg'
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pkg) by extensions ['colcon_meta']
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pkg) by extension 'colcon_meta'
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pkg) by extensions ['ros']
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_pkg) by extension 'ros'
+[1.203s] DEBUG:colcon.colcon_core.package_identification:Package 'src/control_pkg' with type 'ros.ament_cmake' and name 'control_pkg'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/vida_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/vida_interfaces) by extension 'ignore'
+[1.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/vida_interfaces) by extension 'ignore_ament_install'
+[1.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/vida_interfaces) by extensions ['colcon_pkg']
+[1.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/vida_interfaces) by extension 'colcon_pkg'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/vida_interfaces) by extensions ['colcon_meta']
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/vida_interfaces) by extension 'colcon_meta'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/vida_interfaces) by extensions ['ros']
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/vida_interfaces) by extension 'ros'
+[1.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vida_interfaces' with type 'ros.ament_cmake' and name 'vida_interfaces'
+[1.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.309s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.310s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.322s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/odroid/Documentos/Plataforma-VIDA/Ros/install
+[1.325s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 180 installed packages in /opt/ros/humble
+[1.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.507s] Level 5:colcon.colcon_core.verb:set package 'vida_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.507s] Level 5:colcon.colcon_core.verb:set package 'vida_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.507s] Level 5:colcon.colcon_core.verb:set package 'vida_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.508s] Level 5:colcon.colcon_core.verb:set package 'vida_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.508s] Level 5:colcon.colcon_core.verb:set package 'vida_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.508s] Level 5:colcon.colcon_core.verb:set package 'vida_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.508s] Level 5:colcon.colcon_core.verb:set package 'vida_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.508s] Level 5:colcon.colcon_core.verb:set package 'vida_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.508s] Level 5:colcon.colcon_core.verb:set package 'vida_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.508s] DEBUG:colcon.colcon_core.verb:Building package 'vida_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces', 'merge_install': False, 'path': '/home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.509s] Level 5:colcon.colcon_core.verb:set package 'control_pkg' build argument 'cmake_args' from command line to 'None'
+[1.510s] Level 5:colcon.colcon_core.verb:set package 'control_pkg' build argument 'cmake_target' from command line to 'None'
+[1.510s] Level 5:colcon.colcon_core.verb:set package 'control_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.510s] Level 5:colcon.colcon_core.verb:set package 'control_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[1.510s] Level 5:colcon.colcon_core.verb:set package 'control_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[1.510s] Level 5:colcon.colcon_core.verb:set package 'control_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[1.510s] Level 5:colcon.colcon_core.verb:set package 'control_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[1.510s] Level 5:colcon.colcon_core.verb:set package 'control_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[1.510s] Level 5:colcon.colcon_core.verb:set package 'control_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.510s] DEBUG:colcon.colcon_core.verb:Building package 'control_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg', 'merge_install': False, 'path': '/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg', 'symlink_install': False, 'test_result_base': None}
+[1.511s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.514s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.515s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces' with build type 'ament_cmake'
+[1.515s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/odroid/Documentos/Plataforma-VIDA/Ros/src/vida_interfaces'
+[1.526s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.527s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.527s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.554s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces -- -j6 -l6
+[3.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces -- -j6 -l6
+[4.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces
+[4.362s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vida_interfaces)
+[4.369s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_interfaces
+[4.395s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces' for CMake module files
+[4.400s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces' for CMake config files
+[4.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('vida_interfaces', 'cmake_prefix_path')
+[4.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/hook/cmake_prefix_path.ps1'
+[4.406s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/hook/cmake_prefix_path.dsv'
+[4.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/hook/cmake_prefix_path.sh'
+[4.412s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib'
+[4.413s] Level 1:colcon.colcon_core.shell:create_environment_hook('vida_interfaces', 'ld_library_path_lib')
+[4.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/hook/ld_library_path_lib.ps1'
+[4.416s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/hook/ld_library_path_lib.dsv'
+[4.418s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/hook/ld_library_path_lib.sh'
+[4.420s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/bin'
+[4.421s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib/pkgconfig/vida_interfaces.pc'
+[4.422s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib/python3.10/site-packages'
+[4.424s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/bin'
+[4.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/package.ps1'
+[4.429s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/package.dsv'
+[4.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/package.sh'
+[4.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/package.bash'
+[4.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/package.zsh'
+[4.445s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/colcon-core/packages/vida_interfaces)
+[4.706s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vida_interfaces)
+[4.707s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces' for CMake module files
+[4.710s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces' for CMake config files
+[4.712s] Level 1:colcon.colcon_core.shell:create_environment_hook('vida_interfaces', 'cmake_prefix_path')
+[4.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/hook/cmake_prefix_path.ps1'
+[4.715s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/hook/cmake_prefix_path.dsv'
+[4.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/hook/cmake_prefix_path.sh'
+[4.721s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib'
+[4.721s] Level 1:colcon.colcon_core.shell:create_environment_hook('vida_interfaces', 'ld_library_path_lib')
+[4.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/hook/ld_library_path_lib.ps1'
+[4.724s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/hook/ld_library_path_lib.dsv'
+[4.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/hook/ld_library_path_lib.sh'
+[4.728s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/bin'
+[4.728s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib/pkgconfig/vida_interfaces.pc'
+[4.729s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/lib/python3.10/site-packages'
+[4.731s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/bin'
+[4.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/package.ps1'
+[4.735s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/package.dsv'
+[4.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/package.sh'
+[4.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/package.bash'
+[4.742s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/vida_interfaces/package.zsh'
+[4.745s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces/share/colcon-core/packages/vida_interfaces)
+[4.746s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg' with build type 'ament_cmake'
+[4.747s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg'
+[4.750s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.750s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg -- -j6 -l6
+[41.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg' returned '0': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg -- -j6 -l6
+[42.132s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg
+[42.199s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control_pkg)
+[42.201s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg' for CMake module files
+[42.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg' returned '0': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg
+[42.208s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg' for CMake config files
+[42.209s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_pkg', 'cmake_prefix_path')
+[42.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/hook/cmake_prefix_path.ps1'
+[42.215s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/hook/cmake_prefix_path.dsv'
+[42.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/hook/cmake_prefix_path.sh'
+[42.219s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib'
+[42.221s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/bin'
+[42.222s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/pkgconfig/control_pkg.pc'
+[42.223s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/python3.10/site-packages'
+[42.224s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/bin'
+[42.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.ps1'
+[42.228s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.dsv'
+[42.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.sh'
+[42.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.bash'
+[42.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.zsh'
+[42.237s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/colcon-core/packages/control_pkg)
+[42.363s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control_pkg)
+[42.366s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg' for CMake module files
+[42.376s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg' for CMake config files
+[42.378s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_pkg', 'cmake_prefix_path')
+[42.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/hook/cmake_prefix_path.ps1'
+[42.385s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/hook/cmake_prefix_path.dsv'
+[42.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/hook/cmake_prefix_path.sh'
+[42.393s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib'
+[42.394s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/bin'
+[42.394s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/pkgconfig/control_pkg.pc'
+[42.395s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/python3.10/site-packages'
+[42.396s] Level 1:colcon.colcon_core.environment:checking '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/bin'
+[42.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.ps1'
+[42.400s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.dsv'
+[42.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.sh'
+[42.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.bash'
+[42.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.zsh'
+[42.409s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/colcon-core/packages/control_pkg)
+[42.410s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[42.412s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[42.412s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[42.413s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[42.442s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[42.443s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[42.443s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[43.014s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[43.016s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/local_setup.ps1'
+[43.019s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/_local_setup_util_ps1.py'
+[43.024s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/setup.ps1'
+[43.028s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/local_setup.sh'
+[43.031s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/_local_setup_util_sh.py'
+[43.033s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/setup.sh'
+[43.037s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/local_setup.bash'
+[43.039s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/setup.bash'
+[43.042s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/local_setup.zsh'
+[43.044s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/odroid/Documentos/Plataforma-VIDA/Ros/install/setup.zsh'

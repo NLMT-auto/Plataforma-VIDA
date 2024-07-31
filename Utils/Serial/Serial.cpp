@@ -5,7 +5,7 @@ Serial::Serial(string port)
     string aux = "/dev/" + port;
     port = aux;
 
-    this->serialport = serialOpen(port.c_str(), BAUD_RATE);
+    this->serialport = serialOpen(port.c_str(), BAUD_RATE);    
 }
 
 Serial::~Serial()

@@ -2,7 +2,7 @@
 
 Sensors::Sensors(string name) : Node(name)
 {
-    this->declare_parameter("frequency_publish", 100.0);
+    this->declare_parameter("frequency_publish", 20.0);
     frequencyPublish = this->get_parameter("frequency_publish").as_double();
 
     sensorSerial = new Serial("ttyACM0");
@@ -11,7 +11,7 @@ Sensors::Sensors(string name) : Node(name)
     pinMode(sensorInterrupt, OUTPUT);
     digitalWrite(sensorInterrupt, LOW);
 
-    publisher = this->create_publisher<vida_interfaces::msg::SensorDatas>("sensorData", 10);
+    publisher = this->create_publisher<vida_interfaces::msg::SensorDatas>("sensorData", 10);    
     timer = this->create_wall_timer(chrono::nanoseconds((int)(1e9 / frequencyPublish)), bind(&Sensors::readSensors, this));
     RCLCPP_INFO(this->get_logger(), "sensors has been started");
 }
@@ -28,7 +28,7 @@ void Sensors::readSensors()
     digitalWrite(sensorInterrupt, LOW);
 
     auto msg = vida_interfaces::msg::SensorDatas();
-
+   
     istringstream stream(dataRecived);
     stream >> msg.left_pulses;
     stream >> msg.right_pulses;
