@@ -1,0 +1,60 @@
+[35m[1mConsolidate compiler generated dependencies of target control[0m
+gmake[2]: ** Aviso: O arquivo 'control' está com a hora 13 s adiantada
+gmake[2]: aviso: O relógio está errado. Sua compilação pode ficar incompleta.
+[ 37%] [32mBuilding CXX object CMakeFiles/sensors.dir/src/Sensors/Sensors.cpp.o[0m
+[ 50%] Built target control
+[ 75%] Built target record
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.cpp:[m[K In member function ‘[01m[Kvoid Sensors::readSensors()[m[K’:
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.cpp:32:35:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint*[m[K’, but argument 3 has type ‘[01m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_left_pulses_type*[m[K’ {aka ‘[01m[Klong int*[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   32 |     sscanf(dataRecived.c_str(), "[01;35m[K%d[m[K %d %d %d", [32m[K&msg.left_pulses[m[K, &msg.right_pulses, &msg.back_pulses, &msg.steering);
+      |                                  [01;35m[K~^[m[K            [32m[K~~~~~~~~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K            [32m[K|[m[K
+      |                                   [01;35m[Kint*[m[K         [32m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_left_pulses_type* {aka long int*}[m[K
+      |                                  [32m[K%ld[m[K
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.cpp:32:38:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint*[m[K’, but argument 4 has type ‘[01m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_right_pulses_type*[m[K’ {aka ‘[01m[Klong int*[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   32 |     sscanf(dataRecived.c_str(), "%d [01;35m[K%d[m[K %d %d", &msg.left_pulses, [32m[K&msg.right_pulses[m[K, &msg.back_pulses, &msg.steering);
+      |                                     [01;35m[K~^[m[K                           [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                                      [01;35m[K|[m[K                           [32m[K|[m[K
+      |                                      [01;35m[Kint*[m[K                        [32m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_right_pulses_type* {aka long int*}[m[K
+      |                                     [32m[K%ld[m[K
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.cpp:32:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint*[m[K’, but argument 5 has type ‘[01m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_back_pulses_type*[m[K’ {aka ‘[01m[Klong int*[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   32 |     sscanf(dataRecived.c_str(), "%d %d [01;35m[K%d[m[K %d", &msg.left_pulses, &msg.right_pulses, [32m[K&msg.back_pulses[m[K, &msg.steering);
+      |                                        [01;35m[K~^[m[K                                           [32m[K~~~~~~~~~~~~~~~~[m[K
+      |                                         [01;35m[K|[m[K                                           [32m[K|[m[K
+      |                                         [01;35m[Kint*[m[K                                        [32m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_back_pulses_type* {aka long int*}[m[K
+      |                                        [32m[K%ld[m[K
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.cpp:32:44:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint*[m[K’, but argument 6 has type ‘[01m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_steering_type*[m[K’ {aka ‘[01m[Kdouble*[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   32 |     sscanf(dataRecived.c_str(), "%d %d %d [01;35m[K%d[m[K", &msg.left_pulses, &msg.right_pulses, &msg.back_pulses, [32m[K&msg.steering[m[K);
+      |                                           [01;35m[K~^[m[K                                                          [32m[K~~~~~~~~~~~~~[m[K
+      |                                            [01;35m[K|[m[K                                                          [32m[K|[m[K
+      |                                            [01;35m[Kint*[m[K                                                       [32m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_steering_type* {aka double*}[m[K
+      |                                           [32m[K%le[m[K
+In file included from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/../../../../../Utils/Serial/Serial.h:9[m[K,
+                 from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.h:11[m[K,
+                 from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.cpp:1[m[K:
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/../../../../../Utils/Serial/../road_time.h:[m[K At global scope:
+[01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/../../../../../Utils/Serial/../road_time.h:16:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kroad_time_t road_time()[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+   16 | static road_time_t [01;35m[Kroad_time[m[K(void)      // Function that returns the time (ms) since midnight on 01/01/1970
+      |                    [01;35m[K^~~~~~~~~[m[K
+[ 87%] [32m[1mLinking CXX executable sensors[0m
+[100%] Built target sensors
+-- Install configuration: ""
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/control
+-- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/sensors
+-- Set runtime path of "/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/sensors" to ""
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/record
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/ament_index/resource_index/package_run_dependencies/control_pkg
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/ament_index/resource_index/parent_prefix_path/control_pkg
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/path.sh
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/path.dsv
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.bash
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.sh
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.zsh
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.dsv
+-- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.dsv
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/ament_index/resource_index/packages/control_pkg
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/cmake/control_pkgConfig.cmake
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/cmake/control_pkgConfig-version.cmake
+-- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.xml

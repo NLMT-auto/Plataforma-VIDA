@@ -1,0 +1,64 @@
+[0.101s] Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg -- -j6 -l6
+[0.418s] [35m[1mConsolidate compiler generated dependencies of target control[0m
+[0.444s] gmake[2]: ** Aviso: O arquivo 'control' está com a hora 13 s adiantada
+[0.448s] gmake[2]: aviso: O relógio está errado. Sua compilação pode ficar incompleta.
+[0.470s] [ 37%] [32mBuilding CXX object CMakeFiles/sensors.dir/src/Sensors/Sensors.cpp.o[0m
+[0.471s] [ 50%] Built target control
+[0.473s] [ 75%] Built target record
+[10.626s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.cpp:[m[K In member function ‘[01m[Kvoid Sensors::readSensors()[m[K’:
+[10.626s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.cpp:32:35:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint*[m[K’, but argument 3 has type ‘[01m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_left_pulses_type*[m[K’ {aka ‘[01m[Klong int*[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[10.627s]    32 |     sscanf(dataRecived.c_str(), "[01;35m[K%d[m[K %d %d %d", [32m[K&msg.left_pulses[m[K, &msg.right_pulses, &msg.back_pulses, &msg.steering);
+[10.627s]       |                                  [01;35m[K~^[m[K            [32m[K~~~~~~~~~~~~~~~~[m[K
+[10.628s]       |                                   [01;35m[K|[m[K            [32m[K|[m[K
+[10.628s]       |                                   [01;35m[Kint*[m[K         [32m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_left_pulses_type* {aka long int*}[m[K
+[10.628s]       |                                  [32m[K%ld[m[K
+[10.638s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.cpp:32:38:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint*[m[K’, but argument 4 has type ‘[01m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_right_pulses_type*[m[K’ {aka ‘[01m[Klong int*[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[10.640s]    32 |     sscanf(dataRecived.c_str(), "%d [01;35m[K%d[m[K %d %d", &msg.left_pulses, [32m[K&msg.right_pulses[m[K, &msg.back_pulses, &msg.steering);
+[10.645s]       |                                     [01;35m[K~^[m[K                           [32m[K~~~~~~~~~~~~~~~~~[m[K
+[10.645s]       |                                      [01;35m[K|[m[K                           [32m[K|[m[K
+[10.646s]       |                                      [01;35m[Kint*[m[K                        [32m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_right_pulses_type* {aka long int*}[m[K
+[10.647s]       |                                     [32m[K%ld[m[K
+[10.647s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.cpp:32:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint*[m[K’, but argument 5 has type ‘[01m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_back_pulses_type*[m[K’ {aka ‘[01m[Klong int*[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[10.647s]    32 |     sscanf(dataRecived.c_str(), "%d %d [01;35m[K%d[m[K %d", &msg.left_pulses, &msg.right_pulses, [32m[K&msg.back_pulses[m[K, &msg.steering);
+[10.648s]       |                                        [01;35m[K~^[m[K                                           [32m[K~~~~~~~~~~~~~~~~[m[K
+[10.648s]       |                                         [01;35m[K|[m[K                                           [32m[K|[m[K
+[10.649s]       |                                         [01;35m[Kint*[m[K                                        [32m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_back_pulses_type* {aka long int*}[m[K
+[10.649s]       |                                        [32m[K%ld[m[K
+[10.649s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.cpp:32:44:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint*[m[K’, but argument 6 has type ‘[01m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_steering_type*[m[K’ {aka ‘[01m[Kdouble*[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[10.650s]    32 |     sscanf(dataRecived.c_str(), "%d %d %d [01;35m[K%d[m[K", &msg.left_pulses, &msg.right_pulses, &msg.back_pulses, [32m[K&msg.steering[m[K);
+[10.650s]       |                                           [01;35m[K~^[m[K                                                          [32m[K~~~~~~~~~~~~~[m[K
+[10.651s]       |                                            [01;35m[K|[m[K                                                          [32m[K|[m[K
+[10.651s]       |                                            [01;35m[Kint*[m[K                                                       [32m[Kvida_interfaces::msg::SensorDatas_<std::allocator<void> >::_steering_type* {aka double*}[m[K
+[10.651s]       |                                           [32m[K%le[m[K
+[17.754s] In file included from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/../../../../../Utils/Serial/Serial.h:9[m[K,
+[17.755s]                  from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.h:11[m[K,
+[17.755s]                  from [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/Sensors.cpp:1[m[K:
+[17.756s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/../../../../../Utils/Serial/../road_time.h:[m[K At global scope:
+[17.756s] [01m[K/home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/../../../../../Utils/Serial/../road_time.h:16:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kroad_time_t road_time()[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[17.756s]    16 | static road_time_t [01;35m[Kroad_time[m[K(void)      // Function that returns the time (ms) since midnight on 01/01/1970
+[17.757s]       |                    [01;35m[K^~~~~~~~~[m[K
+[24.115s] [ 87%] [32m[1mLinking CXX executable sensors[0m
+[30.689s] [100%] Built target sensors
+[30.739s] Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg' returned '0': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --build /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg -- -j6 -l6
+[30.907s] Invoking command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg
+[30.936s] -- Install configuration: ""
+[30.939s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/control
+[30.941s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/sensors
+[30.945s] -- Set runtime path of "/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/sensors" to ""
+[30.954s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/lib/control_pkg/record
+[30.955s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/ament_index/resource_index/package_run_dependencies/control_pkg
+[30.961s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/ament_index/resource_index/parent_prefix_path/control_pkg
+[30.965s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/ament_prefix_path.sh
+[30.966s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/ament_prefix_path.dsv
+[30.967s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/path.sh
+[30.967s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/environment/path.dsv
+[30.968s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.bash
+[30.968s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.sh
+[30.968s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.zsh
+[30.968s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/local_setup.dsv
+[30.969s] -- Installing: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.dsv
+[30.970s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/ament_index/resource_index/packages/control_pkg
+[30.970s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/cmake/control_pkgConfig.cmake
+[30.970s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/cmake/control_pkgConfig-version.cmake
+[30.970s] -- Up-to-date: /home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg/share/control_pkg/package.xml
+[30.971s] Invoked command in '/home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg' returned '0': CMAKE_PREFIX_PATH=/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_interfaces:/home/odroid/Documentos/Plataforma-VIDA/Ros/install/control_pkg:/opt/ros/humble /usr/bin/cmake --install /home/odroid/Documentos/Plataforma-VIDA/Ros/build/control_pkg

@@ -29,7 +29,7 @@ void Sensors::readSensors()
 
     auto msg = vida_interfaces::msg::SensorDatas();
    
-    sscanf(dataRecived.c_str(), "%d %d %d %d", &msg.left_pulses, &msg.right_pulses, &msg.back_pulses, &msg.steering);
+    sscanf(dataRecived.c_str(), "%ld %ld %ld %le", &msg.left_pulses, &msg.right_pulses, &msg.back_pulses, &msg.steering);
 
     publisher->publish(msg);
 }

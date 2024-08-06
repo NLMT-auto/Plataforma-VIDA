@@ -1,0 +1,1 @@
+/home/odroid/Documentos/Plataforma-VIDA/Ros/build/vida_bringup/ament_cmake_environment_hooks/local_setup.zsh

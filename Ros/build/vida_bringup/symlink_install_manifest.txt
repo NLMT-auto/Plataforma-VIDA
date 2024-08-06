@@ -1,0 +1,16 @@
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/vida_bringup/launch/plataforma_vida_app.launch.py
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/ament_index/resource_index/package_run_dependencies/vida_bringup
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/ament_index/resource_index/parent_prefix_path/vida_bringup
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/vida_bringup/environment/ament_prefix_path.sh
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/vida_bringup/environment/ament_prefix_path.dsv
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/vida_bringup/environment/path.sh
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/vida_bringup/environment/path.dsv
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/vida_bringup/local_setup.bash
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/vida_bringup/local_setup.sh
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/vida_bringup/local_setup.zsh
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/vida_bringup/local_setup.dsv
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/vida_bringup/package.dsv
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/ament_index/resource_index/packages/vida_bringup
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/vida_bringup/cmake/vida_bringupConfig.cmake
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/vida_bringup/cmake/vida_bringupConfig-version.cmake
+/home/odroid/Documentos/Plataforma-VIDA/Ros/install/vida_bringup/share/vida_bringup/package.xml
