@@ -149,7 +149,7 @@ CMakeFiles/sensors.dir/home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/Seria
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /usr/local/include/wiringpi2/wiringSerial.h \
- /home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/../Files/DefinePin.h \
- /home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/../road_time.h \
- /usr/include/aarch64-linux-gnu/sys/time.h
+ /usr/local/include/wiringpi2/wiringSerial.h /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/limits \
+ /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
+ /home/odroid/Documentos/Plataforma-VIDA/Utils/Serial/../Files/DefinePin.h

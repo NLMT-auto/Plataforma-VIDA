@@ -24,7 +24,7 @@ string Serial::read(char c)
     int index = 0;
 
     bool end = false;
-    time = road_time();
+    auto start = chrono::high_resolution_clock::now();
     do
     {
         // Verifica se há dados disponíveis para leitura
@@ -45,7 +45,10 @@ string Serial::read(char c)
             }
         }
 
-        if ((road_time() - time) > 1000)
+        auto now = chrono::high_resolution_clock::now();
+        auto elapsed = chrono::duration_cast<chrono::milliseconds>(now - start).count();
+
+        if (elapsed > 1000)
         {
             receivedChar[index++] = '-';
             receivedChar[index++] = '1';

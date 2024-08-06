@@ -629,5 +629,4 @@ CMakeFiles/sensors.dir/src/Sensors/Sensors.cpp.o: \
  /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/../../../../../Utils/Serial/Serial.h \
  /usr/local/include/wiringpi2/wiringSerial.h \
  /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/../../../../../Utils/Serial/../Files/DefinePin.h \
- /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/../../../../../Utils/Serial/../road_time.h \
  /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Sensors/../../../../../Utils/Files/DefinePin.h

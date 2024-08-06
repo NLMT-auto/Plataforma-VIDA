@@ -624,5 +624,4 @@ CMakeFiles/control.dir/src/Control/Control.cpp.o: \
  /usr/local/include/wiringpi2/wiringPi.h \
  /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Utils/Serial/Serial.h \
  /usr/local/include/wiringpi2/wiringSerial.h \
- /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Utils/Serial/../Files/DefinePin.h \
- /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Utils/Serial/../road_time.h
+ /home/odroid/Documentos/Plataforma-VIDA/Ros/src/control_pkg/src/Control/../../../../../Utils/Serial/../Files/DefinePin.h
